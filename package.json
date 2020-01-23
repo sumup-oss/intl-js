@@ -1,0 +1,46 @@
+{
+  "name": "intl",
+  "version": "0.0.0-semantically-released",
+  "description": "A partial polyfill for the JavaScript Internationalization API, catered to SumUp's needs",
+  "repository": "git@github.com:sumup-oss/intl-js.git",
+  "author": "Connor Bär <connor.baer@sumup.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "start": "tsc --watch",
+    "dev": "yarn start",
+    "build": "tsc && tsc --project ./tsconfig-es.json",
+    "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "lint:ci": "yarn lint --format junit -o __reports__/junit/eslint-results.xml",
+    "prerelease": "yarn build",
+    "release": "foundry run semantic-release",
+    "test": "jest --watch",
+    "test:ci": "jest --ci --runInBand --coverage --reporters default --reporters \"jest-junit\"",
+    "check:security": "audit-ci --critical",
+    "check:licenses": "license-checker --production --summary --failOn=GPLv3"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@sumup/foundry": "^2.0.0-beta.9",
+    "@types/jest": "^24.9.0",
+    "audit-ci": "^2.4.2",
+    "jest": "^25.1.0",
+    "jest-extended": "^0.11.4",
+    "jest-junit": "^10.0.0",
+    "license-checker": "^25.0.1",
+    "ts-jest": "^25.0.0",
+    "typescript": "^3.7.5"
+  }
+}
