@@ -1,5 +1,4 @@
-![Code coverage](https://codecov.io/gh/sumup/foundry/branch/master/graph/badge.svg?token=<codecov-token>)
-[![License](https://img.shields.io/badge/license--lightgrey.svg)](https://github.com/sumup-oss/intl-js/LICENSE)
+[![Coverage](https://img.shields.io/codecov/c/github/sumup-oss/intl-js)](https://codecov.io/gh/sumup-oss/intl-js) [![License](https://img.shields.io/github/license/sumup-oss/intl-js)](https://github.com/sumup-oss/intl-js/blob/master/LICENSE)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 <div align="center">
