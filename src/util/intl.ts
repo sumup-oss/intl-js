@@ -13,17 +13,14 @@
  * limitations under the License.
  */
 
-import { Locales, Options, Value, FormatFn } from '../types';
+import { Locale } from '../types';
 import { memoize } from './memoize';
 
-const supportsIntl = typeof Intl !== 'undefined';
+export const isIntlSupported = typeof Intl !== 'undefined';
 
-export const getFormatFn = memoize(
-  (locales: Locales, options?: Options): FormatFn => {
-    if (!supportsIntl) {
-      return (value: Value): string => `${value}`;
-    }
-    // eslint-disable-next-line @typescript-eslint/unbound-method
-    return new Intl.NumberFormat(locales, options).format;
-  },
+export const getNumberFormat = memoize(
+  (
+    locales?: Locale | Locale[],
+    options?: Intl.NumberFormatOptions,
+  ): Intl.NumberFormat => new Intl.NumberFormat(locales, options),
 );

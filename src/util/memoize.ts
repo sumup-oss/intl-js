@@ -13,20 +13,24 @@
  * limitations under the License.
  */
 
+type Memory = {
+  [key: string]: any;
+};
+
 // eslint-disable-next-line space-before-function-paren
 export function memoize<R, T extends (...args: any[]) => R>(fn: T): T {
-  const memory = new Map<string, R>();
+  const memory: Memory = {};
 
-  const memoizedFn = (...args: any[]) => {
+  const memoizedFn = (...args: any[]): R => {
     const key = JSON.stringify(args);
-    const memoryValue = memory.get(key);
+    const memoryValue = memory[key];
 
     if (typeof memoryValue !== 'undefined') {
       return memoryValue;
     }
 
     const value = fn(...args);
-    memory.set(key, value);
+    memory[key] = value;
 
     return value;
   };

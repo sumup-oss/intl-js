@@ -13,10 +13,6 @@
  * limitations under the License.
  */
 
-export type Value = number;
-
-export type Locales = string[];
-
 export type Locale =
   | 'at'
   | 'be'
@@ -54,19 +50,13 @@ export type Locale =
   | 'us'
   | string;
 
-export interface BaseOptions {
-  locale?: Locale | Locale[];
-  localeMatcher?: 'best fit' | 'lookup';
-  style?: 'decimal' | 'currency' | 'percent' | 'unit';
+export interface DecimalOptions extends Intl.NumberFormatOptions {
+  style: 'decimal';
 }
 
-export type DecimalOptions = BaseOptions;
-
-export interface CurrencyOptions extends BaseOptions {
-  currency?: string;
-  currencyDisplay?: 'symbol' | 'code' | 'name';
+export interface CurrencyOptions extends Intl.NumberFormatOptions {
+  style: 'currency';
+  currency: string;
 }
 
 export type Options = DecimalOptions | CurrencyOptions;
-
-export type FormatFn = (value: Value) => string;

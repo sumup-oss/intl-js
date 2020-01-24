@@ -13,14 +13,32 @@
  * limitations under the License.
  */
 
-import { format } from '.';
+/* eslint-disable no-irregular-whitespace */
+
+import { format, formatCurrency } from '.';
 
 describe('Format', () => {
-  describe('decimals', () => {
-    it('should format a number with default options', () => {
+  describe('number', () => {
+    it('should format with default options', () => {
       const actual = format(123456.789);
-      const expected = '123,456.789';
-      expect(actual).toBe(expected);
+      expect(actual).toMatchInlineSnapshot(`"123.456,789"`);
+    });
+
+    it('should format for a specified locale', () => {
+      const actual = format(123456.789, 'PT');
+      expect(actual).toMatchInlineSnapshot(`"123.456,789"`);
+    });
+  });
+
+  describe('currency', () => {
+    it('should format with default options', () => {
+      const actual = formatCurrency(123456.789);
+      expect(actual).toMatchInlineSnapshot(`"R$ 123.456,79"`);
+    });
+
+    it('should format for a specified locale', () => {
+      const actual = formatCurrency(123456.789, 'PT');
+      expect(actual).toMatchInlineSnapshot(`"€ 123.456,79"`);
     });
   });
 });

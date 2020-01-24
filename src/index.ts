@@ -13,57 +13,21 @@
  * limitations under the License.
  */
 
-import {
-  Value,
-  Locales,
-  DecimalOptions,
-  CurrencyOptions,
-  Options,
-} from './types';
-import { getLocales } from './lib/locales';
-import { getCurrency } from './lib/currencies';
-import { getFormatFn } from './lib/intl';
+/* eslint-disable @typescript-eslint/unbound-method */
 
-function baseFormat(value: Value, locales: Locales, options?: Options): string {
-  const formatFn = getFormatFn(locales, options);
-  return formatFn(value);
-}
+import { formatFactory, formatToPartsFactory } from './base';
+import { getDecimalOptions } from './numbers';
+import { getCurrencyOptions } from './currencies';
 
-export function format(value: Value, options?: DecimalOptions): string {
-  const locales = getLocales(options?.locale);
-  return baseFormat(value, locales, {
-    ...options,
-    style: 'decimal',
-  });
-}
+type NumberArgs = [Intl.NumberFormatOptions?];
+type CurrencyArgs = [string?, Intl.NumberFormatOptions?];
 
-export function formatCurrency(
-  value: Value,
-  options?: CurrencyOptions,
-): string {
-  const locales = getLocales(options?.locale);
-  const currency = options?.currency || getCurrency(locales);
+export const format = formatFactory<NumberArgs>(getDecimalOptions);
+export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
 
-  if (!currency) {
-    if (process.env.NODE_ENV !== 'production') {
-      throw new Error(
-        [
-          `No currency found for "${locales.join(', ')}".`,
-          'Explicitely pass a currency as part of the options',
-          'or submit a new one on GitHub.',
-        ].join(' '),
-      );
-    }
-
-    return baseFormat(value, locales, {
-      ...options,
-      style: 'decimal',
-    });
-  }
-
-  return baseFormat(value, locales, {
-    ...options,
-    style: 'currency',
-    currency,
-  });
-}
+export const formatToParts = formatToPartsFactory<NumberArgs>(
+  getDecimalOptions,
+);
+export const formatCurrencyToParts = formatToPartsFactory<CurrencyArgs>(
+  getCurrencyOptions,
+);
