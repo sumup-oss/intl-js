@@ -1,5 +1,5 @@
 {
-  "name": "intl",
+  "name": "@sumup/intl",
   "version": "0.0.0-semantically-released",
   "description": "A partial polyfill for the JavaScript Internationalization API, catered to SumUp's needs",
   "repository": "git@github.com:sumup-oss/intl-js.git",

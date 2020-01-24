@@ -37,9 +37,8 @@ jobs:
         uses: codecov/codecov-action@v1.0.3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-      # Disable automatic releases while the project hasn't reached v1
-      # - name: Release
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      #   run: yarn release
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn release
