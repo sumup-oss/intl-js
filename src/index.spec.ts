@@ -19,25 +19,25 @@ import { format, formatCurrency } from '.';
 
 describe('Format', () => {
   describe('number', () => {
-    it('should format with default options', () => {
-      const actual = format(123456.789);
+    it('should format for a locale', () => {
+      const actual = format(123456.789, 'PT');
       expect(actual).toMatchInlineSnapshot(`"123.456,789"`);
     });
 
-    it('should format for a specified locale', () => {
-      const actual = format(123456.789, 'PT');
+    it('should format for an array of locales', () => {
+      const actual = format(123456.789, ['CN', 'PT']);
       expect(actual).toMatchInlineSnapshot(`"123.456,789"`);
     });
   });
 
   describe('currency', () => {
-    it('should format with default options', () => {
-      const actual = formatCurrency(123456.789);
-      expect(actual).toMatchInlineSnapshot(`"R$ 123.456,79"`);
+    it('should format for a locale', () => {
+      const actual = formatCurrency(123456.789, 'PT');
+      expect(actual).toMatchInlineSnapshot(`"€ 123.456,79"`);
     });
 
-    it('should format for a specified locale', () => {
-      const actual = formatCurrency(123456.789, 'PT');
+    it('should format for an array of locales', () => {
+      const actual = formatCurrency(123456.789, ['CN', 'PT']);
       expect(actual).toMatchInlineSnapshot(`"€ 123.456,79"`);
     });
   });

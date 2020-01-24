@@ -19,8 +19,10 @@ import { formatFactory, formatToPartsFactory } from './base';
 import { getDecimalOptions } from './numbers';
 import { getCurrencyOptions } from './currencies';
 
+type Currency = string;
+
 type NumberArgs = [Intl.NumberFormatOptions?];
-type CurrencyArgs = [string?, Intl.NumberFormatOptions?];
+type CurrencyArgs = [Currency?, Intl.NumberFormatOptions?];
 
 export const format = formatFactory<NumberArgs>(getDecimalOptions);
 export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
