@@ -13,6 +13,57 @@
  * limitations under the License.
  */
 
-export function square(x: number): number {
-  return x * x;
+import {
+  Value,
+  Locales,
+  DecimalOptions,
+  CurrencyOptions,
+  Options,
+} from './types';
+import { getLocales } from './lib/locales';
+import { getCurrency } from './lib/currencies';
+import { getFormatFn } from './lib/intl';
+
+function baseFormat(value: Value, locales: Locales, options?: Options): string {
+  const formatFn = getFormatFn(locales, options);
+  return formatFn(value);
+}
+
+export function format(value: Value, options?: DecimalOptions): string {
+  const locales = getLocales(options?.locale);
+  return baseFormat(value, locales, {
+    ...options,
+    style: 'decimal',
+  });
+}
+
+export function formatCurrency(
+  value: Value,
+  options?: CurrencyOptions,
+): string {
+  const locales = getLocales(options?.locale);
+  const currency = options?.currency || getCurrency(locales);
+
+  if (!currency) {
+    if (process.env.NODE_ENV !== 'production') {
+      throw new Error(
+        [
+          `No currency found for "${locales.join(', ')}".`,
+          'Explicitely pass a currency as part of the options',
+          'or submit a new one on GitHub.',
+        ].join(' '),
+      );
+    }
+
+    return baseFormat(value, locales, {
+      ...options,
+      style: 'decimal',
+    });
+  }
+
+  return baseFormat(value, locales, {
+    ...options,
+    style: 'currency',
+    currency,
+  });
 }

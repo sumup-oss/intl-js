@@ -13,14 +13,17 @@
  * limitations under the License.
  */
 
-import { format } from '.';
+import { Locales, Options, Value, FormatFn } from '../types';
+import { memoize } from './memoize';
 
-describe('Format', () => {
-  describe('decimals', () => {
-    it('should format a number with default options', () => {
-      const actual = format(123456.789);
-      const expected = '123,456.789';
-      expect(actual).toBe(expected);
-    });
-  });
-});
+const supportsIntl = typeof Intl !== 'undefined';
+
+export const getFormatFn = memoize(
+  (locales: Locales, options?: Options): FormatFn => {
+    if (!supportsIntl) {
+      return (value: Value): string => `${value}`;
+    }
+    // eslint-disable-next-line @typescript-eslint/unbound-method
+    return new Intl.NumberFormat(locales, options).format;
+  },
+);

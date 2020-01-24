@@ -13,14 +13,23 @@
  * limitations under the License.
  */
 
-import { format } from '.';
+// eslint-disable-next-line space-before-function-paren
+export function memoize<R, T extends (...args: any[]) => R>(fn: T): T {
+  const memory = new Map<string, R>();
 
-describe('Format', () => {
-  describe('decimals', () => {
-    it('should format a number with default options', () => {
-      const actual = format(123456.789);
-      const expected = '123,456.789';
-      expect(actual).toBe(expected);
-    });
-  });
-});
+  const memoizedFn = (...args: any[]) => {
+    const key = JSON.stringify(args);
+    const memoryValue = memory.get(key);
+
+    if (typeof memoryValue !== 'undefined') {
+      return memoryValue;
+    }
+
+    const value = fn(...args);
+    memory.set(key, value);
+
+    return value;
+  };
+
+  return memoizedFn as T;
+}
