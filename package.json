@@ -17,6 +17,9 @@
     "CONTRIBUTING.md",
     "LICENSE.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "tsc --watch",
     "dev": "yarn start",
