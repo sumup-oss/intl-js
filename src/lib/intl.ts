@@ -24,3 +24,11 @@ export const getNumberFormat = memoize(
     options?: Intl.NumberFormatOptions,
   ): Intl.NumberFormat => new Intl.NumberFormat(locales, options),
 );
+
+export function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
+  if (locales && locales.length >= 0) {
+    return locales;
+  }
+  const numberFormat = getNumberFormat();
+  return numberFormat.resolvedOptions().locale;
+}

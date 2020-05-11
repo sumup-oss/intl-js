@@ -15,11 +15,11 @@
 
 /* eslint-disable no-continue */
 
-import { Locale, CurrencyOptions, DecimalOptions } from '../types';
+import { Locale, CurrencyOptions, DecimalOptions, Currency } from '../types';
 
-import { getNumberFormat } from './intl';
+import { resolveLocale } from './intl';
 
-export const CURRENCY_MAP: { [country: string]: string } = {
+export const CURRENCY_MAP: { [country: string]: Currency } = {
   AT: 'EUR',
   BE: 'EUR',
   BG: 'BGN',
@@ -56,14 +56,6 @@ export const CURRENCY_MAP: { [country: string]: string } = {
   US: 'USD',
 };
 
-function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
-  if (locales && locales.length >= 0) {
-    return locales;
-  }
-  const numberFormat = getNumberFormat();
-  return numberFormat.resolvedOptions().locale;
-}
-
 export function extractCountry(locale: string): string {
   if (locale.length === 2) {
     return locale.toUpperCase();
@@ -72,7 +64,7 @@ export function extractCountry(locale: string): string {
   return country && country.toUpperCase();
 }
 
-export function resolveCurrency(locales?: Locale | Locale[]): string | null {
+export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
   const inferredLocale = resolveLocale(locales);
   const localesArray =
     typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;
@@ -106,7 +98,7 @@ export function resolveCurrency(locales?: Locale | Locale[]): string | null {
 
 export function getCurrencyOptions(
   locales?: Locale | Locale[],
-  currency?: string,
+  currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ): CurrencyOptions | DecimalOptions {
   const finalCurrency = currency || resolveCurrency(locales);

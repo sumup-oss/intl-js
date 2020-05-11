@@ -50,13 +50,31 @@ export type Locale =
   | 'us'
   | string;
 
+export type Currency =
+  | 'BGN'
+  | 'BRL'
+  | 'CHF'
+  | 'CLP'
+  | 'CZK'
+  | 'DKK'
+  | 'EUR'
+  | 'GBP'
+  | 'HRK'
+  | 'HUF'
+  | 'NOK'
+  | 'PLN'
+  | 'RON'
+  | 'RUB'
+  | 'SEK'
+  | 'USD';
+
 export interface DecimalOptions extends Intl.NumberFormatOptions {
   style: 'decimal';
 }
 
 export interface CurrencyOptions extends Intl.NumberFormatOptions {
   style: 'currency';
-  currency: string;
+  currency: Currency;
 }
 
 export type Options = DecimalOptions | CurrencyOptions;
