@@ -9,15 +9,11 @@ A convenience wrapper around a part of the [ECMAScript Internationalization API]
 
 </div>
 
-> **TLDR;**
->
-> Something to get people started quickly
-
 ##### Table of contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [API/CLI documentation](#api-cli-documentation)
+- [Code of Conduct](#code-of-conduct)
 - [About SumUp](#about-sumup)
 
 ## Installation
@@ -34,7 +30,7 @@ How to install this project?
 - If there’s a CLI, what are the commands?
 - What’s the public API of the project?
 
-## Code of conduct (CoC)
+## Code of Conduct
 
 We want to foster an inclusive and friendly community around our Open Source efforts. Like all SumUp Open Source projects, this project follows the Contributor Covenant Code of Conduct. Please, [read it and follow it](CODE_OF_CONDUCT.md).
 
