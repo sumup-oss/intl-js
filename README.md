@@ -3,9 +3,9 @@
 
 <div align="center">
 
-# Intl
+# Intl.js
 
-The [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) provides language sensitive string comparison, number formatting, and date and time formatting. This project provides polyfills for some of the API. It mostly covers the parts that are relevant for our use cases at [SumUp](https://sumup.com).
+The [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) provides language sensitive string comparison, number formatting, and date and time formatting.
 
 </div>
 

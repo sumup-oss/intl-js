@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { Locale, DecimalOptions } from './types';
+import { Locale, DecimalOptions } from '../types';
 
 export function getDecimalOptions(
   locales?: Locale | Locale[],

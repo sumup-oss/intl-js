@@ -15,30 +15,97 @@
 
 /* eslint-disable no-irregular-whitespace */
 
-import { format, formatCurrency } from '.';
+import {
+  format,
+  formatCurrency,
+  formatToParts,
+  formatCurrencyToParts,
+} from '.';
 
 describe('Format', () => {
   describe('number', () => {
-    it('should format for a locale', () => {
-      const actual = format(123456.789, 'PT');
-      expect(actual).toMatchInlineSnapshot(`"123.456,789"`);
-    });
-
-    it('should format for an array of locales', () => {
-      const actual = format(123456.789, ['CN', 'PT']);
-      expect(actual).toMatchInlineSnapshot(`"123.456,789"`);
+    it.each([
+      [123456.789, 'PT', '123.456,789'],
+      [123456.789, ['CN', 'PT'], '123.456,789'],
+    ])('should format %f for %o', (number, locales, expected) => {
+      const actual = format(number, locales);
+      expect(actual).toBe(expected);
     });
   });
 
   describe('currency', () => {
-    it('should format for a locale', () => {
-      const actual = formatCurrency(123456.789, 'PT');
-      expect(actual).toMatchInlineSnapshot(`"€ 123.456,79"`);
+    it.each([
+      [123456.789, 'PT', '€ 123.456,79'],
+      [123456.789, ['CN', 'PT'], '€ 123.456,79'],
+    ])('should format %f for %o', (number, locales, expected) => {
+      const actual = formatCurrency(number, locales);
+      expect(actual).toBe(expected);
     });
+  });
+});
 
-    it('should format for an array of locales', () => {
-      const actual = formatCurrency(123456.789, ['CN', 'PT']);
-      expect(actual).toMatchInlineSnapshot(`"€ 123.456,79"`);
+describe('Format to parts', () => {
+  describe('number', () => {
+    it.each([
+      [
+        123456.789,
+        'PT',
+        [
+          { type: 'integer', value: '123' },
+          { type: 'group', value: '.' },
+          { type: 'integer', value: '456' },
+          { type: 'decimal', value: ',' },
+          { type: 'fraction', value: '789' },
+        ],
+      ],
+      [
+        123456.789,
+        ['CN', 'PT'],
+        [
+          { type: 'integer', value: '123' },
+          { type: 'group', value: '.' },
+          { type: 'integer', value: '456' },
+          { type: 'decimal', value: ',' },
+          { type: 'fraction', value: '789' },
+        ],
+      ],
+    ])('should format %f for %o', (number, locales, expected) => {
+      const actual = formatToParts(number, locales);
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  describe('currency', () => {
+    it.each([
+      [
+        123456.789,
+        'PT',
+        [
+          { type: 'currency', value: '€' },
+          { type: 'literal', value: ' ' },
+          { type: 'integer', value: '123' },
+          { type: 'group', value: '.' },
+          { type: 'integer', value: '456' },
+          { type: 'decimal', value: ',' },
+          { type: 'fraction', value: '79' },
+        ],
+      ],
+      [
+        123456.789,
+        ['CN', 'PT'],
+        [
+          { type: 'currency', value: '€' },
+          { type: 'literal', value: ' ' },
+          { type: 'integer', value: '123' },
+          { type: 'group', value: '.' },
+          { type: 'integer', value: '456' },
+          { type: 'decimal', value: ',' },
+          { type: 'fraction', value: '79' },
+        ],
+      ],
+    ])('should format %f for %o', (number, locales, expected) => {
+      const actual = formatCurrencyToParts(number, locales);
+      expect(actual).toEqual(expected);
     });
   });
 });

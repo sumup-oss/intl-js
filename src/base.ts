@@ -14,7 +14,7 @@
  */
 
 import { Locale, Options } from './types';
-import { isIntlSupported, getNumberFormat } from './util/intl';
+import { isIntlSupported, getNumberFormat } from './lib/intl';
 
 type Args = Array<any>;
 

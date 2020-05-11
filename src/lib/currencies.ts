@@ -15,11 +15,11 @@
 
 /* eslint-disable no-continue */
 
-import { Locale, CurrencyOptions, DecimalOptions } from './types';
+import { Locale, CurrencyOptions, DecimalOptions } from '../types';
 
-import { getNumberFormat } from './util/intl';
+import { getNumberFormat } from './intl';
 
-export const CURRENCY_MAP = {
+export const CURRENCY_MAP: { [country: string]: string } = {
   AT: 'EUR',
   BE: 'EUR',
   BG: 'BGN',
@@ -56,7 +56,7 @@ export const CURRENCY_MAP = {
   US: 'USD',
 };
 
-function getLocale(locales?: Locale | Locale[]): Locale | Locale[] {
+function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
   if (locales && locales.length >= 0) {
     return locales;
   }
@@ -72,8 +72,10 @@ export function extractCountry(locale: string): string {
   return country && country.toUpperCase();
 }
 
-export function getCurrency(locales: Locale | Locale[]): string | null {
-  const localesArray = typeof locales === 'string' ? [locales] : locales;
+export function resolveCurrency(locales?: Locale | Locale[]): string | null {
+  const inferredLocale = resolveLocale(locales);
+  const localesArray =
+    typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;
   // eslint-disable-next-line no-restricted-syntax
   for (const locale of localesArray) {
     const country = extractCountry(locale);
@@ -81,13 +83,24 @@ export function getCurrency(locales: Locale | Locale[]): string | null {
       continue;
     }
 
-    const currency = (CURRENCY_MAP as any)[country];
+    const currency = CURRENCY_MAP[country];
     if (!currency) {
       continue;
     }
 
     return currency;
   }
+
+  if (process.env.NODE_ENV !== 'production') {
+    throw new TypeError(
+      [
+        `No currency found for "${localesArray.join(', ')}".`,
+        'Explicitely pass a currency as part of the options',
+        'or submit a new one on GitHub.',
+      ].join(' '),
+    );
+  }
+
   return null;
 }
 
@@ -96,22 +109,9 @@ export function getCurrencyOptions(
   currency?: string,
   options?: Intl.NumberFormatOptions,
 ): CurrencyOptions | DecimalOptions {
-  const locale = getLocale(locales);
-  const finalCurrency = currency || getCurrency(locale);
+  const finalCurrency = currency || resolveCurrency(locales);
 
   if (!finalCurrency) {
-    if (process.env.NODE_ENV !== 'production') {
-      const localeString =
-        typeof locale === 'string' ? locale : locale.join(', ');
-      throw new TypeError(
-        [
-          `No currency found for "${localeString}".`,
-          'Explicitely pass a currency as part of the options',
-          'or submit a new one on GitHub.',
-        ].join(' '),
-      );
-    }
-
     return { ...options, style: 'decimal' };
   }
 
