@@ -16,7 +16,7 @@
 import { Locale, Options } from './types';
 import { isIntlSupported, getNumberFormat } from './lib/intl';
 
-type Args = Array<any>;
+type Args = Array<unknown>;
 
 type GetOptions<T extends Args> = (
   locales?: Locale | Locale[],

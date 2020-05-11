@@ -1,7 +1,7 @@
 {
   "name": "@sumup/intl",
   "version": "0.0.0-semantically-released",
-  "description": "A partial polyfill for the JavaScript Internationalization API, catered to SumUp's needs",
+  "description": "A convenience wrapper around the EcmaScript Internationalization API",
   "repository": "git@github.com:sumup-oss/intl-js.git",
   "author": "Connor Bär <connor.baer@sumup.com>",
   "license": "Apache-2.0",
@@ -36,10 +36,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@sumup/foundry": "^2.0.0-beta.9",
-    "@types/jest": "^24.9.0",
-    "audit-ci": "^2.4.2",
-    "jest": "^25.1.0",
+    "@sumup/foundry": "^2.2.0",
+    "@types/jest": "^25.2.0",
+    "audit-ci": "^3.0.0",
+    "jest": "^26.0.0",
     "jest-extended": "^0.11.4",
     "jest-junit": "^10.0.0",
     "license-checker": "^25.0.1",

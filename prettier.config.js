@@ -1,1 +1,1 @@
-module.exports = require('@sumup/foundry/prettier')({ language: 'TypeScript' });
+module.exports = require('@sumup/foundry/prettier')();
