@@ -1,7 +1,7 @@
 {
   "name": "@sumup/intl",
   "version": "0.0.0-semantically-released",
-  "description": "A convenience wrapper around the EcmaScript Internationalization API",
+  "description": "A convenience wrapper around the ECMAScript Internationalization API",
   "repository": "git@github.com:sumup-oss/intl-js.git",
   "author": "Connor Bär <connor.baer@sumup.com>",
   "license": "Apache-2.0",

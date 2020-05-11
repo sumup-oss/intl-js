@@ -5,7 +5,7 @@
 
 # Intl.js
 
-The [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) provides language sensitive string comparison, number formatting, and date and time formatting.
+A convenience wrapper around a part of the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
 
 </div>
 
