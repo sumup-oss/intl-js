@@ -20,6 +20,8 @@ import {
   formatCurrency,
   formatToParts,
   formatCurrencyToParts,
+  getFormat,
+  getCurrencyFormat,
 } from '.';
 
 describe('Format', () => {
@@ -47,65 +49,43 @@ describe('Format', () => {
 describe('Format to parts', () => {
   describe('number', () => {
     it.each([
-      [
-        123456.789,
-        'PT',
-        [
-          { type: 'integer', value: '123' },
-          { type: 'group', value: '.' },
-          { type: 'integer', value: '456' },
-          { type: 'decimal', value: ',' },
-          { type: 'fraction', value: '789' },
-        ],
-      ],
-      [
-        123456.789,
-        ['CN', 'PT'],
-        [
-          { type: 'integer', value: '123' },
-          { type: 'group', value: '.' },
-          { type: 'integer', value: '456' },
-          { type: 'decimal', value: ',' },
-          { type: 'fraction', value: '789' },
-        ],
-      ],
-    ])('should format %f for %o', (number, locales, expected) => {
+      [123456.789, 'PT'],
+      [123456.789, ['CN', 'PT']],
+    ])('should format %f for %o', (number, locales) => {
       const actual = formatToParts(number, locales);
-      expect(actual).toEqual(expected);
+      expect(actual).toMatchSnapshot();
     });
   });
 
   describe('currency', () => {
     it.each([
-      [
-        123456.789,
-        'PT',
-        [
-          { type: 'currency', value: '€' },
-          { type: 'literal', value: ' ' },
-          { type: 'integer', value: '123' },
-          { type: 'group', value: '.' },
-          { type: 'integer', value: '456' },
-          { type: 'decimal', value: ',' },
-          { type: 'fraction', value: '79' },
-        ],
-      ],
-      [
-        123456.789,
-        ['CN', 'PT'],
-        [
-          { type: 'currency', value: '€' },
-          { type: 'literal', value: ' ' },
-          { type: 'integer', value: '123' },
-          { type: 'group', value: '.' },
-          { type: 'integer', value: '456' },
-          { type: 'decimal', value: ',' },
-          { type: 'fraction', value: '79' },
-        ],
-      ],
-    ])('should format %f for %o', (number, locales, expected) => {
+      [123456.789, 'PT'],
+      [123456.789, ['CN', 'PT']],
+    ])('should format %f for %o', (number, locales) => {
       const actual = formatCurrencyToParts(number, locales);
-      expect(actual).toEqual(expected);
+      expect(actual).toMatchSnapshot();
     });
+  });
+});
+
+describe('Get format', () => {
+  describe('number', () => {
+    it.each([['PT'], [['en-US', 'pt-PT']]])(
+      'should get format for %o',
+      (locales) => {
+        const actual = getFormat(locales);
+        expect(actual).toMatchSnapshot();
+      },
+    );
+  });
+
+  describe('currency', () => {
+    it.each([['PT'], [['en-US', 'pt-PT']]])(
+      'should get format for %o',
+      (locales) => {
+        const actual = getCurrencyFormat(locales);
+        expect(actual).toMatchSnapshot();
+      },
+    );
   });
 });

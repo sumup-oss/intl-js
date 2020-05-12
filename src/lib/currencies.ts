@@ -19,7 +19,7 @@ import { Locale, CurrencyOptions, DecimalOptions, Currency } from '../types';
 
 import { resolveLocale } from './intl';
 
-export const CURRENCY_MAP: { [country: string]: Currency } = {
+export const CURRENCIES: { [country: string]: Currency } = {
   AT: 'EUR',
   BE: 'EUR',
   BG: 'BGN',
@@ -75,7 +75,7 @@ export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
       continue;
     }
 
-    const currency = CURRENCY_MAP[country];
+    const currency = CURRENCIES[country];
     if (!currency) {
       continue;
     }

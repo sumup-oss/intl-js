@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Format to parts currency should format 123456.789 for 'PT' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format 123456.789 for [ 'CN', 'PT', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts number should format 123456.789 for 'PT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format 123456.789 for [ 'CN', 'PT', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Get format currency should get format for 'PT' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyIndex": 0,
+  "currencySign": "standard",
+  "locale": "pt",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get format for [ 'en-US', 'pt-PT', [length]: 2 ] 1`] = `
+Object {
+  "currency": "USD",
+  "currencyDisplay": "symbol",
+  "currencyIndex": 0,
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "$",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get format for 'PT' 1`] = `
+Object {
+  "locale": "pt",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get format for [ 'en-US', 'pt-PT', [length]: 2 ] 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;

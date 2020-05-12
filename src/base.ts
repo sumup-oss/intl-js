@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { Locale, Options } from './types';
+import { Locale, Options, Format, Parts } from './types';
 import { isIntlSupported, getNumberFormat } from './lib/intl';
 
 type Args = Array<unknown>;
@@ -50,5 +50,38 @@ export function formatToPartsFactory<T extends Args>(
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.formatToParts(value);
+  };
+}
+
+const TEST_VALUE = 1001001001.11111;
+
+export function getFormatFactory<T extends Args>(getOptions: GetOptions<T>) {
+  return (locales?: Locale | Locale[], ...args: T): Format | null => {
+    if (!isIntlSupported) {
+      return null;
+    }
+
+    const options = getOptions(locales, ...args);
+    const numberFormat = getNumberFormat(locales, options);
+    const resolvedOptions = numberFormat.resolvedOptions();
+    const rawParts = numberFormat.formatToParts(TEST_VALUE);
+
+    const parts = rawParts.reduce((allParts, part) => {
+      if (part.type === 'integer' || part.type === 'fraction') {
+        return allParts;
+      }
+      // eslint-disable-next-line no-param-reassign
+      allParts[part.type] = part.value;
+      return allParts;
+    }, {} as Parts);
+
+    if (options.style === 'currency') {
+      const currencyIndex = rawParts.findIndex(
+        (part) => part.type === 'currency',
+      );
+      return { ...resolvedOptions, parts, currencyIndex };
+    }
+
+    return { ...resolvedOptions, parts };
   };
 }

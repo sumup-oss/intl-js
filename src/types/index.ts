@@ -68,6 +68,26 @@ export type Currency =
   | 'SEK'
   | 'USD';
 
+type Part =
+  | 'currency'
+  | 'decimal'
+  | 'fraction'
+  | 'group'
+  | 'infinity'
+  | 'integer'
+  | 'literal'
+  | 'minusSign'
+  | 'nan'
+  | 'plusSign'
+  | 'percentSign';
+
+export type Parts = { [part in Part]: string };
+
+export interface Format extends Intl.ResolvedNumberFormatOptions {
+  parts: Parts;
+  currencyIndex?: number;
+}
+
 export interface DecimalOptions extends Intl.NumberFormatOptions {
   style: 'decimal';
 }
