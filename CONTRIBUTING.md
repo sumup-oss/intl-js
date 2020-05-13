@@ -1,9 +1,8 @@
 # Contributing
 
-## Prerequisites
+## Contributor License Agreement (CLA)
 
-- **Signed and verified CLA**
-- Node 12+ and `yarn`
+To start contributing to SumUp Open Source projects, [please accept our Contributor License Agreement](https://opensource.sumup.com/cla). Should you have any questions or concerns, please get in touch with [opensource@sumup.com](mailto:opensource@sumup.com).
 
 ## Code of Conduct (CoC)
 
@@ -17,7 +16,7 @@ If you feel another member of the community violated our CoC or you are experien
 
 1. Check existing issues and verify that your issue is not already submitted. If a similar issue already exists, we highly recommend to add your report to that issue.
 2. Open issue
-3. Be as detailed as possible - include the `node` version, what you did, what you expected to happen, and what actually happened.
+3. Be as detailed as possible - include the Node version, what you did, what you expected to happen, and what actually happened.
 
 ### Submitting a PR
 
@@ -30,20 +29,6 @@ If you feel another member of the community violated our CoC or you are experien
 
 ## Common commands
 
-**Running the project**
-
-```sh
-yarn start
-```
-
-**Running the tests**
-
-```sh
-yarn test
-```
-
-**Running the linter**
-
-```sh
-yarn lint
-```
+- Continously transpile and typecheck the code: `yarn start`
+- Continously run the tests: `yarn test`
+- Run the linter: `yarn lint`

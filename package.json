@@ -1,7 +1,7 @@
 {
   "name": "@sumup/intl",
   "version": "0.0.0-semantically-released",
-  "description": "A convenience wrapper around the ECMAScript Internationalization API",
+  "description": "Format numbers and currency values for any locale with the ECMAScript Internationalization API",
   "repository": "git@github.com:sumup-oss/intl-js.git",
   "author": "Connor Bär <connor.baer@sumup.com>",
   "license": "Apache-2.0",
@@ -33,6 +33,9 @@
     "test:ci": "jest --ci --runInBand --coverage --reporters default --reporters \"jest-junit\"",
     "check:security": "audit-ci --critical",
     "check:licenses": "license-checker --production --summary --failOn=GPLv3"
+  },
+  "engines": {
+    "node": ">=10.18.0"
   },
   "dependencies": {
     "intl-format-cache": "^4.2.27"
