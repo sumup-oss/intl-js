@@ -16,45 +16,9 @@
 /* eslint-disable no-continue */
 
 import { Locale, CurrencyOptions, DecimalOptions, Currency } from '../types';
+import { CURRENCIES } from '../data/currencies';
 
 import { resolveLocale } from './intl';
-
-export const CURRENCIES: { [country: string]: Currency } = {
-  AT: 'EUR',
-  BE: 'EUR',
-  BG: 'BGN',
-  BR: 'BRL',
-  CH: 'CHF',
-  CL: 'CLP',
-  CY: 'EUR',
-  CZ: 'CZK',
-  DE: 'EUR',
-  DK: 'DKK',
-  EE: 'EUR',
-  ES: 'EUR',
-  FI: 'EUR',
-  FR: 'EUR',
-  GB: 'GBP',
-  GR: 'EUR',
-  HR: 'HRK',
-  HU: 'HUF',
-  IE: 'EUR',
-  IT: 'EUR',
-  LT: 'EUR',
-  LU: 'EUR',
-  LV: 'EUR',
-  MT: 'EUR',
-  NL: 'EUR',
-  NO: 'NOK',
-  PL: 'PLN',
-  PT: 'EUR',
-  RO: 'RON',
-  RU: 'RUB',
-  SE: 'SEK',
-  SI: 'EUR',
-  SK: 'EUR',
-  US: 'USD',
-};
 
 export function extractCountry(locale: string): string {
   if (locale.length === 2) {

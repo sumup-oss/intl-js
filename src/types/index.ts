@@ -13,60 +13,9 @@
  * limitations under the License.
  */
 
-export type Locale =
-  | 'at'
-  | 'be'
-  | 'bg'
-  | 'br'
-  | 'ch'
-  | 'cl'
-  | 'cy'
-  | 'cz'
-  | 'de'
-  | 'dk'
-  | 'ee'
-  | 'es'
-  | 'fi'
-  | 'fr'
-  | 'gb'
-  | 'gr'
-  | 'hr'
-  | 'hu'
-  | 'ie'
-  | 'it'
-  | 'lt'
-  | 'lu'
-  | 'lv'
-  | 'mt'
-  | 'nl'
-  | 'no'
-  | 'pl'
-  | 'pt'
-  | 'ro'
-  | 'ru'
-  | 'se'
-  | 'si'
-  | 'sk'
-  | 'us'
-  | string;
+export type Locale = string;
 
-export type Currency =
-  | 'BGN'
-  | 'BRL'
-  | 'CHF'
-  | 'CLP'
-  | 'CZK'
-  | 'DKK'
-  | 'EUR'
-  | 'GBP'
-  | 'HRK'
-  | 'HUF'
-  | 'NOK'
-  | 'PLN'
-  | 'RON'
-  | 'RUB'
-  | 'SEK'
-  | 'USD';
+export type Currency = string;
 
 export type Format = Intl.ResolvedNumberFormatOptions & {
   groupDelimiter: string;
