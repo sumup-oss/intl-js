@@ -34,7 +34,9 @@
     "check:security": "audit-ci --critical",
     "check:licenses": "license-checker --production --summary --failOn=GPLv3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "intl-format-cache": "^4.2.27"
+  },
   "devDependencies": {
     "@sumup/foundry": "^2.2.0",
     "@types/jest": "^25.2.0",

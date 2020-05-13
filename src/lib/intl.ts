@@ -13,17 +13,16 @@
  * limitations under the License.
  */
 
+import memoizeFormatConstructor from 'intl-format-cache';
+
 import { Locale } from '../types';
-import { memoize } from './memoize';
 
 export const isIntlSupported = typeof Intl !== 'undefined';
 
-export const getNumberFormat = memoize(
-  (
-    locales?: Locale | Locale[],
-    options?: Intl.NumberFormatOptions,
-  ): Intl.NumberFormat => new Intl.NumberFormat(locales, options),
-);
+export const getNumberFormat: (
+  locales?: Locale | Locale[],
+  options?: Intl.NumberFormatOptions,
+) => Intl.NumberFormat = memoizeFormatConstructor(Intl.NumberFormat);
 
 export function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
   if (locales && locales.length >= 0) {
