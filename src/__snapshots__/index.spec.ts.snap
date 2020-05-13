@@ -34,7 +34,7 @@ exports[`Format currency should format a currency for 'GR' 1`] = `"€123,456.79
 
 exports[`Format currency should format a currency for 'HR' 1`] = `"123.456,79 HRK"`;
 
-exports[`Format currency should format a currency for 'HU' 1`] = `"123456,79 Ft"`;
+exports[`Format currency should format a currency for 'HU' 1`] = `"123 456,79 Ft"`;
 
 exports[`Format currency should format a currency for 'IE' 1`] = `"€123,456.79"`;
 
@@ -110,7 +110,7 @@ exports[`Format number should format a number for 'GR' 1`] = `"123,456.789"`;
 
 exports[`Format number should format a number for 'HR' 1`] = `"123.456,789"`;
 
-exports[`Format number should format a number for 'HU' 1`] = `"123456,789"`;
+exports[`Format number should format a number for 'HU' 1`] = `"123 456,789"`;
 
 exports[`Format number should format a number for 'IE' 1`] = `"123,456.789"`;
 
@@ -681,7 +681,15 @@ exports[`Format to parts currency should format a currency for 'HU' 1`] = `
 Array [
   Object {
     "type": "integer",
-    "value": "123456",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
   },
   Object {
     "type": "decimal",
@@ -1767,7 +1775,15 @@ exports[`Format to parts number should format a number for 'HU' 1`] = `
 Array [
   Object {
     "type": "integer",
-    "value": "123456",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
   },
   Object {
     "type": "decimal",
