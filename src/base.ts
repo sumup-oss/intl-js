@@ -13,8 +13,9 @@
  * limitations under the License.
  */
 
-import { Locale, Options, Format, Parts } from './types';
+import { Locale, Options, Format } from './types';
 import { isIntlSupported, getNumberFormat } from './lib/intl';
+import { findIndex } from './lib/findIndex';
 
 type Args = Array<unknown>;
 
@@ -55,6 +56,10 @@ export function formatToPartsFactory<T extends Args>(
 
 const TEST_VALUE = 1001001001.11111;
 
+function getPart(parts: Intl.NumberFormatPart[], name: string): string {
+  return parts.find((part) => part.type === name)?.value as string;
+}
+
 export function getFormatFactory<T extends Args>(getOptions: GetOptions<T>) {
   return (locales?: Locale | Locale[], ...args: T): Format | null => {
     if (!isIntlSupported) {
@@ -64,25 +69,27 @@ export function getFormatFactory<T extends Args>(getOptions: GetOptions<T>) {
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     const resolvedOptions = numberFormat.resolvedOptions();
-    const rawParts = numberFormat.formatToParts(TEST_VALUE);
+    const parts = numberFormat.formatToParts(TEST_VALUE);
 
-    const parts = rawParts.reduce((allParts, part) => {
-      if (part.type === 'integer' || part.type === 'fraction') {
-        return allParts;
-      }
-      // eslint-disable-next-line no-param-reassign
-      allParts[part.type] = part.value;
-      return allParts;
-    }, {} as Parts);
+    const groupDelimiter = getPart(parts, 'group');
+    const decimalDelimiter = getPart(parts, 'decimal');
 
     if (options.style === 'currency') {
-      const currencyIndex = rawParts.findIndex(
+      const currencySymbol = getPart(parts, 'currency');
+      const currencyIndex = findIndex(
+        parts,
         (part) => part.type === 'currency',
       );
       const currencyPosition = currencyIndex === 0 ? 'prefix' : 'suffix';
-      return { ...resolvedOptions, parts, currencyPosition };
+      return {
+        ...resolvedOptions,
+        groupDelimiter,
+        decimalDelimiter,
+        currencySymbol,
+        currencyPosition,
+      };
     }
 
-    return { ...resolvedOptions, parts };
+    return { ...resolvedOptions, groupDelimiter, decimalDelimiter };
   };
 }
