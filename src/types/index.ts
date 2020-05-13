@@ -85,7 +85,7 @@ export type Parts = { [part in Part]: string };
 
 export interface Format extends Intl.ResolvedNumberFormatOptions {
   parts: Parts;
-  currencyIndex?: number;
+  currencyPosition?: 'prefix' | 'suffix';
 }
 
 export interface DecimalOptions extends Intl.NumberFormatOptions {

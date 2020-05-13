@@ -79,7 +79,8 @@ export function getFormatFactory<T extends Args>(getOptions: GetOptions<T>) {
       const currencyIndex = rawParts.findIndex(
         (part) => part.type === 'currency',
       );
-      return { ...resolvedOptions, parts, currencyIndex };
+      const currencyPosition = currencyIndex === 0 ? 'prefix' : 'suffix';
+      return { ...resolvedOptions, parts, currencyPosition };
     }
 
     return { ...resolvedOptions, parts };

@@ -120,7 +120,7 @@ exports[`Get format currency should get format for 'PT' 1`] = `
 Object {
   "currency": "EUR",
   "currencyDisplay": "symbol",
-  "currencyIndex": 0,
+  "currencyPosition": "prefix",
   "currencySign": "standard",
   "locale": "pt",
   "maximumFractionDigits": 2,
@@ -144,7 +144,7 @@ exports[`Get format currency should get format for [ 'en-US', 'pt-PT', [length]:
 Object {
   "currency": "USD",
   "currencyDisplay": "symbol",
-  "currencyIndex": 0,
+  "currencyPosition": "prefix",
   "currencySign": "standard",
   "locale": "en-US",
   "maximumFractionDigits": 2,
