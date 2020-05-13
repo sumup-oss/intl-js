@@ -17,13 +17,9 @@
 
 import { Currency } from './types';
 import { formatFactory, formatToPartsFactory, getFormatFactory } from './base';
-import { isIntlSupported, resolveLocale } from './lib/intl';
+import { isIntlSupported } from './lib/intl';
 import { getDecimalOptions } from './lib/numbers';
-import {
-  getCurrencyOptions,
-  resolveCurrency,
-  CURRENCIES,
-} from './lib/currencies';
+import { getCurrencyOptions, CURRENCIES } from './lib/currencies';
 
 type NumberArgs = [Intl.NumberFormatOptions?];
 type CurrencyArgs = [Currency?, Intl.NumberFormatOptions?];
@@ -43,4 +39,4 @@ export const getCurrencyFormat = getFormatFactory<CurrencyArgs>(
   getCurrencyOptions,
 );
 
-export { isIntlSupported, resolveLocale, resolveCurrency, CURRENCIES };
+export { isIntlSupported, CURRENCIES };

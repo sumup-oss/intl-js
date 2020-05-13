@@ -22,47 +22,45 @@ import {
   formatCurrencyToParts,
   getFormat,
   getCurrencyFormat,
+  CURRENCIES,
 } from '.';
+
+const locales: (string | string[])[] = [
+  ...Object.keys(CURRENCIES),
+  'de-DE',
+  'es-US',
+  ['DE', 'US'],
+  ['de-DE', 'es-US'],
+];
+const number = 123456.789;
 
 describe('Format', () => {
   describe('number', () => {
-    it.each([
-      [123456.789, 'PT', '123.456,789'],
-      [123456.789, ['CN', 'PT'], '123.456,789'],
-    ])('should format %f for %o', (number, locales, expected) => {
-      const actual = format(number, locales);
-      expect(actual).toBe(expected);
+    it.each(locales)('should format a number for %o', (locale) => {
+      const actual = format(number, locale);
+      expect(actual).toMatchSnapshot();
     });
   });
 
   describe('currency', () => {
-    it.each([
-      [123456.789, 'PT', '€ 123.456,79'],
-      [123456.789, ['CN', 'PT'], '€ 123.456,79'],
-    ])('should format %f for %o', (number, locales, expected) => {
-      const actual = formatCurrency(number, locales);
-      expect(actual).toBe(expected);
+    it.each(locales)('should format a currency for %o', (locale) => {
+      const actual = formatCurrency(number, locale);
+      expect(actual).toMatchSnapshot();
     });
   });
 });
 
 describe('Format to parts', () => {
   describe('number', () => {
-    it.each([
-      [123456.789, 'PT'],
-      [123456.789, ['CN', 'PT']],
-    ])('should format %f for %o', (number, locales) => {
-      const actual = formatToParts(number, locales);
+    it.each(locales)('should format a number for %o', (locale) => {
+      const actual = formatToParts(number, locale);
       expect(actual).toMatchSnapshot();
     });
   });
 
   describe('currency', () => {
-    it.each([
-      [123456.789, 'PT'],
-      [123456.789, ['CN', 'PT']],
-    ])('should format %f for %o', (number, locales) => {
-      const actual = formatCurrencyToParts(number, locales);
+    it.each(locales)('should format a currency for %o', (locale) => {
+      const actual = formatCurrencyToParts(number, locale);
       expect(actual).toMatchSnapshot();
     });
   });
@@ -70,22 +68,16 @@ describe('Format to parts', () => {
 
 describe('Get format', () => {
   describe('number', () => {
-    it.each([['PT'], [['en-US', 'pt-PT']]])(
-      'should get format for %o',
-      (locales) => {
-        const actual = getFormat(locales);
-        expect(actual).toMatchSnapshot();
-      },
-    );
+    it.each(locales)('should get the format for %o', (locale) => {
+      const actual = getFormat(locale);
+      expect(actual).toMatchSnapshot();
+    });
   });
 
   describe('currency', () => {
-    it.each([['PT'], [['en-US', 'pt-PT']]])(
-      'should get format for %o',
-      (locales) => {
-        const actual = getCurrencyFormat(locales);
-        expect(actual).toMatchSnapshot();
-      },
-    );
+    it.each(locales)('should get the currency format for %o', (locale) => {
+      const actual = getCurrencyFormat(locale);
+      expect(actual).toMatchSnapshot();
+    });
   });
 });

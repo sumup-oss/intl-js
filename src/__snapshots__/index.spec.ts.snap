@@ -1,6 +1,894 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Format to parts currency should format 123456.789 for 'PT' 1`] = `
+exports[`Format currency should format a currency for 'AT' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'BE' 1`] = `"123 456,79 €"`;
+
+exports[`Format currency should format a currency for 'BG' 1`] = `"123456,79 лв."`;
+
+exports[`Format currency should format a currency for 'BR' 1`] = `"123 456,79 BRL"`;
+
+exports[`Format currency should format a currency for 'CH' 1`] = `"CHF 123,456.79"`;
+
+exports[`Format currency should format a currency for 'CL' 1`] = `"CLP 123,457"`;
+
+exports[`Format currency should format a currency for 'CY' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'CZ' 1`] = `"CZK 123,456.79"`;
+
+exports[`Format currency should format a currency for 'DE' 1`] = `"123.456,79 €"`;
+
+exports[`Format currency should format a currency for 'DK' 1`] = `"DKK 123,456.79"`;
+
+exports[`Format currency should format a currency for 'EE' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'ES' 1`] = `"123.456,79 €"`;
+
+exports[`Format currency should format a currency for 'FI' 1`] = `"123 456,79 €"`;
+
+exports[`Format currency should format a currency for 'FR' 1`] = `"123 456,79 €"`;
+
+exports[`Format currency should format a currency for 'GB' 1`] = `"£123,456.79"`;
+
+exports[`Format currency should format a currency for 'GR' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'HR' 1`] = `"123.456,79 HRK"`;
+
+exports[`Format currency should format a currency for 'HU' 1`] = `"123456,79 Ft"`;
+
+exports[`Format currency should format a currency for 'IE' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'IT' 1`] = `"123.456,79 €"`;
+
+exports[`Format currency should format a currency for 'LT' 1`] = `"123 456,79 €"`;
+
+exports[`Format currency should format a currency for 'LU' 1`] = `"123.456,79€"`;
+
+exports[`Format currency should format a currency for 'LV' 1`] = `"123 456,79 €"`;
+
+exports[`Format currency should format a currency for 'MT' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'NL' 1`] = `"€ 123.456,79"`;
+
+exports[`Format currency should format a currency for 'NO' 1`] = `"NOK 123,456.79"`;
+
+exports[`Format currency should format a currency for 'PL' 1`] = `"123 456,79 zł"`;
+
+exports[`Format currency should format a currency for 'PT' 1`] = `"€ 123.456,79"`;
+
+exports[`Format currency should format a currency for 'RO' 1`] = `"123.456,79 RON"`;
+
+exports[`Format currency should format a currency for 'RU' 1`] = `"123 456,79 ₽"`;
+
+exports[`Format currency should format a currency for 'SE' 1`] = `"123 456,79 Skr"`;
+
+exports[`Format currency should format a currency for 'SI' 1`] = `"€123,456.79"`;
+
+exports[`Format currency should format a currency for 'SK' 1`] = `"123 456,79 €"`;
+
+exports[`Format currency should format a currency for 'US' 1`] = `"$123,456.79"`;
+
+exports[`Format currency should format a currency for 'de-DE' 1`] = `"123.456,79 €"`;
+
+exports[`Format currency should format a currency for 'es-US' 1`] = `"$123,456.79"`;
+
+exports[`Format currency should format a currency for [ 'DE', 'US', [length]: 2 ] 1`] = `"123.456,79 €"`;
+
+exports[`Format currency should format a currency for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,79 €"`;
+
+exports[`Format number should format a number for 'AT' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'BE' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'BG' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'BR' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'CH' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'CL' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'CY' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'CZ' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'DE' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'DK' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'EE' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'ES' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'FI' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'FR' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'GB' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'GR' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'HR' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'HU' 1`] = `"123456,789"`;
+
+exports[`Format number should format a number for 'IE' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'IT' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'LT' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'LU' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'LV' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'MT' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'NL' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'NO' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'PL' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'PT' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'RO' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'RU' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'SE' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'SI' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'SK' 1`] = `"123 456,789"`;
+
+exports[`Format number should format a number for 'US' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for 'de-DE' 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for 'es-US' 1`] = `"123,456.789"`;
+
+exports[`Format number should format a number for [ 'DE', 'US', [length]: 2 ] 1`] = `"123.456,789"`;
+
+exports[`Format number should format a number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,789"`;
+
+exports[`Format to parts currency should format a currency for 'AT' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'BE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'BG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "лв.",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'BR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "BRL",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'CH' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "CHF",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'CL' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "CLP",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "457",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'CY' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'CZ' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "CZK",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'DE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'DK' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "DKK",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'EE' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'ES' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'FI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'FR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'GB' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "£",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'GR' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'HR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "HRK",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'HU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "Ft",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'IE' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'IT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'LT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'LU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'LV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'MT' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'NL' 1`] = `
 Array [
   Object {
     "type": "currency",
@@ -33,7 +921,73 @@ Array [
 ]
 `;
 
-exports[`Format to parts currency should format 123456.789 for [ 'CN', 'PT', [length]: 2 ] 1`] = `
+exports[`Format to parts currency should format a currency for 'NO' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "NOK",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'PL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "zł",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'PT' 1`] = `
 Array [
   Object {
     "type": "currency",
@@ -66,7 +1020,525 @@ Array [
 ]
 `;
 
-exports[`Format to parts number should format 123456.789 for 'PT' 1`] = `
+exports[`Format to parts currency should format a currency for 'RO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "RON",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'RU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "₽",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'SE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "Skr",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'SI' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'SK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'US' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "$",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'de-DE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for 'es-US' 1`] = `
+Array [
+  Object {
+    "type": "currency",
+    "value": "$",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for [ 'DE', 'US', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts currency should format a currency for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "79",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "currency",
+    "value": "€",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'AT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'BE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'BG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'BR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'CH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'CL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'CY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'CZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'DE' 1`] = `
 Array [
   Object {
     "type": "integer",
@@ -91,7 +1563,57 @@ Array [
 ]
 `;
 
-exports[`Format to parts number should format 123456.789 for [ 'CN', 'PT', [length]: 2 ] 1`] = `
+exports[`Format to parts number should format a number for 'DK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'EE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'ES' 1`] = `
 Array [
   Object {
     "type": "integer",
@@ -116,7 +1638,1287 @@ Array [
 ]
 `;
 
-exports[`Get format currency should get format for 'PT' 1`] = `
+exports[`Format to parts number should format a number for 'FI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'FR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'GB' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'GR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'HR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'HU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'IE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'IT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'LT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'LU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'LV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'MT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'NL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'NO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'PL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'PT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'RO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'RU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'SE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'SI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'SK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'US' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'de-DE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for 'es-US' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for [ 'DE', 'US', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Get format currency should get the currency format for 'AT' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'BE' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "be",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'BG' 1`] = `
+Object {
+  "currency": "BGN",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "bg",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "лв.",
+    "decimal": ",",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'BR' 1`] = `
+Object {
+  "currency": "BRL",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "br",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "BRL",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'CH' 1`] = `
+Object {
+  "currency": "CHF",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "CHF",
+    "decimal": ".",
+    "group": ",",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'CL' 1`] = `
+Object {
+  "currency": "CLP",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 0,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "CLP",
+    "group": ",",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'CY' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "cy",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'CZ' 1`] = `
+Object {
+  "currency": "CZK",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "CZK",
+    "decimal": ".",
+    "group": ",",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'DE' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "de",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'DK' 1`] = `
+Object {
+  "currency": "DKK",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "DKK",
+    "decimal": ".",
+    "group": ",",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'EE' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "ee",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'ES' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "es",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'FI' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "fi",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'FR' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "fr",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'GB' 1`] = `
+Object {
+  "currency": "GBP",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "£",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'GR' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'HR' 1`] = `
+Object {
+  "currency": "HRK",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "hr",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "HRK",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'HU' 1`] = `
+Object {
+  "currency": "HUF",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "hu",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "Ft",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'IE' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'IT' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "it",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'LT' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "lt",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'LU' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "lu",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'LV' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "lv",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'MT' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "mt",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'NL' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "nl",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'NO' 1`] = `
+Object {
+  "currency": "NOK",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "en-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "NOK",
+    "decimal": ".",
+    "group": ",",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'PL' 1`] = `
+Object {
+  "currency": "PLN",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "pl",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "zł",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'PT' 1`] = `
 Object {
   "currency": "EUR",
   "currencyDisplay": "symbol",
@@ -140,7 +2942,126 @@ Object {
 }
 `;
 
-exports[`Get format currency should get format for [ 'en-US', 'pt-PT', [length]: 2 ] 1`] = `
+exports[`Get format currency should get the currency format for 'RO' 1`] = `
+Object {
+  "currency": "RON",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "ro",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "RON",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'RU' 1`] = `
+Object {
+  "currency": "RUB",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "ru",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "₽",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'SE' 1`] = `
+Object {
+  "currency": "SEK",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "se",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "Skr",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'SI' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "si",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'SK' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "sk",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": " ",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'US' 1`] = `
 Object {
   "currency": "USD",
   "currencyDisplay": "symbol",
@@ -163,7 +3084,588 @@ Object {
 }
 `;
 
-exports[`Get format number should get format for 'PT' 1`] = `
+exports[`Get format currency should get the currency format for 'de-DE' 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "de-DE",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for 'es-US' 1`] = `
+Object {
+  "currency": "USD",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "prefix",
+  "currencySign": "standard",
+  "locale": "es-US",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "$",
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for [ 'DE', 'US', [length]: 2 ] 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "de",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format currency should get the currency format for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `
+Object {
+  "currency": "EUR",
+  "currencyDisplay": "symbol",
+  "currencyPosition": "suffix",
+  "currencySign": "standard",
+  "locale": "de-DE",
+  "maximumFractionDigits": 2,
+  "minimumFractionDigits": 2,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "currency": "€",
+    "decimal": ",",
+    "group": ".",
+    "literal": " ",
+  },
+  "signDisplay": "auto",
+  "style": "currency",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'AT' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'BE' 1`] = `
+Object {
+  "locale": "be",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'BG' 1`] = `
+Object {
+  "locale": "bg",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'BR' 1`] = `
+Object {
+  "locale": "br",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'CH' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'CL' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'CY' 1`] = `
+Object {
+  "locale": "cy",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'CZ' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'DE' 1`] = `
+Object {
+  "locale": "de",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'DK' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'EE' 1`] = `
+Object {
+  "locale": "ee",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'ES' 1`] = `
+Object {
+  "locale": "es",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'FI' 1`] = `
+Object {
+  "locale": "fi",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'FR' 1`] = `
+Object {
+  "locale": "fr",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'GB' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'GR' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'HR' 1`] = `
+Object {
+  "locale": "hr",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'HU' 1`] = `
+Object {
+  "locale": "hu",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'IE' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'IT' 1`] = `
+Object {
+  "locale": "it",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'LT' 1`] = `
+Object {
+  "locale": "lt",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'LU' 1`] = `
+Object {
+  "locale": "lu",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'LV' 1`] = `
+Object {
+  "locale": "lv",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'MT' 1`] = `
+Object {
+  "locale": "mt",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'NL' 1`] = `
+Object {
+  "locale": "nl",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'NO' 1`] = `
+Object {
+  "locale": "en-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'PL' 1`] = `
+Object {
+  "locale": "pl",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'PT' 1`] = `
 Object {
   "locale": "pt",
   "maximumFractionDigits": 3,
@@ -181,7 +3683,97 @@ Object {
 }
 `;
 
-exports[`Get format number should get format for [ 'en-US', 'pt-PT', [length]: 2 ] 1`] = `
+exports[`Get format number should get the format for 'RO' 1`] = `
+Object {
+  "locale": "ro",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'RU' 1`] = `
+Object {
+  "locale": "ru",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'SE' 1`] = `
+Object {
+  "locale": "se",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'SI' 1`] = `
+Object {
+  "locale": "si",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'SK' 1`] = `
+Object {
+  "locale": "sk",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": " ",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'US' 1`] = `
 Object {
   "locale": "en-US",
   "maximumFractionDigits": 3,
@@ -192,6 +3784,78 @@ Object {
   "parts": Object {
     "decimal": ".",
     "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'de-DE' 1`] = `
+Object {
+  "locale": "de-DE",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for 'es-US' 1`] = `
+Object {
+  "locale": "es-US",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ".",
+    "group": ",",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for [ 'DE', 'US', [length]: 2 ] 1`] = `
+Object {
+  "locale": "de",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
+  },
+  "signDisplay": "auto",
+  "style": "decimal",
+  "useGrouping": true,
+}
+`;
+
+exports[`Get format number should get the format for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `
+Object {
+  "locale": "de-DE",
+  "maximumFractionDigits": 3,
+  "minimumFractionDigits": 0,
+  "minimumIntegerDigits": 1,
+  "notation": "standard",
+  "numberingSystem": "latn",
+  "parts": Object {
+    "decimal": ",",
+    "group": ".",
   },
   "signDisplay": "auto",
   "style": "decimal",
