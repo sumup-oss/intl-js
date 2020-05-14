@@ -16,7 +16,11 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 
 import { Currency } from './types';
-import { formatFactory, formatToPartsFactory, getFormatFactory } from './base';
+import {
+  formatFactory,
+  formatToPartsFactory,
+  resolveFormatFactory,
+} from './base';
 import { getDecimalOptions } from './lib/numbers';
 import { getCurrencyOptions } from './lib/currencies';
 
@@ -36,7 +40,9 @@ export const formatCurrencyToParts = formatToPartsFactory<CurrencyArgs>(
   getCurrencyOptions,
 );
 
-export const getFormat = getFormatFactory<NumberArgs>(getDecimalOptions);
-export const getCurrencyFormat = getFormatFactory<CurrencyArgs>(
+export const resolveFormat = resolveFormatFactory<NumberArgs>(
+  getDecimalOptions,
+);
+export const resolveCurrencyFormat = resolveFormatFactory<CurrencyArgs>(
   getCurrencyOptions,
 );

@@ -1,44 +1,50 @@
-[![Coverage](https://img.shields.io/codecov/c/github/sumup-oss/intl-js)](https://codecov.io/gh/sumup-oss/intl-js) [![License](https://img.shields.io/github/license/sumup-oss/intl-js)](https://github.com/sumup-oss/intl-js/blob/master/LICENSE)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-
 <div align="center">
 
 # Intl.js
 
-Format numbers and currency values for any locale with the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
+[![Coverage](https://img.shields.io/codecov/c/github/sumup-oss/intl-js)](https://codecov.io/gh/sumup-oss/intl-js) [![License](https://img.shields.io/github/license/sumup-oss/intl-js)](https://github.com/sumup-oss/intl-js/blob/master/LICENSE)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+
+Format 🔢 numbers and 💱currency values for any locale with the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
 
 </div>
 
-**Table of contents**
+## Table of contents
 
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Format as string](#format-as-string)
+  - [Format as parts](#format-as-parts)
+  - [Resolve format](#resolve-format)
+  - [Helpers](#helpers)
 - [Code of Conduct](#code-of-conduct)
 - [About SumUp](#about-sumup)
 
 ## Installation
 
-`@sumup/intl` needs to be installed as a dependency via the [Yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com) package managers. The npm CLI ships with [Node](https://nodejs.org/en/). You can read how to install the Yarn CLI in [their documentation](https://yarnpkg.com/en/docs/install). `@sumup/intl` requires Node v10.18+.
+[`@sumup/intl`](https://www.npmjs.com/package/sumup/intl) needs to be installed as a dependency via the [Yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com) package managers. The npm CLI ships with [Node](https://nodejs.org/en/). You can read how to install the Yarn CLI in [their documentation](https://yarnpkg.com/en/docs/install). `@sumup/intl` requires Node v10.18+.
 
 Depending on your preference, run one of the following:
 
 ```sh
 # With Yarn
-$ yarn add --dev @sumup/intl
+$ yarn add @sumup/intl
 
 # With npm
-$ npm install --save-dev @sumup/intl
+$ npm install @sumup/intl
 ```
 
 `@sumup/intl` wraps the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) which is [supported by all modern browsers](https://caniuse.com/#search=NumberFormat). If you need to support older browsers, you need to include [a polyfill for the `Intl.NumberFormat` API](https://formatjs.io/docs/polyfills/intl-numberformat).
 
-[Node](https://nodejs.org/docs/latest-v8.x/api/intl.html) supports the `Intl` API since v8, however, it only includes the English localisations until v12. Node v13 and above support all locales. If you're unable to use Node v13+, you can either include [a polyfill for the `Intl.NumberFormat` API](https://formatjs.io/docs/polyfills/intl-numberformat) or use a [custom Node build](https://nodejs.org/docs/latest-v8.x/api/intl.html#intl_options_for_building_node_js).
+[Node](https://nodejs.org/en/) supports the `Intl` API since v8, however, it includes only the English localisations up to v12. Node v13 and above support all locales. If you're unable to use Node v13+, you can either include [a polyfill for the `Intl.NumberFormat` API](https://formatjs.io/docs/polyfills/intl-numberformat) or use a [custom Node build](https://nodejs.org/docs/latest-v8.x/api/intl.html#intl_options_for_building_node_js).
 
 ## Usage
 
-`@sumup/intl` exports the following functions:
+The functions exposed by `@sumup/intl` share a similar API.
 
-### `format`
+### Format as string
+
+#### `format`
 
 ```ts
 function format(
@@ -48,7 +54,7 @@ function format(
 ): string;
 ```
 
-### `formatCurrency`
+#### `formatCurrency`
 
 ```ts
 function formatCurrency(
@@ -59,7 +65,9 @@ function formatCurrency(
 ): string;
 ```
 
-### `formatToParts`
+### Format as parts
+
+#### `formatToParts`
 
 ```ts
 function formatToParts(
@@ -69,7 +77,7 @@ function formatToParts(
 ): Intl.NumberFormatPart[];
 ```
 
-### `formatCurrencyToParts`
+#### `formatCurrencyToParts`
 
 ```ts
 function formatCurrencyToParts(
@@ -80,10 +88,12 @@ function formatCurrencyToParts(
 ): Intl.NumberFormatPart[];
 ```
 
-### `getFormat`
+### Resolve format
+
+#### `resolveFormat`
 
 ```ts
-function getFormat(
+function resolveFormat(
   locales?: string | string[],
   options?: Intl.NumberFormatOptions,
 ): Intl.ResolvedNumberFormatOptions & {
@@ -92,10 +102,10 @@ function getFormat(
 };
 ```
 
-### `getCurrencyFormat`
+#### `resolveCurrencyFormat`
 
 ```ts
-function getCurrencyFormat(
+function resolveCurrencyFormat(
   locales?: string | string[],
   currency?: string,
   options?: Intl.NumberFormatOptions,
@@ -107,13 +117,15 @@ function getCurrencyFormat(
 };
 ```
 
-### `isIntlSupported`
+### Helpers
+
+#### `isIntlSupported`
 
 ```ts
 const isIntlSupported: boolean;
 ```
 
-### `CURRENCIES`
+#### `CURRENCIES`
 
 ```ts
 type Currency = string;

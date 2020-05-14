@@ -60,7 +60,9 @@ function getPart(parts: Intl.NumberFormatPart[], name: string): string {
   return parts.find((part) => part.type === name)?.value as string;
 }
 
-export function getFormatFactory<T extends Args>(getOptions: GetOptions<T>) {
+export function resolveFormatFactory<T extends Args>(
+  getOptions: GetOptions<T>,
+) {
   return (locales?: Locale | Locale[], ...args: T): Format | null => {
     if (!isIntlSupported) {
       return null;

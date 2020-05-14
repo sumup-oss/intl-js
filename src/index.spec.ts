@@ -20,8 +20,8 @@ import {
   formatCurrency,
   formatToParts,
   formatCurrencyToParts,
-  getFormat,
-  getCurrencyFormat,
+  resolveFormat,
+  resolveCurrencyFormat,
   CURRENCIES,
 } from '.';
 
@@ -69,14 +69,14 @@ describe('Format to parts', () => {
 describe('Get format', () => {
   describe('number', () => {
     it.each(locales)('should get the format for %o', (locale) => {
-      const actual = getFormat(locale);
+      const actual = resolveFormat(locale);
       expect(actual).toMatchSnapshot();
     });
   });
 
   describe('currency', () => {
     it.each(locales)('should get the currency format for %o', (locale) => {
-      const actual = getCurrencyFormat(locale);
+      const actual = resolveCurrencyFormat(locale);
       expect(actual).toMatchSnapshot();
     });
   });
