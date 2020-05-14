@@ -30,19 +30,47 @@ export { CURRENCIES } from './data/currencies';
 type NumberArgs = [Intl.NumberFormatOptions?];
 type CurrencyArgs = [Currency?, Intl.NumberFormatOptions?];
 
+/**
+ * Formats a number according to the locale with support for various
+ * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
+ * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
 export const format = formatFactory<NumberArgs>(getDecimalOptions);
+
+/**
+ * Formats a number according to the locale in the country's official curreny
+ * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
 export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
 
+/**
+ * Formats a number according to the locale with support for various
+ * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
+ * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
 export const formatToParts = formatToPartsFactory<NumberArgs>(
   getDecimalOptions,
 );
+
+/**
+ * Formats a number according to the locale in the country's official curreny
+ * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
 export const formatCurrencyToParts = formatToPartsFactory<CurrencyArgs>(
   getCurrencyOptions,
 );
 
+/**
+ * Resolves the locale and collation options that are used to format a number.
+ */
 export const resolveFormat = resolveFormatFactory<NumberArgs>(
   getDecimalOptions,
 );
+
+/**
+ * Resolves the locale and collation options that are used to format a number
+ * in the country's official currency.
+ */
 export const resolveCurrencyFormat = resolveFormatFactory<CurrencyArgs>(
   getCurrencyOptions,
 );

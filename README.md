@@ -16,7 +16,7 @@ Format 🔢 numbers and 💱currency values for any locale with the [ECMAScript 
   - [Format as string](#format-as-string)
   - [Format as parts](#format-as-parts)
   - [Resolve format](#resolve-format)
-  - [Helpers](#helpers)
+  - [Constants](#constants)
 - [Code of Conduct](#code-of-conduct)
 - [About SumUp](#about-sumup)
 
@@ -40,86 +40,283 @@ $ npm install @sumup/intl
 
 ## Usage
 
-The functions exposed by `@sumup/intl` share a similar API.
+All functions exported by `@sumup/intl` share a similar interface such as the common [`locales`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument), [`options`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#options_argument), and [`currency`](https://en.wikipedia.org/wiki/ISO_4217) arguments. These are passed on almost unchanged to the [`Intl.NumberFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) constructor and thus support the same values. If the `locales` argument is not provided or is undefined, the runtime's default locale is used. Please refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) for more details.
 
 ### Format as string
 
 #### `format`
 
+Formats a number according to the locale with support for various [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit), and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+
+**Arguments**
+
+| Name     | Type                     | Examples                                                |
+| -------- | ------------------------ | ------------------------------------------------------- |
+| value    | number                   | `12345.67`, `-0.89`                                     |
+| locales? | string \| string[]       | `'de-DE'`, `'DE'`, `'zh-Hans-CN'`, `['de-AT', 'de-DE']` |
+| options? | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
+
+**Examples**
+
 ```ts
-function format(
-  value: number,
-  locales?: string | string[],
-  options?: Intl.NumberFormatOptions,
-): string;
+import { format } from '@sumup/intl';
+
+format(12345.67, 'de-DE'); // '12.345,67'
+format(-0.89, ['ban', 'id']); // '-0,89'
+format(16, 'en-GB', { style: 'unit', unit: 'liter', unitDisplay: 'long' }); // 16 litres
 ```
 
 #### `formatCurrency`
 
+Formats a number according to the locale in the country's official curreny with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+
+**Arguments**
+
+| Name      | Type                     | Examples                                                |
+| --------- | ------------------------ | ------------------------------------------------------- |
+| value     | number                   | `12345.67`, `-0.89`                                     |
+| locales?  | string \| string[]       | `'de-DE'`, `'DE'`, `'zh-Hans-CN'`, `['de-AT', 'de-DE']` |
+| currency? | string                   | `'EUR'`, `'BRL'`, `'USD'`                               |
+| options?  | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
+
+**Examples**
+
 ```ts
-function formatCurrency(
-  value: number,
-  locales?: string | string[],
-  currency?: string,
-  options?: Intl.NumberFormatOptions,
-): string;
+import { formatCurrency } from '@sumup/intl';
+
+formatCurrency(12345.67, 'de-DE'); // '12.345,67 €'
+formatCurrency(89, 'ja-JP', 'JPY'); // '￥89'
+formatCurrency(16, 'en-GB', null, { currencyDisplay: 'name' }); // '16.00 British pounds'
 ```
 
 ### Format as parts
 
 #### `formatToParts`
 
+Formats a number according to the locale with support for various [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit), and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+
+**Arguments**
+
+| Name     | Type                     | Examples                                                |
+| -------- | ------------------------ | ------------------------------------------------------- |
+| value    | number                   | `12345.67`, `-0.89`                                     |
+| locales? | string \| string[]       | `'de-DE'`, `'DE'`, `'zh-Hans-CN'`, `['de-AT', 'de-DE']` |
+| options? | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
+
 ```ts
-function formatToParts(
-  value: number,
-  locales?: string | string[],
-  options?: Intl.NumberFormatOptions,
-): Intl.NumberFormatPart[];
+import { formatToParts } from '@sumup/intl';
+
+formatToParts(12345.67, 'de-DE');
+// [
+//   { type: "integer", value: "12" },
+//   { type: "group", value: "." },
+//   { type: "integer", value: "345" },
+//   { type: "decimal", value: "," },
+//   { type: "fraction", value: "67" },
+// ]
+
+formatToParts(-0.89, ['ban', 'id']);
+// [
+//   { type: "minusSign", value: "-" },
+//   { type: "integer", value: "0" },
+//   { type: "decimal", value: "," },
+//   { type: "fraction", value: "89" },
+// ]
+
+formatToParts(16, 'en-GB', {
+  style: 'unit',
+  unit: 'liter',
+  unitDisplay: 'long',
+});
+// [
+//   { type: "integer", value: "16" },
+//   { type: "literal", value: " " },
+//   { type: "unit", value: "litres" },
+// ]
 ```
 
 #### `formatCurrencyToParts`
 
+Formats a number according to the locale in the country's official curreny with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+
+**Arguments**
+
+| Name      | Type                     | Examples                                                |
+| --------- | ------------------------ | ------------------------------------------------------- |
+| value     | number                   | `12345.67`, `-0.89`                                     |
+| locales?  | string \| string[]       | `'de-DE'`, `'DE'`, `'zh-Hans-CN'`, `['de-AT', 'de-DE']` |
+| currency? | string                   | `'EUR'`, `'BRL'`, `'USD'`                               |
+| options?  | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
+
+**Examples**
+
 ```ts
-function formatCurrencyToParts(
-  value: number,
-  locales?: string | string[],
-  currency?: string,
-  options?: Intl.NumberFormatOptions,
-): Intl.NumberFormatPart[];
+import { formatCurrencyToParts } from '@sumup/intl';
+
+formatCurrencyToParts(12345.67, 'de-DE');
+// [
+//   { type: "integer", value: "12" },
+//   { type: "group", value: "." },
+//   { type: "integer", value: "345" },
+//   { type: "decimal", value: "," },
+//   { type: "fraction", value: "67" },
+//   { type: "literal", value: " " },
+//   { type: "currency", value: "€" },
+// ]
+
+formatCurrencyToParts(-89, 'ja-JP', 'JPY');
+// [
+//   { type: "minusSign", value: "-" },
+//   { type: "currency", value: "￥" },
+//   { type: "integer", value: "89" },
+// ]
+
+formatCurrencyToParts(16, 'en-GB', null, { currencyDisplay: 'name' });
+// [
+//   { type: "integer", value: "16" },
+//   { type: "decimal", value: "." },
+//   { type: "fraction", value: "00" },
+//   { type: "literal", value: " " },
+//   { type: "currency", value: "British pounds" },
+// ]
 ```
 
 ### Resolve format
 
 #### `resolveFormat`
 
+Resolves the locale and collation options that are used to format a number.
+
+**Arguments**
+
+| Name     | Type                     | Examples                                                |
+| -------- | ------------------------ | ------------------------------------------------------- |
+| locales? | string \| string[]       | `'de-DE'`, `'DE'`, `'zh-Hans-CN'`, `['de-AT', 'de-DE']` |
+| options? | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
+
+**Examples**
+
 ```ts
-function resolveFormat(
-  locales?: string | string[],
-  options?: Intl.NumberFormatOptions,
-): Intl.ResolvedNumberFormatOptions & {
-  groupDelimiter: string;
-  decimalDelimiter: string;
-};
+import { resolveFormat } from '@sumup/intl';
+
+resolveFormat();
+// {
+//   'locale': 'en-US',
+//   'numberingSystem': 'latn',
+//   'style': 'decimal',
+//   'minimumIntegerDigits': 1,
+//   'minimumFractionDigits': 0,
+//   'maximumFractionDigits': 3,
+//   'useGrouping': true,
+//   'groupDelimiter': ',',
+//   'decimalDelimiter': '.',
+// }
+
+resolveFormat(['ban', 'id']);
+// {
+//   'locale': 'id',
+//   'numberingSystem': 'latn',
+//   'style': 'decimal',
+//   'minimumIntegerDigits': 1,
+//   'minimumFractionDigits': 0,
+//   'maximumFractionDigits': 3,
+//   'useGrouping': true,
+//   'groupDelimiter': '.',
+//   'decimalDelimiter': ',',
+// }
+
+resolveFormat('en-GB', { style: 'unit', unit: 'liter', unitDisplay: 'long' });
+// {
+//   'locale': 'en-GB',
+//   'numberingSystem': 'latn',
+//   'style': 'unit',
+//   'unit': 'liter',
+//   'unitDisplay': 'long',
+//   'minimumIntegerDigits': 1,
+//   'minimumFractionDigits': 0,
+//   'maximumFractionDigits': 3,
+//   'useGrouping': true,
+//   'notation': 'standard',
+//   'signDisplay': 'auto',
+//   'groupDelimiter': ',',
+//   'decimalDelimiter': '.',
+// }
 ```
 
 #### `resolveCurrencyFormat`
 
+Resolves the locale and collation options that are used to format a number in the country's official currency.
+
+**Arguments**
+
+| Name      | Type                     | Examples                                                |
+| --------- | ------------------------ | ------------------------------------------------------- |
+| locales?  | string \| string[]       | `'de-DE'`, `'DE'`, `'zh-Hans-CN'`, `['de-AT', 'de-DE']` |
+| currency? | string                   | `'EUR'`, `'BRL'`, `'USD'`                               |
+| options?  | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
+
+**Examples**
+
 ```ts
-function resolveCurrencyFormat(
-  locales?: string | string[],
-  currency?: string,
-  options?: Intl.NumberFormatOptions,
-): Intl.ResolvedNumberFormatOptions & {
-  groupDelimiter: string;
-  decimalDelimiter: string;
-  currencySymbol?: string;
-  currencyPosition?: 'prefix' | 'suffix';
-};
+import { resolveCurrencyFormat } from '@sumup/intl';
+
+resolveCurrencyFormat();
+// {
+//   'locale': 'en-US',
+//   'numberingSystem': 'latn',
+//   'style': 'currency',
+//   'currency': 'USD',
+//   'currencyDisplay': 'symbol',
+//   'minimumIntegerDigits': 1,
+//   'minimumFractionDigits': 2,
+//   'maximumFractionDigits': 2,
+//   'useGrouping': true,
+//   'groupDelimiter': '.',
+//   'decimalDelimiter': ',',
+//   'currencySymbol': '$',
+//   'currencyPosition': 'prefix',
+// }
+
+resolveCurrencyFormat('ja-JP');
+// {
+//   'locale': 'ja-JP',
+//   'numberingSystem': 'latn',
+//   'style': 'currency',
+//   'currency': 'JPY',
+//   'currencyDisplay': 'symbol',
+//   'minimumIntegerDigits': 1,
+//   'minimumFractionDigits': 0,
+//   'maximumFractionDigits': 0,
+//   'useGrouping': true,
+//   'groupDelimiter': ',',
+//   'decimalDelimiter': undefined,
+//   'currencySymbol': '￥',
+//   'currencyPosition': 'prefix',
+// }
+
+resolveCurrencyFormat('en-GB', { currencyDisplay: 'name' });
+// {
+//   'locale': 'en-GB',
+//   'numberingSystem': 'latn',
+//   'style': 'currency',
+//   'currency': 'GBP',
+//   'currencyDisplay': 'symbol',
+//   'minimumIntegerDigits': 1,
+//   'minimumFractionDigits': 2,
+//   'maximumFractionDigits': 2,
+//   'useGrouping': true,
+//   'groupDelimiter': ',',
+//   'decimalDelimiter': '.',
+//   'currencySymbol': 'British pounds',
+//   'currencyPosition': 'suffix',
+// }
 ```
 
-### Helpers
+### Constants
 
 #### `isIntlSupported`
+
+Whether the `Intl` and `Intl.NumberFormat` APIs are supported by the runtime.
 
 ```ts
 const isIntlSupported: boolean;
@@ -127,9 +324,10 @@ const isIntlSupported: boolean;
 
 #### `CURRENCIES`
 
+An object that maps a 2 char country code to its official 3 char currency code. [View all supported countries](https://github.com/sumup-oss/intl-js/blob/master/src/data/currencies.ts).
+
 ```ts
-type Currency = string;
-const CURRENCIES: { [countryCode: string]: Currency };
+const CURRENCIES: { [country: string]: string };
 ```
 
 ## Code of Conduct

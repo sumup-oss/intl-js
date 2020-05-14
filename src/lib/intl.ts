@@ -17,7 +17,11 @@ import memoizeFormatConstructor from 'intl-format-cache';
 
 import { Locale } from '../types';
 
-export const isIntlSupported = typeof Intl !== 'undefined';
+/**
+ * Whether the `Intl` and `Intl.NumberFormat` APIs are supported by the runtime.
+ */
+export const isIntlSupported =
+  typeof Intl !== 'undefined' && typeof Intl.NumberFormat !== 'undefined';
 
 export const getNumberFormat: (
   locales?: Locale | Locale[],
