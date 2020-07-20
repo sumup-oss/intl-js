@@ -6,9 +6,9 @@
   "author": "Connor Bär <connor.baer@sumup.com>",
   "license": "Apache-2.0",
   "private": false,
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/es/index.d.ts",
   "sideEffects": false,
   "files": [
     "dist",
@@ -23,7 +23,9 @@
   "scripts": {
     "start": "tsc --watch",
     "dev": "yarn start",
-    "build": "tsc && tsc --project ./tsconfig-es.json",
+    "build": "yarn build:es && yarn build:cjs",
+    "build:es": "tsc",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:ci": "yarn lint --format junit -o __reports__/junit/eslint-results.xml",
