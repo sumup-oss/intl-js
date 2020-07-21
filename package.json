@@ -43,14 +43,14 @@
     "intl-format-cache": "^4.2.27"
   },
   "devDependencies": {
-    "@sumup/foundry": "^2.2.0",
+    "@sumup/foundry": "^3.0.0",
     "@types/jest": "^25.2.0",
     "audit-ci": "^3.0.0",
     "jest": "^26.0.0",
     "jest-extended": "^0.11.4",
     "jest-junit": "^10.0.0",
     "license-checker": "^25.0.1",
-    "ts-jest": "^25.0.0",
+    "ts-jest": "^26.0.0",
     "typescript": "^3.7.5"
   }
 }
