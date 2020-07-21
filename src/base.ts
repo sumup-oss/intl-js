@@ -44,7 +44,10 @@ export function formatToPartsFactory<T extends Args>(
     locales?: Locale | Locale[],
     ...args: T
   ): Intl.NumberFormatPart[] => {
-    if (!isIntlSupported) {
+    if (
+      !isIntlSupported ||
+      typeof Intl.NumberFormat.prototype.formatToParts === 'undefined'
+    ) {
       return [{ type: 'integer', value: value.toString() }];
     }
 

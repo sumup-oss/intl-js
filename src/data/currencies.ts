@@ -17,7 +17,7 @@ import { Currency } from '../types';
 
 /**
  * An object that maps a 2 char country code to its official 3 char currency code.
- * [View all supported countries](https://github.com/sumup-oss/intl-js/blob/master/src/data/currencies.ts).
+ * [View all supported countries](https://github.com/sumup-oss/intl-js/blob/main/src/data/currencies.ts).
  */
 export const CURRENCIES: { [country: string]: Currency } = {
   // Andorra

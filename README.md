@@ -2,7 +2,7 @@
 
 # Intl.js
 
-[![Coverage](https://img.shields.io/codecov/c/github/sumup-oss/intl-js)](https://codecov.io/gh/sumup-oss/intl-js) [![License](https://img.shields.io/github/license/sumup-oss/intl-js)](https://github.com/sumup-oss/intl-js/blob/master/LICENSE)
+[![Coverage](https://img.shields.io/codecov/c/github/sumup-oss/intl-js)](https://codecov.io/gh/sumup-oss/intl-js) [![License](https://img.shields.io/github/license/sumup-oss/intl-js)](https://github.com/sumup-oss/intl-js/blob/main/LICENSE)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 Format 🔢 numbers and 💱currency values for any locale with the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
@@ -324,7 +324,7 @@ const isIntlSupported: boolean;
 
 #### `CURRENCIES`
 
-An object that maps a 2 char country code to its official 3 char currency code. [View all supported countries](https://github.com/sumup-oss/intl-js/blob/master/src/data/currencies.ts).
+An object that maps a 2 char country code to its official 3 char currency code. [View all supported countries](https://github.com/sumup-oss/intl-js/blob/main/src/data/currencies.ts).
 
 ```ts
 const CURRENCIES: { [country: string]: string };
