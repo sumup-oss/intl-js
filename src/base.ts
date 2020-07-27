@@ -67,7 +67,10 @@ export function resolveFormatFactory<T extends Args>(
   getOptions: GetOptions<T>,
 ) {
   return (locales?: Locale | Locale[], ...args: T): Format | null => {
-    if (!isIntlSupported) {
+    if (
+      !isIntlSupported ||
+      typeof Intl.NumberFormat.prototype.formatToParts === 'undefined'
+    ) {
       return null;
     }
 
