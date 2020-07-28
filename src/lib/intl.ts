@@ -18,10 +18,48 @@ import memoizeFormatConstructor from 'intl-format-cache';
 import { Locale } from '../types';
 
 /**
- * Whether the `Intl` and `Intl.NumberFormat` APIs are supported by the runtime.
+ * Whether the `Intl` and `Intl.NumberFormat` APIs
+ * are supported by the runtime.
  */
-export const isIntlSupported =
-  typeof Intl !== 'undefined' && typeof Intl.NumberFormat !== 'undefined';
+export const isNumberFormatSupported = (() => {
+  try {
+    return (
+      typeof Intl !== 'undefined' && typeof Intl.NumberFormat !== 'undefined'
+    );
+  } catch (error) {
+    return false;
+  }
+})();
+
+/**
+ * Whether the `Intl`, `Intl.NumberFormat`, and
+ * `Intl.NumberFormat.formatToParts` APIs are supported by the runtime.
+ */
+export const isNumberFormatToPartsSupported = (() => {
+  try {
+    return typeof Intl.NumberFormat.prototype.formatToParts !== 'undefined';
+  } catch (error) {
+    return false;
+  }
+})();
+
+/**
+ * @deprecated Whether the `Intl` and `Intl.NumberFormat` APIs
+ * are supported by the runtime.
+ */
+export const isIntlSupported = (() => {
+  if (process.env.NODE_ENV !== 'production') {
+    // eslint-disable-next-line no-console
+    console.warn(
+      [
+        'DEPRECATED: isIntlSupported has been replaced',
+        'by isNumberFormatSupported & isNumberFormatToPartsSupported',
+        'and will be removed in the next major version.',
+      ].join(' '),
+    );
+  }
+  return isNumberFormatSupported;
+})();
 
 export const getNumberFormat: (
   locales?: Locale | Locale[],

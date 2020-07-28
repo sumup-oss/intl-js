@@ -24,7 +24,11 @@ import {
 import { getDecimalOptions } from './lib/numbers';
 import { getCurrencyOptions } from './lib/currencies';
 
-export { isIntlSupported } from './lib/intl';
+export {
+  isNumberFormatSupported,
+  isNumberFormatToPartsSupported,
+  isIntlSupported,
+} from './lib/intl';
 export { CURRENCIES } from './data/currencies';
 
 type NumberArgs = [Intl.NumberFormatOptions?];

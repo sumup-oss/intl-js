@@ -14,7 +14,11 @@
  */
 
 import { Locale, Options, Format } from './types';
-import { isIntlSupported, getNumberFormat } from './lib/intl';
+import {
+  isNumberFormatSupported,
+  isNumberFormatToPartsSupported,
+  getNumberFormat,
+} from './lib/intl';
 import { findIndex } from './lib/findIndex';
 
 type Args = Array<unknown>;
@@ -26,7 +30,7 @@ type GetOptions<T extends Args> = (
 
 export function formatFactory<T extends Args>(getOptions: GetOptions<T>) {
   return (value: number, locales?: Locale | Locale[], ...args: T): string => {
-    if (!isIntlSupported) {
+    if (!isNumberFormatSupported) {
       return `${value}`;
     }
 
@@ -44,10 +48,7 @@ export function formatToPartsFactory<T extends Args>(
     locales?: Locale | Locale[],
     ...args: T
   ): Intl.NumberFormatPart[] => {
-    if (
-      !isIntlSupported ||
-      typeof Intl.NumberFormat.prototype.formatToParts === 'undefined'
-    ) {
+    if (!isNumberFormatToPartsSupported) {
       return [{ type: 'integer', value: value.toString() }];
     }
 
@@ -67,10 +68,7 @@ export function resolveFormatFactory<T extends Args>(
   getOptions: GetOptions<T>,
 ) {
   return (locales?: Locale | Locale[], ...args: T): Format | null => {
-    if (
-      !isIntlSupported ||
-      typeof Intl.NumberFormat.prototype.formatToParts === 'undefined'
-    ) {
+    if (!isNumberFormatToPartsSupported) {
       return null;
     }
 

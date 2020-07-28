@@ -314,12 +314,20 @@ resolveCurrencyFormat('en-GB', { currencyDisplay: 'name' });
 
 ### Constants
 
-#### `isIntlSupported`
+#### `isNumberFormatSupported`
 
 Whether the `Intl` and `Intl.NumberFormat` APIs are supported by the runtime.
 
 ```ts
-const isIntlSupported: boolean;
+const isNumberFormatSupported: boolean;
+```
+
+#### `isNumberFormatToPartsSupported`
+
+Whether the `Intl`, `Intl.NumberFormat`, and `Intl.NumberFormat.formatToParts` APIs are supported by the runtime.
+
+```ts
+const isNumberFormatToPartsSupported: boolean;
 ```
 
 #### `CURRENCIES`
