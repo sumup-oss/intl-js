@@ -47,19 +47,7 @@ export const isNumberFormatToPartsSupported = (() => {
  * @deprecated Whether the `Intl` and `Intl.NumberFormat` APIs
  * are supported by the runtime.
  */
-export const isIntlSupported = (() => {
-  if (process.env.NODE_ENV !== 'production') {
-    // eslint-disable-next-line no-console
-    console.warn(
-      [
-        'DEPRECATED: isIntlSupported has been replaced',
-        'by isNumberFormatSupported & isNumberFormatToPartsSupported',
-        'and will be removed in the next major version.',
-      ].join(' '),
-    );
-  }
-  return isNumberFormatSupported;
-})();
+export const isIntlSupported = isNumberFormatSupported;
 
 let memoizedIntl: (
   locales?: Locale | Locale[],
