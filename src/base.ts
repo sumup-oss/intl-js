@@ -17,7 +17,7 @@ import { Locale, Options, Format } from './types';
 import {
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
-  getNumberFormat,
+  memoizeIntl,
 } from './lib/intl';
 import { findIndex } from './lib/findIndex';
 
@@ -28,12 +28,17 @@ type GetOptions<T extends Args> = (
   ...args: T
 ) => Options;
 
-export function formatFactory<T extends Args>(getOptions: GetOptions<T>) {
-  return (value: number, locales?: Locale | Locale[], ...args: T): string => {
-    if (!isNumberFormatSupported) {
-      return `${value}`;
-    }
+export function formatFactory<T extends Args>(
+  getOptions: GetOptions<T>,
+): (value: number, locales?: Locale | Locale[], ...args: T) => string {
+  if (!isNumberFormatSupported) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    return (value, _locales, ..._args): string => `${value}`;
+  }
 
+  const getNumberFormat = memoizeIntl();
+
+  return (value, locales, ...args): string => {
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.format(value);
@@ -42,16 +47,21 @@ export function formatFactory<T extends Args>(getOptions: GetOptions<T>) {
 
 export function formatToPartsFactory<T extends Args>(
   getOptions: GetOptions<T>,
-) {
-  return (
-    value: number,
-    locales?: Locale | Locale[],
-    ...args: T
-  ): Intl.NumberFormatPart[] => {
-    if (!isNumberFormatToPartsSupported) {
-      return [{ type: 'integer', value: value.toString() }];
-    }
+): (
+  value: number,
+  locales?: Locale | Locale[],
+  ...args: T
+) => Intl.NumberFormatPart[] {
+  if (!isNumberFormatToPartsSupported) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    return (value, _locales, ..._args): Intl.NumberFormatPart[] => [
+      { type: 'integer', value: value.toString() },
+    ];
+  }
 
+  const getNumberFormat = memoizeIntl();
+
+  return (value, locales, ...args): Intl.NumberFormatPart[] => {
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.formatToParts(value);
@@ -66,12 +76,15 @@ function getPart(parts: Intl.NumberFormatPart[], name: string): string {
 
 export function resolveFormatFactory<T extends Args>(
   getOptions: GetOptions<T>,
-) {
-  return (locales?: Locale | Locale[], ...args: T): Format | null => {
-    if (!isNumberFormatToPartsSupported) {
-      return null;
-    }
+): (locales?: Locale | Locale[], ...args: T) => null | Format {
+  if (!isNumberFormatToPartsSupported) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    return (_locales, ..._args) => null;
+  }
 
+  const getNumberFormat = memoizeIntl();
+
+  return (locales, ...args): Format => {
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     const resolvedOptions = numberFormat.resolvedOptions();

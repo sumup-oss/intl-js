@@ -61,15 +61,26 @@ export const isIntlSupported = (() => {
   return isNumberFormatSupported;
 })();
 
-export const getNumberFormat: (
+let memoizedIntl: (
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
-) => Intl.NumberFormat = memoizeFormatConstructor(Intl.NumberFormat);
+) => Intl.NumberFormat;
+
+export const memoizeIntl: () => (
+  locales?: Locale | Locale[],
+  options?: Intl.NumberFormatOptions,
+) => Intl.NumberFormat = () => {
+  if (!memoizedIntl) {
+    memoizedIntl = memoizeFormatConstructor(Intl.NumberFormat);
+  }
+  return memoizedIntl;
+};
 
 export function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
   if (locales && locales.length >= 0) {
     return locales;
   }
+  const getNumberFormat = memoizeIntl();
   const numberFormat = getNumberFormat();
   return numberFormat.resolvedOptions().locale;
 }
