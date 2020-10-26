@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@sumup/foundry": "^3.0.0",
-    "@types/jest": "^25.2.0",
+    "@types/jest": "^26.0.15",
     "audit-ci": "^3.0.0",
     "jest": "^26.0.0",
     "jest-extended": "^0.11.4",
