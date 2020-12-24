@@ -13,13 +13,13 @@
  * limitations under the License.
  */
 
-import { Locale, DecimalOptions } from '../types';
+import { Locale, NumberFormatOptions } from '../types';
 
-export function getDecimalOptions(
+export function getNumberOptions(
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
-): DecimalOptions {
-  return { ...options, style: 'decimal' };
+): NumberFormatOptions {
+  return { style: 'decimal', ...options };
 }
 
 export function normalize(value?: string): number {

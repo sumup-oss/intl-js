@@ -15,7 +15,12 @@
 
 /* eslint-disable no-continue */
 
-import { Locale, CurrencyOptions, DecimalOptions, Currency } from '../types';
+import {
+  Locale,
+  CurrencyFormatOptions,
+  NumberFormatOptions,
+  Currency,
+} from '../types';
 import { CURRENCIES } from '../data/currencies';
 
 import { resolveLocale } from './intl';
@@ -64,7 +69,7 @@ export function getCurrencyOptions(
   locales?: Locale | Locale[],
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
-): CurrencyOptions | DecimalOptions {
+): CurrencyFormatOptions | NumberFormatOptions {
   const finalCurrency = currency || resolveCurrency(locales);
 
   if (!finalCurrency) {

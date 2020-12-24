@@ -24,13 +24,11 @@ export type Format = Intl.ResolvedNumberFormatOptions & {
   currencyPosition?: 'prefix' | 'suffix';
 };
 
-export interface DecimalOptions extends Intl.NumberFormatOptions {
-  style: 'decimal';
-}
+export type NumberFormatOptions = Intl.NumberFormatOptions;
 
-export interface CurrencyOptions extends Intl.NumberFormatOptions {
+export interface CurrencyFormatOptions extends Intl.NumberFormatOptions {
   style: 'currency';
   currency: Currency;
 }
 
-export type Options = DecimalOptions | CurrencyOptions;
+export type Options = NumberFormatOptions | CurrencyFormatOptions;

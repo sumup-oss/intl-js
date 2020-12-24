@@ -21,7 +21,7 @@ import {
   formatToPartsFactory,
   resolveFormatFactory,
 } from './base';
-import { getDecimalOptions } from './lib/numbers';
+import { getNumberOptions } from './lib/numbers';
 import { getCurrencyOptions } from './lib/currencies';
 
 export {
@@ -39,7 +39,7 @@ type CurrencyArgs = [Currency?, Intl.NumberFormatOptions?];
  * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
-export const format = formatFactory<NumberArgs>(getDecimalOptions);
+export const format = formatFactory<NumberArgs>(getNumberOptions);
 
 /**
  * Formats a number according to the locale in the country's official curreny
@@ -52,9 +52,7 @@ export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
  * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
-export const formatToParts = formatToPartsFactory<NumberArgs>(
-  getDecimalOptions,
-);
+export const formatToParts = formatToPartsFactory<NumberArgs>(getNumberOptions);
 
 /**
  * Formats a number according to the locale in the country's official curreny
@@ -67,9 +65,7 @@ export const formatCurrencyToParts = formatToPartsFactory<CurrencyArgs>(
 /**
  * Resolves the locale and collation options that are used to format a number.
  */
-export const resolveFormat = resolveFormatFactory<NumberArgs>(
-  getDecimalOptions,
-);
+export const resolveFormat = resolveFormatFactory<NumberArgs>(getNumberOptions);
 
 /**
  * Resolves the locale and collation options that are used to format a number

@@ -1000,6 +1000,506 @@ exports[`Format number should format a number for [ 'DE', 'US', [length]: 2 ] 1`
 
 exports[`Format number should format a number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,789"`;
 
+exports[`Format number should format a unit number for 'AD' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AF' 1`] = `"123 456,789 ℓ"`;
+
+exports[`Format number should format a unit number for 'AG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AI' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AL' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AM' 1`] = `"123,456.789 ሊ"`;
+
+exports[`Format number should format a unit number for 'AN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AQ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AR' 1`] = `"١٢٣٬٤٥٦٫٧٨٩ لتر"`;
+
+exports[`Format number should format a unit number for 'AS' 1`] = `"১,২৩,৪৫৬.৭৮৯ লিঃ"`;
+
+exports[`Format number should format a unit number for 'AT' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AU' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AX' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'AZ' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'BA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BB' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BD' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BE' 1`] = `"123 456,789 л"`;
+
+exports[`Format number should format a unit number for 'BF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BG' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'BH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BI' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BJ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BL' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BM' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'BN' 1`] = `"১,২৩,৪৫৬.৭৮৯ লিটার"`;
+
+exports[`Format number should format a unit number for 'BO' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'BR' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'BS' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'BT' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BV' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'BZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CA' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'CC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CD' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CI' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CK' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CL' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CU' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CV' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CX' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'CZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'DE' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'DJ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'DK' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'DM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'DO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'DZ' 1`] = `"༡,༢༣,༤༥༦.༧༨༩ l"`;
+
+exports[`Format number should format a unit number for 'EC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'EE' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'EG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'EH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'ER' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'ES' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'ET' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'FI' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'FJ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'FK' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'FM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'FO' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'FR' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'GA' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'GB' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GD' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'GE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GI' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GL' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'GM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GP' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GQ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GS' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GT' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GU' 1`] = `"1,23,456.789 લિ"`;
+
+exports[`Format number should format a unit number for 'GW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'GY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'HK' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'HM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'HN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'HR' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'HT' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'HU' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'ID' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'IE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'IL' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'IM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'IN' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'IO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'IQ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'IR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'IS' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'IT' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'JE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'JM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'JO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'JP' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'KE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'KG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'KH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'KI' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'KM' 1`] = `"123.456,789 L"`;
+
+exports[`Format number should format a unit number for 'KN' 1`] = `"123,456.789 ಲೀ"`;
+
+exports[`Format number should format a unit number for 'KP' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'KR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'KW' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'KY' 1`] = `"123 456,789 л"`;
+
+exports[`Format number should format a unit number for 'KZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LB' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'LC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LI' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LK' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LS' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'LT' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'LU' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'LV' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'LY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MD' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'ME' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MG' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'MH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MK' 1`] = `"123.456,789 л"`;
+
+exports[`Format number should format a unit number for 'ML' 1`] = `"1,23,456.789 ലി."`;
+
+exports[`Format number should format a unit number for 'MM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MN' 1`] = `"123,456.789 л"`;
+
+exports[`Format number should format a unit number for 'MO' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'MP' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MQ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MR' 1`] = `"१,२३,४५६.७८९ ली"`;
+
+exports[`Format number should format a unit number for 'MS' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'MT' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'MU' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MV' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MX' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'MY' 1`] = `"၁၂၃,၄၅၆.၇၈၉ လီတာ"`;
+
+exports[`Format number should format a unit number for 'MZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NE' 1`] = `"१२३,४५६.७८९ लि."`;
+
+exports[`Format number should format a unit number for 'NF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NI' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NL' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'NO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NP' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NU' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'NZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'OM' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'PA' 1`] = `"1,23,456.789 ਲਿ."`;
+
+exports[`Format number should format a unit number for 'PE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PK' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PL' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'PM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PR' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PS' 1`] = `"۱۲۳٬۴۵۶٫۷۸۹ L"`;
+
+exports[`Format number should format a unit number for 'PT' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'PW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'PY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'QA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'RE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'RO' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'RS' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'RU' 1`] = `"123 456,789 л"`;
+
+exports[`Format number should format a unit number for 'RW' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'SA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SB' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SD' 1`] = `"١٢٣٬٤٥٦٫٧٨٩ ليٽر"`;
+
+exports[`Format number should format a unit number for 'SE' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'SG' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'SH' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SI' 1`] = `"ලී 123,456.789"`;
+
+exports[`Format number should format a unit number for 'SJ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SK' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'SL' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'SM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SN' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'SO' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SR' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'ST' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SV' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'SY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'SZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TD' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TG' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'TH' 1`] = `"123,456.789 ล."`;
+
+exports[`Format number should format a unit number for 'TJ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TK' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'TL' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TO' 1`] = `"l ʻe 123,456.789"`;
+
+exports[`Format number should format a unit number for 'TR' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'TT' 1`] = `"123 456,789 l"`;
+
+exports[`Format number should format a unit number for 'TV' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'TZ' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'UA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'UG' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for 'UM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'US' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'UY' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'UZ' 1`] = `"123 456,789 L"`;
+
+exports[`Format number should format a unit number for 'VA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'VC' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'VE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'VG' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'VI' 1`] = `"123.456,789 L"`;
+
+exports[`Format number should format a unit number for 'VN' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'VU' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'WF' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'WS' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'YE' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'YT' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'ZA' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'ZM' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'ZW' 1`] = `"123,456.789 L"`;
+
+exports[`Format number should format a unit number for 'de-DE' 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for 'es-US' 1`] = `"123,456.789 l"`;
+
+exports[`Format number should format a unit number for [ 'DE', 'US', [length]: 2 ] 1`] = `"123.456,789 l"`;
+
+exports[`Format number should format a unit number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,789 l"`;
+
 exports[`Format to parts currency should format a currency for 'AD' 1`] = `
 Array [
   Object {
@@ -14912,6 +15412,8312 @@ Array [
   Object {
     "type": "fraction",
     "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ℓ",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ሊ",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AQ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "١٢٣",
+  },
+  Object {
+    "type": "group",
+    "value": "٬",
+  },
+  Object {
+    "type": "integer",
+    "value": "٤٥٦",
+  },
+  Object {
+    "type": "decimal",
+    "value": "٫",
+  },
+  Object {
+    "type": "fraction",
+    "value": "٧٨٩",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "لتر",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "১",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "২৩",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "৪৫৬",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "৭৮৯",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "লিঃ",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AX' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'AZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BB' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "л",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BJ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "১",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "২৩",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "৪৫৬",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "৭৮৯",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "লিটার",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'BZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CX' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'CZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'DE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'DJ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'DK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'DM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'DO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'DZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "༡",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "༢༣",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "༤༥༦",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "༧༨༩",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'EC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'EE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'EG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'EH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ER' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ES' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ET' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'FI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'FJ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'FK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'FM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'FO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'FR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GB' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GP' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GQ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "1",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "23",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "લિ",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'GY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'HK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'HM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'HN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'HR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'HT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'HU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ID' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IQ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'IT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'JE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'JM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'JO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'JP' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ಲೀ",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KP' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "л",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'KZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LB' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'LY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ME' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "л",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ML' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "1",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "23",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ലി.",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "л",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MP' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MQ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "१",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "२३",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "४५६",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "७८९",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ली",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MX' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "၁၂၃",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "၄၅၆",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "၇၈၉",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "လီတာ",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'MZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "१२३",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "४५६",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "७८९",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "लि.",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NP' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'NZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'OM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "1",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "23",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ਲਿ.",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "۱۲۳",
+  },
+  Object {
+    "type": "group",
+    "value": "٬",
+  },
+  Object {
+    "type": "integer",
+    "value": "۴۵۶",
+  },
+  Object {
+    "type": "decimal",
+    "value": "٫",
+  },
+  Object {
+    "type": "fraction",
+    "value": "۷۸۹",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'PY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'QA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'RE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'RO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'RS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'RU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "л",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'RW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SB' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "١٢٣",
+  },
+  Object {
+    "type": "group",
+    "value": "٬",
+  },
+  Object {
+    "type": "integer",
+    "value": "٤٥٦",
+  },
+  Object {
+    "type": "decimal",
+    "value": "٫",
+  },
+  Object {
+    "type": "fraction",
+    "value": "٧٨٩",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ليٽر",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SI' 1`] = `
+Array [
+  Object {
+    "type": "unit",
+    "value": "ලී",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SJ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SO' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ST' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'SZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TD' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TH' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "ล.",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TJ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TK' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TL' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TO' 1`] = `
+Array [
+  Object {
+    "type": "unit",
+    "value": "l ʻe",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TR' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TV' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'TZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'UA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'UG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'UM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'US' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'UY' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'UZ' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": " ",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VC' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VG' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VI' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VN' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'VU' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'WF' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'WS' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'YE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'YT' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ZA' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ZM' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'ZW' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "L",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'de-DE' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for 'es-US' 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ",",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ".",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for [ 'DE', 'US', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
+  },
+]
+`;
+
+exports[`Format to parts number should format a unit number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `
+Array [
+  Object {
+    "type": "integer",
+    "value": "123",
+  },
+  Object {
+    "type": "group",
+    "value": ".",
+  },
+  Object {
+    "type": "integer",
+    "value": "456",
+  },
+  Object {
+    "type": "decimal",
+    "value": ",",
+  },
+  Object {
+    "type": "fraction",
+    "value": "789",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
+  Object {
+    "type": "unit",
+    "value": "l",
   },
 ]
 `;

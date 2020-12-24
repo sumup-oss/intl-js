@@ -40,6 +40,11 @@ describe('Format', () => {
       const actual = format(number, locale);
       expect(actual).toMatchSnapshot();
     });
+
+    it.each(locales)('should format a unit number for %o', (locale) => {
+      const actual = format(number, locale, { style: 'unit', unit: 'liter' });
+      expect(actual).toMatchSnapshot();
+    });
   });
 
   describe('currency', () => {
@@ -54,6 +59,14 @@ describe('Format to parts', () => {
   describe('number', () => {
     it.each(locales)('should format a number for %o', (locale) => {
       const actual = formatToParts(number, locale);
+      expect(actual).toMatchSnapshot();
+    });
+
+    it.each(locales)('should format a unit number for %o', (locale) => {
+      const actual = formatToParts(number, locale, {
+        style: 'unit',
+        unit: 'liter',
+      });
       expect(actual).toMatchSnapshot();
     });
   });
