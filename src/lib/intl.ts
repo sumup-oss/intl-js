@@ -37,6 +37,7 @@ export const isNumberFormatSupported = (() => {
  */
 export const isNumberFormatToPartsSupported = (() => {
   try {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     return typeof Intl.NumberFormat.prototype.formatToParts !== 'undefined';
   } catch (error) {
     return false;
