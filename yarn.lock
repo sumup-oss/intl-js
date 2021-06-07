@@ -980,9 +980,9 @@
     "@sinonjs/commons" "^1.7.0"
 
 "@sumup/foundry@^4.0.0-canary":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@sumup/foundry/-/foundry-4.0.0.tgz#104688b36fe071158889cc2e5055d1dde5b890a5"
-  integrity sha512-8TsJrI43/BuYDXOi00kLXOthoIo7VAPZbHhukooZSJe8F64tXuKFnBlEVvJaAUnPgNu8aMCzByuO0Jl8/ZkzmQ==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@sumup/foundry/-/foundry-4.0.1.tgz#54abdde966e5c23e28613ce023531b865c7cdc85"
+  integrity sha512-si3lmkzr7S+JElN0ifdpuKKdPw8+10kvSHXQaqnQeyOPYs69y5AY/zmQYYvbDFtHOAWCy1ccL8b3xWdEQb2DGg==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/eslint-parser" "^7.14.3"
