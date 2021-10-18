@@ -980,9 +980,9 @@
     "@sinonjs/commons" "^1.7.0"
 
 "@sumup/foundry@^4.0.0-canary":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@sumup/foundry/-/foundry-4.0.1.tgz#54abdde966e5c23e28613ce023531b865c7cdc85"
-  integrity sha512-si3lmkzr7S+JElN0ifdpuKKdPw8+10kvSHXQaqnQeyOPYs69y5AY/zmQYYvbDFtHOAWCy1ccL8b3xWdEQb2DGg==
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@sumup/foundry/-/foundry-4.0.2.tgz#5bf33a5a12bd34f620cda0e4bfcc41596d8a0522"
+  integrity sha512-9/MnP1CFWJ/GyveZBxy9RZc3cmHK8vvcEFSP89sl9eKWfgVBMPCiujIe6SH9nC+GEW5h6MQLjIp0D2LKD5iNVw==
   dependencies:
     "@babel/core" "^7.14.3"
     "@babel/eslint-parser" "^7.14.3"
@@ -997,7 +997,7 @@
     dedent "^0.7.0"
     eslint "^7.23.0"
     eslint-config-airbnb-base "^14.0.0"
-    eslint-config-airbnb-typescript "^12.3.1"
+    eslint-config-airbnb-typescript "^14.0.0"
     eslint-config-prettier "^8.3.0"
     eslint-formatter-github "^1.0.11"
     eslint-plugin-cypress "^2.8.1"
@@ -1008,7 +1008,7 @@
     eslint-plugin-jsx-a11y "^6.0.0"
     eslint-plugin-node "^11.0.0"
     eslint-plugin-notice "^0.9.10"
-    eslint-plugin-prettier "^3.0.0"
+    eslint-plugin-prettier "^4.0.0"
     eslint-plugin-react "^7.23.1"
     eslint-plugin-react-hooks "^4.0.0"
     eslint-plugin-testing-library "^4.6.0"
@@ -1286,7 +1286,7 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@^4.20.0", "@typescript-eslint/parser@^4.4.1":
+"@typescript-eslint/parser@^4.20.0":
   version "4.20.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.20.0.tgz#8dd403c8b4258b99194972d9799e201b8d083bdd"
   integrity sha512-m6vDtgL9EABdjMtKVw5rr6DdeMCH3OA1vFb0dAyuZSa3e5yw1YRzlwFnm9knma9Lz6b2GPvoNSa8vOXrqsaglA==
@@ -3314,7 +3314,7 @@ escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-airbnb-base@^14.0.0, eslint-config-airbnb-base@^14.2.0, eslint-config-airbnb-base@^14.2.1:
+eslint-config-airbnb-base@14.2.1, eslint-config-airbnb-base@^14.0.0:
   version "14.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz#8a2eb38455dc5a312550193b319cdaeef042cd1e"
   integrity sha512-GOrQyDtVEc1Xy20U7vsB2yAoB4nBlfH5HZJeatRXHleO+OS5Ot+MWij4Dpltw4/DyIkqUfqz1epfhVR5XWWQPA==
@@ -3323,23 +3323,12 @@ eslint-config-airbnb-base@^14.0.0, eslint-config-airbnb-base@^14.2.0, eslint-con
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-airbnb-typescript@^12.3.1:
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-12.3.1.tgz#83ab40d76402c208eb08516260d1d6fac8f8acbc"
-  integrity sha512-ql/Pe6/hppYuRp4m3iPaHJqkBB7dgeEmGPQ6X0UNmrQOfTF+dXw29/ZjU2kQ6RDoLxaxOA+Xqv07Vbef6oVTWw==
+eslint-config-airbnb-typescript@^14.0.0:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-14.0.1.tgz#6721eb320d3953ae0d4bf258e877900fcb543a38"
+  integrity sha512-tF4GwC3sRrw8kEj4/yxX8F7AcLzj/1IESBnsCiFMplzYmxre459qm2z9DFkCpqBVQFSH6j2K4+VKVteX4m0GsQ==
   dependencies:
-    "@typescript-eslint/parser" "^4.4.1"
-    eslint-config-airbnb "^18.2.0"
-    eslint-config-airbnb-base "^14.2.0"
-
-eslint-config-airbnb@^18.2.0:
-  version "18.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.2.1.tgz#b7fe2b42f9f8173e825b73c8014b592e449c98d9"
-  integrity sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==
-  dependencies:
-    eslint-config-airbnb-base "^14.2.1"
-    object.assign "^4.1.2"
-    object.entries "^1.1.2"
+    eslint-config-airbnb-base "14.2.1"
 
 eslint-config-prettier@^8.3.0:
   version "8.3.0"
@@ -3475,10 +3464,10 @@ eslint-plugin-notice@^0.9.10:
     lodash "^4.17.15"
     metric-lcs "^0.1.2"
 
-eslint-plugin-prettier@^3.0.0:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.4.tgz#168ab43154e2ea57db992a2cd097c828171f75c2"
-  integrity sha512-jZDa8z76klRqo+TdGDTFJSavwbnWK2ZpqGKNZ+VvweMW516pDUMmQ2koXvxEE4JhzNvTv+radye/bWGBmA6jmg==
+eslint-plugin-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.0.0.tgz#8b99d1e4b8b24a762472b4567992023619cb98e0"
+  integrity sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
