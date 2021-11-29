@@ -22,7 +22,7 @@ Format 🔢 numbers and 💱currency values for any locale with the [ECMAScript 
 
 ## Installation
 
-[`@sumup/intl`](https://www.npmjs.com/package/sumup/intl) needs to be installed as a dependency via the [Yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com) package managers. The npm CLI ships with [Node](https://nodejs.org/en/). You can read how to install the Yarn CLI in [their documentation](https://yarnpkg.com/en/docs/install). `@sumup/intl` requires Node v10+.
+[`@sumup/intl`](https://www.npmjs.com/package/@sumup/intl) needs to be installed as a dependency via the [Yarn](https://yarnpkg.com) or [npm](https://www.npmjs.com) package managers. The npm CLI ships with [Node](https://nodejs.org/en/). You can read how to install the Yarn CLI in [their documentation](https://yarnpkg.com/en/docs/install). `@sumup/intl` requires Node v10+.
 
 Depending on your preference, run one of the following:
 
