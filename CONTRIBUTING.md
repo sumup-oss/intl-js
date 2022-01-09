@@ -29,10 +29,10 @@ If you feel another member of the community violated our CoC or you are experien
 
 ## Common commands
 
-- Continously transpile and typecheck the code: `yarn start`
-- Continously run the tests: `yarn test`
+- Continuously transpile and typecheck the code: `yarn start`
+- Continuously run the tests: `yarn test`
 - Run the linter: `yarn lint`
 
 ## Troubleshooting
 
-Make sure that you use Node v14.2 _exactly_, otherwise, the unit tests will probably fail. Node's localisation data for the `Intl.NumberFormat` API tends to change between minor versions.
+Make sure that you use Node v16.13 _exactly_, otherwise, the unit tests will probably fail. Node's localisation data for the `Intl.NumberFormat` API tends to change between minor versions.
