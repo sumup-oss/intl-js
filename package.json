@@ -28,11 +28,11 @@
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
-    "lint:ci": "yarn lint --format junit -o __reports__/junit/eslint-results.xml",
+    "lint:ci": "yarn lint --format github",
     "prerelease": "yarn build",
     "release": "foundry run semantic-release",
     "test": "jest --watch",
-    "test:ci": "jest --ci --runInBand --coverage --reporters default --reporters \"jest-junit\"",
+    "test:ci": "jest --ci --runInBand --coverage --reporters default --reporters \"jest-github-reporter\"",
     "check:security": "audit-ci --critical",
     "check:licenses": "license-checker --production --summary --failOn=GPLv3"
   },
@@ -43,14 +43,14 @@
     "intl-format-cache": "^4.2.27"
   },
   "devDependencies": {
-    "@sumup/foundry": "^4.0.0-canary",
+    "@sumup/foundry": "^4.0.0",
     "@types/jest": "^27.4.0",
     "audit-ci": "^5.0.0",
-    "jest": "^26.0.0",
+    "jest": "^27.0.1",
     "jest-extended": "^1.2.0",
-    "jest-junit": "^13.0.0",
+    "jest-github-reporter": "^1.0.2",
     "license-checker": "^25.0.1",
-    "ts-jest": "^26.0.0",
-    "typescript": "^4.1.3"
+    "ts-jest": "^27.0.1",
+    "typescript": "^4.3.2"
   }
 }
