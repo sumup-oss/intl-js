@@ -42,7 +42,10 @@ describe('Format', () => {
     });
 
     it.each(locales)('should format a unit number for %o', (locale) => {
-      const actual = format(number, locale, { style: 'unit', unit: 'liter' });
+      const actual = format(number, locale, {
+        style: 'unit',
+        unit: 'hour',
+      });
       expect(actual).toMatchSnapshot();
     });
   });
@@ -65,7 +68,7 @@ describe('Format to parts', () => {
     it.each(locales)('should format a unit number for %o', (locale) => {
       const actual = formatToParts(number, locale, {
         style: 'unit',
-        unit: 'liter',
+        unit: 'hour',
       });
       expect(actual).toMatchSnapshot();
     });

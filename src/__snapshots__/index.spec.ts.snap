@@ -1000,505 +1000,505 @@ exports[`Format number should format a number for [ 'DE', 'US', [length]: 2 ] 1`
 
 exports[`Format number should format a number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,789"`;
 
-exports[`Format number should format a unit number for 'AD' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AD' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AF' 1`] = `"123 456,789 ℓ"`;
+exports[`Format number should format a unit number for 'AF' 1`] = `"123 456,789 u."`;
 
-exports[`Format number should format a unit number for 'AG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AI' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AL' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AL' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AM' 1`] = `"123,456.789 ሊ"`;
+exports[`Format number should format a unit number for 'AM' 1`] = `"123,456.789 ሰዓ"`;
 
-exports[`Format number should format a unit number for 'AN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AO' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AO' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AQ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AQ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AR' 1`] = `"١٢٣٬٤٥٦٫٧٨٩ لتر"`;
+exports[`Format number should format a unit number for 'AR' 1`] = `"١٢٣٬٤٥٦٫٧٨٩ س"`;
 
-exports[`Format number should format a unit number for 'AS' 1`] = `"১,২৩,৪৫৬.৭৮৯ লিঃ"`;
+exports[`Format number should format a unit number for 'AS' 1`] = `"১,২৩,৪৫৬.৭৮৯ ঘণ্টা"`;
 
-exports[`Format number should format a unit number for 'AT' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AT' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AU' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AU' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AW' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AX' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'AX' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'AZ' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'AZ' 1`] = `"123.456,789 saat"`;
 
-exports[`Format number should format a unit number for 'BA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BB' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BB' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BD' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BD' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BE' 1`] = `"123 456,789 л"`;
+exports[`Format number should format a unit number for 'BE' 1`] = `"123 456,789 гадз"`;
 
-exports[`Format number should format a unit number for 'BF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BG' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'BG' 1`] = `"123 456,789 ч"`;
 
-exports[`Format number should format a unit number for 'BH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BI' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BJ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BJ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BL' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BL' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BM' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'BN' 1`] = `"১,২৩,৪৫৬.৭৮৯ লিটার"`;
+exports[`Format number should format a unit number for 'BN' 1`] = `"১,২৩,৪৫৬.৭৮৯ ঘন্টা"`;
 
-exports[`Format number should format a unit number for 'BO' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BO' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'BR' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'BR' 1`] = `"123 456,789 h"`;
 
-exports[`Format number should format a unit number for 'BS' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'BS' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'BT' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BT' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BV' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BV' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BW' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BY' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BY' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'BZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'BZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CA' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'CA' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'CC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CD' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CD' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CI' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CK' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CK' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CL' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CL' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CO' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CO' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CU' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CU' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CV' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CV' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CX' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CX' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'CY' 1`] = `"123,456.789 L"`;
+exports[`Format number should format a unit number for 'CY' 1`] = `"123,456.789 awr"`;
 
-exports[`Format number should format a unit number for 'CZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'CZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'DE' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'DE' 1`] = `"123.456,789 Std."`;
 
-exports[`Format number should format a unit number for 'DJ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'DJ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'DK' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'DK' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'DM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'DM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'DO' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'DO' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'DZ' 1`] = `"༡,༢༣,༤༥༦.༧༨༩ l"`;
+exports[`Format number should format a unit number for 'DZ' 1`] = `"༡,༢༣,༤༥༦.༧༨༩ h"`;
 
-exports[`Format number should format a unit number for 'EC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'EC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'EE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'EE' 1`] = `"gaƒoƒo 123,456.789"`;
 
-exports[`Format number should format a unit number for 'EG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'EG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'EH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'EH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'ER' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'ER' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'ES' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'ES' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'ET' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'ET' 1`] = `"123 456,789 t"`;
 
-exports[`Format number should format a unit number for 'FI' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'FI' 1`] = `"123 456,789 t"`;
 
-exports[`Format number should format a unit number for 'FJ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'FJ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'FK' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'FK' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'FM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'FM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'FO' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'FO' 1`] = `"123.456,789 t."`;
 
-exports[`Format number should format a unit number for 'FR' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'FR' 1`] = `"123 456,789 h"`;
 
-exports[`Format number should format a unit number for 'GA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GA' 1`] = `"123,456.789 u"`;
 
-exports[`Format number should format a unit number for 'GB' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GB' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GD' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GD' 1`] = `"123,456.789 uair"`;
 
-exports[`Format number should format a unit number for 'GE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GI' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GL' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'GL' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'GM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GP' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GP' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GQ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GQ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GS' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GS' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GT' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GT' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GU' 1`] = `"1,23,456.789 લિ"`;
+exports[`Format number should format a unit number for 'GU' 1`] = `"1,23,456.789 કલાક"`;
 
-exports[`Format number should format a unit number for 'GW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GW' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'GY' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'GY' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'HK' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'HK' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'HM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'HM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'HN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'HN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'HR' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'HR' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'HT' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'HT' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'HU' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'HU' 1`] = `"123 456,789 ó"`;
 
-exports[`Format number should format a unit number for 'ID' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'ID' 1`] = `"123.456,789 j"`;
 
-exports[`Format number should format a unit number for 'IE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'IE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'IL' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'IL' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'IM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'IM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'IN' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'IN' 1`] = `"123.456,789 j"`;
 
-exports[`Format number should format a unit number for 'IO' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'IO' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'IQ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'IQ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'IR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'IR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'IS' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'IS' 1`] = `"123.456,789 klst."`;
 
-exports[`Format number should format a unit number for 'IT' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'IT' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'JE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'JE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'JM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'JM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'JO' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'JO' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'JP' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'JP' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'KE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'KG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'KH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'KI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KI' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'KM' 1`] = `"123.456,789 L"`;
+exports[`Format number should format a unit number for 'KM' 1`] = `"123.456,789 ម៉ោង"`;
 
-exports[`Format number should format a unit number for 'KN' 1`] = `"123,456.789 ಲೀ"`;
+exports[`Format number should format a unit number for 'KN' 1`] = `"123,456.789 ಗಂ."`;
 
-exports[`Format number should format a unit number for 'KP' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KP' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'KR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'KW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KW' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'KY' 1`] = `"123 456,789 л"`;
+exports[`Format number should format a unit number for 'KY' 1`] = `"123 456,789 ст"`;
 
-exports[`Format number should format a unit number for 'KZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'KZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LB' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'LB' 1`] = `"123.456,789 St."`;
 
-exports[`Format number should format a unit number for 'LC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LI' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LK' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LK' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LS' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LS' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'LT' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'LT' 1`] = `"123 456,789 val."`;
 
-exports[`Format number should format a unit number for 'LU' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'LU' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'LV' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'LV' 1`] = `"123 456,789 st."`;
 
-exports[`Format number should format a unit number for 'LY' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'LY' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MD' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MD' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'ME' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'ME' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MG' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'MH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MK' 1`] = `"123.456,789 L"`;
+exports[`Format number should format a unit number for 'MK' 1`] = `"123.456,789 ч."`;
 
-exports[`Format number should format a unit number for 'ML' 1`] = `"1,23,456.789 ലി."`;
+exports[`Format number should format a unit number for 'ML' 1`] = `"1,23,456.789 മ"`;
 
-exports[`Format number should format a unit number for 'MM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MN' 1`] = `"123,456.789 л"`;
+exports[`Format number should format a unit number for 'MN' 1`] = `"123,456.789 цаг"`;
 
-exports[`Format number should format a unit number for 'MO' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'MO' 1`] = `"123.456,789 ore"`;
 
-exports[`Format number should format a unit number for 'MP' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MP' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MQ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MQ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MR' 1`] = `"१,२३,४५६.७८९ ली"`;
+exports[`Format number should format a unit number for 'MR' 1`] = `"१,२३,४५६.७८९ ता"`;
 
-exports[`Format number should format a unit number for 'MS' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MS' 1`] = `"123,456.789 j"`;
 
-exports[`Format number should format a unit number for 'MT' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MT' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'MU' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MU' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MV' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MV' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MW' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MX' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MX' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'MY' 1`] = `"၁၂၃,၄၅၆.၇၈၉ လီတာ"`;
+exports[`Format number should format a unit number for 'MY' 1`] = `"၁၂၃,၄၅၆.၇၈၉ နာရီ"`;
 
-exports[`Format number should format a unit number for 'MZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'MZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NE' 1`] = `"१,२३,४५६.७८९ लि."`;
+exports[`Format number should format a unit number for 'NE' 1`] = `"१,२३,४५६.७८९ घण्टा"`;
 
-exports[`Format number should format a unit number for 'NF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NI' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NI' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NL' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'NL' 1`] = `"123.456,789 uur"`;
 
-exports[`Format number should format a unit number for 'NO' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'NO' 1`] = `"123 456,789 t"`;
 
-exports[`Format number should format a unit number for 'NP' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NP' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NU' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NU' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'NZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'NZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'OM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'OM' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'PA' 1`] = `"1,23,456.789 ਲਿ."`;
+exports[`Format number should format a unit number for 'PA' 1`] = `"1,23,456.789 ਘੰਟੇ"`;
 
-exports[`Format number should format a unit number for 'PE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PH' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PH' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PK' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PK' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PL' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'PL' 1`] = `"123 456,789 godz."`;
 
-exports[`Format number should format a unit number for 'PM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PR' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PR' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PS' 1`] = `"۱۲۳٬۴۵۶٫۷۸۹ L"`;
+exports[`Format number should format a unit number for 'PS' 1`] = `"۱۲۳٬۴۵۶٫۷۸۹ h"`;
 
-exports[`Format number should format a unit number for 'PT' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'PT' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'PW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PW' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'PY' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'PY' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'QA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'QA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'RE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'RE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'RO' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'RO' 1`] = `"123.456,789 ore"`;
 
-exports[`Format number should format a unit number for 'RS' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'RS' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'RU' 1`] = `"123 456,789 л"`;
+exports[`Format number should format a unit number for 'RU' 1`] = `"123 456,789 ч"`;
 
-exports[`Format number should format a unit number for 'RW' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'RW' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'SA' 1`] = `"१,२३,४५६.७८९ l"`;
+exports[`Format number should format a unit number for 'SA' 1`] = `"१,२३,४५६.७८९ h"`;
 
-exports[`Format number should format a unit number for 'SB' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SB' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'SC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'SD' 1`] = `"١٢٣٬٤٥٦٫٧٨٩ ليٽر"`;
+exports[`Format number should format a unit number for 'SD' 1`] = `"١٢٣٬٤٥٦٫٧٨٩ ڪلاڪ"`;
 
-exports[`Format number should format a unit number for 'SE' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'SE' 1`] = `"123 456,789 h"`;
 
-exports[`Format number should format a unit number for 'SG' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'SG' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'SH' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'SH' 1`] = `"123.456,789 sati"`;
 
-exports[`Format number should format a unit number for 'SI' 1`] = `"ලී 123,456.789"`;
+exports[`Format number should format a unit number for 'SI' 1`] = `"පැය 123,456.789"`;
 
-exports[`Format number should format a unit number for 'SJ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SJ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'SK' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'SK' 1`] = `"123 456,789 h"`;
 
-exports[`Format number should format a unit number for 'SL' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'SL' 1`] = `"123.456,789 h"`;
 
-exports[`Format number should format a unit number for 'SM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'SN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SN' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'SO' 1`] = `"123,456.789 L"`;
+exports[`Format number should format a unit number for 'SO' 1`] = `"123,456.789 scd"`;
 
-exports[`Format number should format a unit number for 'SR' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'SR' 1`] = `"123.456,789 сати"`;
 
-exports[`Format number should format a unit number for 'ST' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'ST' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'SV' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'SV' 1`] = `"123 456,789 tim"`;
 
-exports[`Format number should format a unit number for 'SY' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SY' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'SZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'SZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TD' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TD' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TG' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'TG' 1`] = `"123 456,789 h"`;
 
-exports[`Format number should format a unit number for 'TH' 1`] = `"123,456.789 ล."`;
+exports[`Format number should format a unit number for 'TH' 1`] = `"123,456.789 ชม."`;
 
-exports[`Format number should format a unit number for 'TJ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TJ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TK' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'TK' 1`] = `"123 456,789 sag"`;
 
-exports[`Format number should format a unit number for 'TL' 1`] = `"123,456.789 L"`;
+exports[`Format number should format a unit number for 'TL' 1`] = `"123,456.789 na oras"`;
 
-exports[`Format number should format a unit number for 'TM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TO' 1`] = `"l ʻe 123,456.789"`;
+exports[`Format number should format a unit number for 'TO' 1`] = `"h ʻe 123,456.789"`;
 
-exports[`Format number should format a unit number for 'TR' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'TR' 1`] = `"123.456,789 sa."`;
 
-exports[`Format number should format a unit number for 'TT' 1`] = `"123 456,789 l"`;
+exports[`Format number should format a unit number for 'TT' 1`] = `"123 456,789 h"`;
 
-exports[`Format number should format a unit number for 'TV' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TV' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'TW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TW' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for 'TZ' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'TZ' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'UA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'UA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'UG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'UG' 1`] = `"123,456.789 سائەت"`;
 
-exports[`Format number should format a unit number for 'UM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'UM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'US' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'US' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'UY' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'UY' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'UZ' 1`] = `"123 456,789 L"`;
+exports[`Format number should format a unit number for 'UZ' 1`] = `"123 456,789 soat"`;
 
-exports[`Format number should format a unit number for 'VA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'VA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'VC' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'VC' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'VE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'VE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'VG' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'VG' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'VI' 1`] = `"123.456,789 L"`;
+exports[`Format number should format a unit number for 'VI' 1`] = `"123.456,789 giờ"`;
 
-exports[`Format number should format a unit number for 'VN' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'VN' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'VU' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'VU' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'WF' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'WF' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'WS' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'WS' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'YE' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'YE' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'YT' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'YT' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'ZA' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'ZA' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'ZM' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'ZM' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'ZW' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'ZW' 1`] = `"123,456.789 hrs"`;
 
-exports[`Format number should format a unit number for 'de-DE' 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for 'de-DE' 1`] = `"123.456,789 Std."`;
 
-exports[`Format number should format a unit number for 'es-US' 1`] = `"123,456.789 l"`;
+exports[`Format number should format a unit number for 'es-US' 1`] = `"123,456.789 h"`;
 
-exports[`Format number should format a unit number for [ 'DE', 'US', [length]: 2 ] 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for [ 'DE', 'US', [length]: 2 ] 1`] = `"123.456,789 Std."`;
 
-exports[`Format number should format a unit number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,789 l"`;
+exports[`Format number should format a unit number for [ 'de-DE', 'es-US', [length]: 2 ] 1`] = `"123.456,789 Std."`;
 
 exports[`Format to parts currency should format a currency for 'AD' 1`] = `
 Array [
@@ -15476,7 +15476,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15509,7 +15509,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15542,7 +15542,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ℓ",
+    "value": "u.",
   },
 ]
 `;
@@ -15575,7 +15575,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15608,7 +15608,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15641,7 +15641,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15674,7 +15674,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ሊ",
+    "value": "ሰዓ",
   },
 ]
 `;
@@ -15707,7 +15707,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15740,7 +15740,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15773,7 +15773,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15806,7 +15806,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "لتر",
+    "value": "س",
   },
 ]
 `;
@@ -15847,7 +15847,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "লিঃ",
+    "value": "ঘণ্টা",
   },
 ]
 `;
@@ -15880,7 +15880,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15913,7 +15913,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15946,7 +15946,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -15979,7 +15979,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16012,7 +16012,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "saat",
   },
 ]
 `;
@@ -16045,7 +16045,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16078,7 +16078,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16111,7 +16111,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16144,7 +16144,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "л",
+    "value": "гадз",
   },
 ]
 `;
@@ -16177,7 +16177,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16210,7 +16210,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "ч",
   },
 ]
 `;
@@ -16243,7 +16243,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16276,7 +16276,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16309,7 +16309,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16342,7 +16342,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16375,7 +16375,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -16416,7 +16416,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "লিটার",
+    "value": "ঘন্টা",
   },
 ]
 `;
@@ -16449,7 +16449,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -16482,7 +16482,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -16515,7 +16515,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -16548,7 +16548,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16581,7 +16581,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16614,7 +16614,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16647,7 +16647,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16680,7 +16680,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16713,7 +16713,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -16746,7 +16746,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16779,7 +16779,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16812,7 +16812,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16845,7 +16845,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16878,7 +16878,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16911,7 +16911,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16944,7 +16944,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -16977,7 +16977,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17010,7 +17010,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17043,7 +17043,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17076,7 +17076,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17109,7 +17109,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17142,7 +17142,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17175,7 +17175,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17208,7 +17208,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17241,7 +17241,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "awr",
   },
 ]
 `;
@@ -17274,7 +17274,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17307,7 +17307,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "Std.",
   },
 ]
 `;
@@ -17340,7 +17340,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17373,7 +17373,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17406,7 +17406,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17439,7 +17439,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17480,7 +17480,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -17513,13 +17513,21 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
 
 exports[`Format to parts number should format a unit number for 'EE' 1`] = `
 Array [
+  Object {
+    "type": "unit",
+    "value": "gaƒoƒo",
+  },
+  Object {
+    "type": "literal",
+    "value": " ",
+  },
   Object {
     "type": "integer",
     "value": "123",
@@ -17539,14 +17547,6 @@ Array [
   Object {
     "type": "fraction",
     "value": "789",
-  },
-  Object {
-    "type": "literal",
-    "value": " ",
-  },
-  Object {
-    "type": "unit",
-    "value": "l",
   },
 ]
 `;
@@ -17579,7 +17579,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17612,7 +17612,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17645,7 +17645,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17678,7 +17678,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -17711,7 +17711,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "t",
   },
 ]
 `;
@@ -17744,7 +17744,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "t",
   },
 ]
 `;
@@ -17777,7 +17777,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17810,7 +17810,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17843,7 +17843,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -17876,7 +17876,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "t.",
   },
 ]
 `;
@@ -17909,7 +17909,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -17942,7 +17942,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "u",
   },
 ]
 `;
@@ -17975,7 +17975,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18008,7 +18008,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "uair",
   },
 ]
 `;
@@ -18041,7 +18041,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18074,7 +18074,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18107,7 +18107,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18140,7 +18140,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18173,7 +18173,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18206,7 +18206,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -18239,7 +18239,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18272,7 +18272,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18305,7 +18305,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18338,7 +18338,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18371,7 +18371,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18404,7 +18404,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18437,7 +18437,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18478,7 +18478,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "લિ",
+    "value": "કલાક",
   },
 ]
 `;
@@ -18511,7 +18511,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18544,7 +18544,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18577,7 +18577,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18610,7 +18610,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18643,7 +18643,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18676,7 +18676,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -18709,7 +18709,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18742,7 +18742,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "ó",
   },
 ]
 `;
@@ -18775,7 +18775,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "j",
   },
 ]
 `;
@@ -18808,7 +18808,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18841,7 +18841,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18874,7 +18874,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18907,7 +18907,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "j",
   },
 ]
 `;
@@ -18940,7 +18940,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -18973,7 +18973,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19006,7 +19006,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19039,7 +19039,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "klst.",
   },
 ]
 `;
@@ -19072,7 +19072,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -19105,7 +19105,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19138,7 +19138,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19171,7 +19171,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19204,7 +19204,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19237,7 +19237,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19270,7 +19270,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19303,7 +19303,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19336,7 +19336,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -19369,7 +19369,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "ម៉ោង",
   },
 ]
 `;
@@ -19402,7 +19402,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ಲೀ",
+    "value": "ಗಂ.",
   },
 ]
 `;
@@ -19435,7 +19435,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19468,7 +19468,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19501,7 +19501,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -19534,7 +19534,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "л",
+    "value": "ст",
   },
 ]
 `;
@@ -19567,7 +19567,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19600,7 +19600,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19633,7 +19633,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "St.",
   },
 ]
 `;
@@ -19666,7 +19666,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19699,7 +19699,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19732,7 +19732,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19765,7 +19765,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19798,7 +19798,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19831,7 +19831,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "val.",
   },
 ]
 `;
@@ -19864,7 +19864,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -19897,7 +19897,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "st.",
   },
 ]
 `;
@@ -19930,7 +19930,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19963,7 +19963,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -19996,7 +19996,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20029,7 +20029,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20062,7 +20062,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20095,7 +20095,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20128,7 +20128,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -20161,7 +20161,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20194,7 +20194,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "ч.",
   },
 ]
 `;
@@ -20235,7 +20235,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ലി.",
+    "value": "മ",
   },
 ]
 `;
@@ -20268,7 +20268,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20301,7 +20301,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "л",
+    "value": "цаг",
   },
 ]
 `;
@@ -20334,7 +20334,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "ore",
   },
 ]
 `;
@@ -20367,7 +20367,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20400,7 +20400,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20441,7 +20441,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ली",
+    "value": "ता",
   },
 ]
 `;
@@ -20474,7 +20474,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "j",
   },
 ]
 `;
@@ -20507,7 +20507,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -20540,7 +20540,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20573,7 +20573,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20606,7 +20606,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20639,7 +20639,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20672,7 +20672,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "လီတာ",
+    "value": "နာရီ",
   },
 ]
 `;
@@ -20705,7 +20705,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20738,7 +20738,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20771,7 +20771,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20812,7 +20812,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "लि.",
+    "value": "घण्टा",
   },
 ]
 `;
@@ -20845,7 +20845,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20878,7 +20878,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20911,7 +20911,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -20944,7 +20944,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "uur",
   },
 ]
 `;
@@ -20977,7 +20977,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "t",
   },
 ]
 `;
@@ -21010,7 +21010,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21043,7 +21043,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21076,7 +21076,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21109,7 +21109,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21142,7 +21142,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -21183,7 +21183,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ਲਿ.",
+    "value": "ਘੰਟੇ",
   },
 ]
 `;
@@ -21216,7 +21216,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21249,7 +21249,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21282,7 +21282,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21315,7 +21315,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21348,7 +21348,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21381,7 +21381,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "godz.",
   },
 ]
 `;
@@ -21414,7 +21414,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21447,7 +21447,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21480,7 +21480,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21513,7 +21513,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "h",
   },
 ]
 `;
@@ -21546,7 +21546,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -21579,7 +21579,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21612,7 +21612,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21645,7 +21645,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21678,7 +21678,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21711,7 +21711,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "ore",
   },
 ]
 `;
@@ -21744,7 +21744,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21777,7 +21777,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "л",
+    "value": "ч",
   },
 ]
 `;
@@ -21810,7 +21810,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -21851,7 +21851,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -21884,7 +21884,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21917,7 +21917,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -21950,7 +21950,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ليٽر",
+    "value": "ڪلاڪ",
   },
 ]
 `;
@@ -21983,7 +21983,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22016,7 +22016,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22049,7 +22049,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "sati",
   },
 ]
 `;
@@ -22058,7 +22058,7 @@ exports[`Format to parts number should format a unit number for 'SI' 1`] = `
 Array [
   Object {
     "type": "unit",
-    "value": "ලී",
+    "value": "පැය",
   },
   Object {
     "type": "literal",
@@ -22115,7 +22115,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22148,7 +22148,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22181,7 +22181,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22214,7 +22214,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22247,7 +22247,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22280,7 +22280,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "scd",
   },
 ]
 `;
@@ -22313,7 +22313,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "сати",
   },
 ]
 `;
@@ -22346,7 +22346,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22379,7 +22379,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "tim",
   },
 ]
 `;
@@ -22412,7 +22412,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22445,7 +22445,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22478,7 +22478,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22511,7 +22511,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22544,7 +22544,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22577,7 +22577,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22610,7 +22610,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "ล.",
+    "value": "ชม.",
   },
 ]
 `;
@@ -22643,7 +22643,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22676,7 +22676,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "sag",
   },
 ]
 `;
@@ -22709,7 +22709,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "na oras",
   },
 ]
 `;
@@ -22742,7 +22742,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22775,7 +22775,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22784,7 +22784,7 @@ exports[`Format to parts number should format a unit number for 'TO' 1`] = `
 Array [
   Object {
     "type": "unit",
-    "value": "l ʻe",
+    "value": "h ʻe",
   },
   Object {
     "type": "literal",
@@ -22841,7 +22841,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "sa.",
   },
 ]
 `;
@@ -22874,7 +22874,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22907,7 +22907,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -22940,7 +22940,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -22973,7 +22973,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23006,7 +23006,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23039,7 +23039,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "سائەت",
   },
 ]
 `;
@@ -23072,7 +23072,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23105,7 +23105,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23138,7 +23138,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23171,7 +23171,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "soat",
   },
 ]
 `;
@@ -23204,7 +23204,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23237,7 +23237,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23270,7 +23270,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23303,7 +23303,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23336,7 +23336,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "L",
+    "value": "giờ",
   },
 ]
 `;
@@ -23369,7 +23369,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23402,7 +23402,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23435,7 +23435,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23468,7 +23468,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23501,7 +23501,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23534,7 +23534,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23567,7 +23567,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23600,7 +23600,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23633,7 +23633,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "hrs",
   },
 ]
 `;
@@ -23666,7 +23666,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "Std.",
   },
 ]
 `;
@@ -23699,7 +23699,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "h",
   },
 ]
 `;
@@ -23732,7 +23732,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "Std.",
   },
 ]
 `;
@@ -23765,7 +23765,7 @@ Array [
   },
   Object {
     "type": "unit",
-    "value": "l",
+    "value": "Std.",
   },
 ]
 `;
