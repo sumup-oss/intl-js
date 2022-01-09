@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@sumup/foundry": "^4.0.0-canary",
-    "@types/jest": "^26.0.15",
+    "@types/jest": "^27.4.0",
     "audit-ci": "^5.0.0",
     "jest": "^26.0.0",
     "jest-extended": "^1.2.0",
