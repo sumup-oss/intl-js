@@ -52,11 +52,14 @@ export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
     return currency;
   }
 
-  if (process.env.NODE_ENV !== 'production') {
+  if (
+    process.env.NODE_ENV !== 'production' &&
+    process.env.NODE_ENV !== 'test'
+  ) {
     throw new TypeError(
       [
         `No currency found for "${localesArray.join(', ')}".`,
-        'Explicitely pass a currency as part of the options',
+        'Explicitly pass a currency as part of the options',
         'or submit a new one on GitHub.',
       ].join(' '),
     );

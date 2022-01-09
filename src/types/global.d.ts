@@ -1,5 +1,5 @@
 /**
- * Copyright 2019, SumUp Ltd.
+ * Copyright 2022, SumUp Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,13 +13,4 @@
  * limitations under the License.
  */
 
-module.exports = {
-  preset: 'ts-jest',
-  clearMocks: true,
-  rootDir: 'src',
-  coverageDirectory: '../__reports__',
-  reporters: ['default', 'jest-junit'],
-  coveragePathIgnorePatterns: ['node_modules'],
-  testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['jest-extended/all', '../jest.setup.js'],
-};
+import 'jest-extended';
