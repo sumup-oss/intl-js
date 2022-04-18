@@ -1673,9 +1673,9 @@ atob@^2.1.2:
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
 audit-ci@^6.1.0:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/audit-ci/-/audit-ci-6.1.2.tgz#b3d1beef263f3e090cbf2f7ee828e779c56965d6"
-  integrity sha512-WNhCpShNp5QE1wbfHgaY2QsjFb1SA7n/97tFY69LW7JN0VTQntH1SJQnIODrSAJQdbsf1yA9BOXKBAE2omeOgw==
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/audit-ci/-/audit-ci-6.2.0.tgz#f863bf749397ce1e9b8dd94315ce01cd01167154"
+  integrity sha512-ZEeEaagcHSt/nSgoSAgS/zvzgtOLE+KcI3Txr/GMABzsm/7qoOCbzCcVYpN9oVS8ZkQCrUFQK2MpavVXm1lv0g==
   dependencies:
     JSONStream "^1.3.5"
     cross-spawn "^7.0.3"
