@@ -43,7 +43,7 @@
     "intl-format-cache": "^4.2.27"
   },
   "devDependencies": {
-    "@sumup/foundry": "^4.0.0",
+    "@sumup/foundry": "^5.0.0",
     "@types/jest": "^27.4.0",
     "audit-ci": "^6.1.0",
     "jest": "^27.0.1",
