@@ -11,4 +11,3 @@ __reports__/
 /*.config.js
 /*rc.js
 jest.setup.js
-plopfile.js
