@@ -20,6 +20,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "foundry": { 
+    "publish": true
+  },
   "scripts": {
     "start": "tsc --watch",
     "dev": "yarn start",
