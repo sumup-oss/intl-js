@@ -1,13 +1,5 @@
-module.exports = require('@sumup/foundry/eslint')(
-  {
-    language: 'TypeScript',
-    environments: ['Browser'],
-    frameworks: ['Jest'],
-    openSource: true,
+module.exports = require('@sumup/foundry/eslint')({
+  parserOptions: {
+    requireConfigFile: false,
   },
-  {
-    parserOptions: {
-      requireConfigFile: false,
-    },
-  },
-);
+});
