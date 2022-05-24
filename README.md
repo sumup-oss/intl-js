@@ -36,7 +36,7 @@ $ npm install @sumup/intl
 
 `@sumup/intl` wraps the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) which is [supported by all modern browsers](https://caniuse.com/#search=NumberFormat) (note that [_formatToParts_](https://caniuse.com/#feat=mdn-javascript_builtins_intl_numberformat_formattoparts) is not supported by IE11). If you need to support older browsers, you need to include [a polyfill for the `Intl.NumberFormat` API](https://formatjs.io/docs/polyfills/intl-numberformat).
 
-[Node](https://nodejs.org/en/) supports the `Intl` API since v8, however, it includes only the English localisations up to v12. Node v13 and above support all locales. If you're unable to use Node v13+, you can either include [a polyfill for the `Intl.NumberFormat` API](https://formatjs.io/docs/polyfills/intl-numberformat) or use a [custom Node build](https://nodejs.org/docs/latest-v8.x/api/intl.html#intl_options_for_building_node_js).
+[Node](https://nodejs.org/en/) supports the `Intl` API since v8, however, it includes only the English localizations up to v12. Node v13 and above support all locales. If you're unable to use Node v13+, you can either include [a polyfill for the `Intl.NumberFormat` API](https://formatjs.io/docs/polyfills/intl-numberformat) or use a [custom Node build](https://nodejs.org/docs/latest-v8.x/api/intl.html#intl_options_for_building_node_js).
 
 ## Usage
 
@@ -68,7 +68,7 @@ format(16, 'en-GB', { style: 'unit', unit: 'liter', unitDisplay: 'long' }); // 1
 
 #### `formatCurrency`
 
-Formats a number according to the locale in the country's official curreny with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+Formats a number according to the locale in the country's official currency with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
 
 **Arguments**
 
@@ -137,7 +137,7 @@ formatToParts(16, 'en-GB', {
 
 #### `formatCurrencyToParts`
 
-Formats a number according to the locale in the country's official curreny with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+Formats a number according to the locale in the country's official currency with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
 
 **Arguments**
 

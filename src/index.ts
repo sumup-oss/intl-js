@@ -42,7 +42,7 @@ type CurrencyArgs = [Currency?, Intl.NumberFormatOptions?];
 export const format = formatFactory<NumberArgs>(getNumberOptions);
 
 /**
- * Formats a number according to the locale in the country's official curreny
+ * Formats a number according to the locale in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
 export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
@@ -55,7 +55,7 @@ export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
 export const formatToParts = formatToPartsFactory<NumberArgs>(getNumberOptions);
 
 /**
- * Formats a number according to the locale in the country's official curreny
+ * Formats a number according to the locale in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
 export const formatCurrencyToParts =
