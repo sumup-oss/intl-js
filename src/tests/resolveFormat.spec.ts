@@ -13,14 +13,14 @@
  * limitations under the License.
  */
 
-import { resolveFormat, resolveCurrencyFormat } from '..';
+import { resolveNumberFormat, resolveCurrencyFormat } from '..';
 
 import { locales } from './shared';
 
 describe('Resolve format', () => {
   describe('number', () => {
     it.each(locales)('should get the format for %o', (locale) => {
-      const actual = resolveFormat(locale);
+      const actual = resolveNumberFormat(locale);
       expect(actual).toBeObject();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'decimal',

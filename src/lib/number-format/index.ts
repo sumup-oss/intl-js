@@ -1,5 +1,5 @@
 /**
- * Copyright 2020, SumUp Ltd.
+ * Copyright 2022, SumUp Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,22 +13,32 @@
  * limitations under the License.
  */
 
-import { Locale, Options, Format } from './types';
+import type { Locale, NumberFormat, NumericOptions } from '../../types';
+import { findIndex } from '../find-index';
+
 import {
+  isIntlSupported,
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
   getNumberFormat,
-} from './lib/intl';
-import { findIndex } from './lib/findIndex';
+} from './intl';
+
+export { getNumberOptions } from './numbers';
+export { getCurrencyOptions } from './currencies';
+export {
+  isIntlSupported,
+  isNumberFormatSupported,
+  isNumberFormatToPartsSupported,
+};
 
 type Args = Array<unknown>;
 
 type GetOptions<T extends Args> = (
   locales?: Locale | Locale[],
   ...args: T
-) => Options;
+) => NumericOptions;
 
-export function formatFactory<T extends Args>(
+export function formatNumberFactory<T extends Args>(
   getOptions: GetOptions<T>,
 ): (value: number, locales?: Locale | Locale[], ...args: T) => string {
   if (!isNumberFormatSupported) {
@@ -43,7 +53,7 @@ export function formatFactory<T extends Args>(
   };
 }
 
-export function formatToPartsFactory<T extends Args>(
+export function formatNumberToPartsFactory<T extends Args>(
   getOptions: GetOptions<T>,
 ): (
   value: number,
@@ -70,15 +80,15 @@ function getPart(parts: Intl.NumberFormatPart[], name: string): string {
   return parts.find((part) => part.type === name)?.value as string;
 }
 
-export function resolveFormatFactory<T extends Args>(
+export function resolveNumberFormatFactory<T extends Args>(
   getOptions: GetOptions<T>,
-): (locales?: Locale | Locale[], ...args: T) => null | Format {
+): (locales?: Locale | Locale[], ...args: T) => null | NumberFormat {
   if (!isNumberFormatToPartsSupported) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (_locales, ..._args) => null;
   }
 
-  return (locales, ...args): Format => {
+  return (locales, ...args): NumberFormat => {
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     const resolvedOptions = numberFormat.resolvedOptions();

@@ -17,18 +17,16 @@ export type Locale = string;
 
 export type Currency = string;
 
-export type Format = Intl.ResolvedNumberFormatOptions & {
+export type NumberFormat = Intl.ResolvedNumberFormatOptions & {
   groupDelimiter: string;
   decimalDelimiter: string;
   currencySymbol?: string;
   currencyPosition?: 'prefix' | 'suffix';
 };
 
-export type NumberFormatOptions = Intl.NumberFormatOptions;
-
 export interface CurrencyFormatOptions extends Intl.NumberFormatOptions {
   style: 'currency';
   currency: Currency;
 }
 
-export type Options = NumberFormatOptions | CurrencyFormatOptions;
+export type NumericOptions = Intl.NumberFormatOptions | CurrencyFormatOptions;

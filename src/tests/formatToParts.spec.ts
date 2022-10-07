@@ -13,14 +13,14 @@
  * limitations under the License.
  */
 
-import { formatToParts, formatCurrencyToParts } from '..';
+import { formatNumberToParts, formatCurrencyToParts } from '..';
 
 import { locales, number } from './shared';
 
 describe('Format to parts', () => {
   describe('number', () => {
     it.each(locales)('should format a number for %o', (locale) => {
-      const actual = formatToParts(number, locale);
+      const actual = formatNumberToParts(number, locale);
       expect(actual).toBeArray();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'decimal',
@@ -28,7 +28,7 @@ describe('Format to parts', () => {
     });
 
     it.each(locales)('should format a unit number for %o', (locale) => {
-      const actual = formatToParts(number, locale, {
+      const actual = formatNumberToParts(number, locale, {
         style: 'unit',
         unit: 'hour',
       });

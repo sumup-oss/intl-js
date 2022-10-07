@@ -15,7 +15,7 @@
 
 import memoizeFormatConstructor from 'intl-format-cache';
 
-import { Locale } from '../types';
+import type { Locale } from '../../types';
 
 /**
  * Whether the `Intl` and `Intl.NumberFormat` APIs
@@ -45,8 +45,7 @@ export const isNumberFormatToPartsSupported = (() => {
 })();
 
 /**
- * @deprecated Whether the `Intl` and `Intl.NumberFormat` APIs
- * are supported by the runtime.
+ * @deprecated Use {@link isNumberFormatSupported} instead.
  */
 export const isIntlSupported = isNumberFormatSupported;
 
