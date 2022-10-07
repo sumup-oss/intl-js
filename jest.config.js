@@ -20,6 +20,5 @@ module.exports = {
   coverageDirectory: '../__reports__',
   reporters: ['default', 'jest-github-reporter'],
   coveragePathIgnorePatterns: ['node_modules'],
-  testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['jest-extended/all', '../jest.setup.js'],
 };
