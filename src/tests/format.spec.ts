@@ -13,14 +13,14 @@
  * limitations under the License.
  */
 
-import { format, formatCurrency } from '..';
+import { formatNumber, formatCurrency } from '..';
 
 import { locales, number } from './shared';
 
 describe('Format', () => {
   describe('number', () => {
     it.each(locales)('should format a number for %o', (locale) => {
-      const actual = format(number, locale);
+      const actual = formatNumber(number, locale);
       expect(actual).toBeString();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'decimal',
@@ -28,7 +28,7 @@ describe('Format', () => {
     });
 
     it.each(locales)('should format a unit number for %o', (locale) => {
-      const actual = format(number, locale, {
+      const actual = formatNumber(number, locale, {
         style: 'unit',
         unit: 'hour',
       });

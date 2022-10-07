@@ -44,7 +44,7 @@ All functions exported by `@sumup/intl` share a similar interface such as the co
 
 ### Format as string
 
-#### `format`
+#### `formatNumber`
 
 Formats a number according to the locale with support for various [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit), and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
 
@@ -59,11 +59,15 @@ Formats a number according to the locale with support for various [styles, units
 **Examples**
 
 ```ts
-import { format } from '@sumup/intl';
+import { formatNumber } from '@sumup/intl';
 
-format(12345.67, 'de-DE'); // '12.345,67'
-format(-0.89, ['ban', 'id']); // '-0,89'
-format(16, 'en-GB', { style: 'unit', unit: 'liter', unitDisplay: 'long' }); // 16 litres
+formatNumber(12345.67, 'de-DE'); // '12.345,67'
+formatNumber(-0.89, ['ban', 'id']); // '-0,89'
+formatNumber(16, 'en-GB', {
+  style: 'unit',
+  unit: 'liter',
+  unitDisplay: 'long',
+}); // 16 litres
 ```
 
 #### `formatCurrency`
@@ -91,7 +95,7 @@ formatCurrency(16, 'en-GB', null, { currencyDisplay: 'name' }); // '16.00 Britis
 
 ### Format as parts
 
-#### `formatToParts`
+#### `formatNumberToParts`
 
 Formats a number according to the locale with support for various [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit), and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
 
@@ -104,9 +108,9 @@ Formats a number according to the locale with support for various [styles, units
 | options? | Intl.NumberFormatOptions | `{ style: 'unit', unit: 'mile-per-hour' }`              |
 
 ```ts
-import { formatToParts } from '@sumup/intl';
+import { formatNumberToParts } from '@sumup/intl';
 
-formatToParts(12345.67, 'de-DE');
+formatNumberToParts(12345.67, 'de-DE');
 // [
 //   { type: "integer", value: "12" },
 //   { type: "group", value: "." },
@@ -115,7 +119,7 @@ formatToParts(12345.67, 'de-DE');
 //   { type: "fraction", value: "67" },
 // ]
 
-formatToParts(-0.89, ['ban', 'id']);
+formatNumberToParts(-0.89, ['ban', 'id']);
 // [
 //   { type: "minusSign", value: "-" },
 //   { type: "integer", value: "0" },
@@ -123,7 +127,7 @@ formatToParts(-0.89, ['ban', 'id']);
 //   { type: "fraction", value: "89" },
 // ]
 
-formatToParts(16, 'en-GB', {
+formatNumberToParts(16, 'en-GB', {
   style: 'unit',
   unit: 'liter',
   unitDisplay: 'long',
@@ -183,7 +187,7 @@ formatCurrencyToParts(16, 'en-GB', null, { currencyDisplay: 'name' });
 
 ### Resolve format
 
-#### `resolveFormat`
+#### `resolveNumberFormat`
 
 Resolves the locale and collation options that are used to format a number.
 
@@ -197,9 +201,9 @@ Resolves the locale and collation options that are used to format a number.
 **Examples**
 
 ```ts
-import { resolveFormat } from '@sumup/intl';
+import { resolveNumberFormat } from '@sumup/intl';
 
-resolveFormat();
+resolveNumberFormat();
 // {
 //   'locale': 'en-US',
 //   'numberingSystem': 'latn',
@@ -212,7 +216,7 @@ resolveFormat();
 //   'decimalDelimiter': '.',
 // }
 
-resolveFormat(['ban', 'id']);
+resolveNumberFormat(['ban', 'id']);
 // {
 //   'locale': 'id',
 //   'numberingSystem': 'latn',
@@ -225,7 +229,11 @@ resolveFormat(['ban', 'id']);
 //   'decimalDelimiter': ',',
 // }
 
-resolveFormat('en-GB', { style: 'unit', unit: 'liter', unitDisplay: 'long' });
+resolveNumberFormat('en-GB', {
+  style: 'unit',
+  unit: 'liter',
+  unitDisplay: 'long',
+});
 // {
 //   'locale': 'en-GB',
 //   'numberingSystem': 'latn',

@@ -15,20 +15,20 @@
 
 /* eslint-disable @typescript-eslint/unbound-method */
 
-import { Currency } from './types';
+import type { Currency } from './types';
 import {
-  formatFactory,
-  formatToPartsFactory,
-  resolveFormatFactory,
-} from './base';
-import { getNumberOptions } from './lib/numbers';
-import { getCurrencyOptions } from './lib/currencies';
+  formatNumberFactory,
+  formatNumberToPartsFactory,
+  resolveNumberFormatFactory,
+  getNumberOptions,
+  getCurrencyOptions,
+} from './lib/number-format';
 
 export {
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
   isIntlSupported,
-} from './lib/intl';
+} from './lib/number-format';
 export { CURRENCIES } from './data/currencies';
 
 type NumberArgs = [Intl.NumberFormatOptions?];
@@ -39,36 +39,54 @@ type CurrencyArgs = [Currency?, Intl.NumberFormatOptions?];
  * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
-export const format = formatFactory<NumberArgs>(getNumberOptions);
+export const formatNumber = formatNumberFactory<NumberArgs>(getNumberOptions);
+
+/**
+ * @deprecated Use {@link formatNumber} instead.
+ */
+export const format = formatNumber;
 
 /**
  * Formats a number according to the locale in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
-export const formatCurrency = formatFactory<CurrencyArgs>(getCurrencyOptions);
+export const formatCurrency =
+  formatNumberFactory<CurrencyArgs>(getCurrencyOptions);
 
 /**
  * Formats a number according to the locale with support for various
  * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
-export const formatToParts = formatToPartsFactory<NumberArgs>(getNumberOptions);
+export const formatNumberToParts =
+  formatNumberToPartsFactory<NumberArgs>(getNumberOptions);
+
+/**
+ * @deprecated Use {@link formatNumberToParts} instead.
+ */
+export const formatToParts = formatNumberToParts;
 
 /**
  * Formats a number according to the locale in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  */
 export const formatCurrencyToParts =
-  formatToPartsFactory<CurrencyArgs>(getCurrencyOptions);
+  formatNumberToPartsFactory<CurrencyArgs>(getCurrencyOptions);
 
 /**
  * Resolves the locale and collation options that are used to format a number.
  */
-export const resolveFormat = resolveFormatFactory<NumberArgs>(getNumberOptions);
+export const resolveNumberFormat =
+  resolveNumberFormatFactory<NumberArgs>(getNumberOptions);
+
+/**
+ * @deprecated Use {@link resolveNumberFormat} instead.
+ */
+export const resolveFormat = resolveNumberFormat;
 
 /**
  * Resolves the locale and collation options that are used to format a number
  * in the country's official currency.
  */
 export const resolveCurrencyFormat =
-  resolveFormatFactory<CurrencyArgs>(getCurrencyOptions);
+  resolveNumberFormatFactory<CurrencyArgs>(getCurrencyOptions);
