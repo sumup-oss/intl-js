@@ -17,7 +17,7 @@ import { Locale, Options, Format } from './types';
 import {
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
-  memoizeIntl,
+  getNumberFormat,
 } from './lib/intl';
 import { findIndex } from './lib/findIndex';
 
@@ -35,8 +35,6 @@ export function formatFactory<T extends Args>(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (value, _locales, ..._args): string => `${value}`;
   }
-
-  const getNumberFormat = memoizeIntl();
 
   return (value, locales, ...args): string => {
     const options = getOptions(locales, ...args);
@@ -59,8 +57,6 @@ export function formatToPartsFactory<T extends Args>(
     ];
   }
 
-  const getNumberFormat = memoizeIntl();
-
   return (value, locales, ...args): Intl.NumberFormatPart[] => {
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
@@ -81,8 +77,6 @@ export function resolveFormatFactory<T extends Args>(
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (_locales, ..._args) => null;
   }
-
-  const getNumberFormat = memoizeIntl();
 
   return (locales, ...args): Format => {
     const options = getOptions(locales, ...args);
