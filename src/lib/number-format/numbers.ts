@@ -21,23 +21,3 @@ export function getNumberOptions(
 ): Intl.NumberFormatOptions {
   return { style: 'decimal', ...options };
 }
-
-export function normalize(value?: string): number {
-  if (!value || !value.length) {
-    return 0;
-  }
-
-  const matches = /[^\d](\d{1,2})$/.exec(value) || [];
-  const [, decimals] = matches;
-
-  const digits = value.replace(/[^\d]/g, '');
-
-  if (digits === '') {
-    return 0.0;
-  }
-
-  const integers =
-    decimals === undefined ? digits : digits.slice(0, -decimals.length);
-  const numberString = `${integers}.${decimals}`;
-  return parseFloat(numberString);
-}
