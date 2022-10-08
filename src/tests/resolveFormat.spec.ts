@@ -13,12 +13,16 @@
  * limitations under the License.
  */
 
-import { resolveNumberFormat, resolveCurrencyFormat } from '..';
+import {
+  resolveNumberFormat,
+  resolveCurrencyFormat,
+  resolveDateTimeFormat,
+} from '..';
 
 import { locales } from './shared';
 
 describe('Resolve format', () => {
-  describe('number', () => {
+  describe('numbers', () => {
     it.each(locales)('should get the format for %o', (locale) => {
       const actual = resolveNumberFormat(locale);
       expect(actual).toBeObject();
@@ -28,7 +32,7 @@ describe('Resolve format', () => {
     });
   });
 
-  describe('currency', () => {
+  describe('currency values', () => {
     it.each(locales)('should get the currency format for %o', (locale) => {
       const actual = resolveCurrencyFormat(locale);
       expect(actual).toBeObject();
@@ -47,6 +51,14 @@ describe('Resolve format', () => {
         style: 'currency',
         currency,
       });
+    });
+  });
+
+  describe('dates and times', () => {
+    it.each(locales)('should get the date time format for %o', (locale) => {
+      const actual = resolveDateTimeFormat(locale);
+      expect(actual).toBeObject();
+      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
     });
   });
 });

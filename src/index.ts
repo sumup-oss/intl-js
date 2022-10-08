@@ -27,4 +27,13 @@ export {
   isNumberFormatToPartsSupported,
   isIntlSupported,
 } from './lib/number-format';
+export {
+  formatDate,
+  formatTime,
+  formatDateTime,
+  formatDateTimeToParts,
+  resolveDateTimeFormat,
+  isDateTimeFormatSupported,
+  isDateTimeFormatToPartsSupported,
+} from './lib/date-time-format';
 export { CURRENCIES } from './data/currencies';

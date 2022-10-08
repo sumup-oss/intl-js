@@ -24,3 +24,4 @@ export const locales: (string | string[])[] = [
 ];
 
 export const number = 123456.789;
+export const date = new Date(Date.UTC(0, 0, 0, 0, 0, 0));
