@@ -1,6 +1,7 @@
 # Project
 
 dist
+docs
 junit.xml
 __coverage__
 __reports__

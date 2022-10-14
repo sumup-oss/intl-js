@@ -29,6 +29,7 @@
     "build": "yarn build:es && yarn build:cjs",
     "build:es": "tsc",
     "build:cjs": "tsc --project tsconfig.cjs.json",
+    "docs": "typedoc",
     "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:ci": "yarn lint --format github",
@@ -54,6 +55,9 @@
     "jest-github-reporter": "^1.0.2",
     "license-checker": "^25.0.1",
     "ts-jest": "^29.0.3",
+    "typedoc": "^0.23.16",
+    "typedoc-github-wiki-theme": "^1.0.1",
+    "typedoc-plugin-markdown": "^3.13.6",
     "typescript": "^4.3.2"
   }
 }
