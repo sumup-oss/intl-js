@@ -18,8 +18,8 @@ export type Locale = string;
 export type Currency = string;
 
 export type NumberFormat = Intl.ResolvedNumberFormatOptions & {
-  groupDelimiter: string;
-  decimalDelimiter: string;
+  groupDelimiter?: string;
+  decimalDelimiter?: string;
   currencySymbol?: string;
   currencyPosition?: 'prefix' | 'suffix';
 };
