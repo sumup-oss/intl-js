@@ -13,7 +13,12 @@
  * limitations under the License.
  */
 
-import type { Locale, NumberFormat, NumericOptions } from '../../types';
+import type {
+  Currency,
+  Locale,
+  NumberFormat,
+  NumericOptions,
+} from '../../types';
 import { findIndex } from '../find-index';
 
 import {
@@ -22,28 +27,54 @@ import {
   isNumberFormatToPartsSupported,
   getNumberFormat,
 } from './intl';
+import { getNumberOptions } from './numbers';
+import { getCurrencyOptions } from './currencies';
 
-export { getNumberOptions } from './numbers';
-export { getCurrencyOptions } from './currencies';
 export {
   isIntlSupported,
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
 };
 
-type Args = Array<unknown>;
-
-type GetOptions<T extends Args> = (
-  locales?: Locale | Locale[],
-  ...args: T
+type GetOptions = (
+  locales: Locale | Locale[],
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ...args: any[]
 ) => NumericOptions;
 
-export function formatNumberFactory<T extends Args>(
-  getOptions: GetOptions<T>,
-): (value: number, locales?: Locale | Locale[], ...args: T) => string {
+/**
+ * Formats a number according to the locale with support for various
+ * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
+ * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
+export const formatNumber = formatNumberFactory(getNumberOptions) as (
+  value: number,
+  locales?: Locale | Locale[],
+  options?: Intl.NumberFormatOptions,
+) => string;
+
+/**
+ * @deprecated Use {@link formatNumber} instead.
+ */
+export const format = formatNumber;
+
+/**
+ * Formats a number according to the locale in the country's official currency
+ * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
+export const formatCurrency = formatNumberFactory(getCurrencyOptions) as (
+  value: number,
+  locales?: Locale | Locale[],
+  currency?: Currency,
+  options?: Intl.NumberFormatOptions,
+) => string;
+
+function formatNumberFactory<T extends GetOptions>(
+  getOptions: T,
+): (value: number, ...args: Parameters<T>) => string {
   if (!isNumberFormatSupported) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    return (value, _locales, ..._args): string => `${value}`;
+    return (value, _locales, ..._args): string => value.toLocaleString();
   }
 
   return (value, locales, ...args): string => {
@@ -53,17 +84,44 @@ export function formatNumberFactory<T extends Args>(
   };
 }
 
-export function formatNumberToPartsFactory<T extends Args>(
-  getOptions: GetOptions<T>,
-): (
+/**
+ * Formats a number according to the locale with support for various
+ * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
+ * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
+export const formatNumberToParts = formatNumberToPartsFactory(
+  getNumberOptions,
+) as (
   value: number,
   locales?: Locale | Locale[],
-  ...args: T
-) => Intl.NumberFormatPart[] {
+  options?: Intl.NumberFormatOptions,
+) => Intl.NumberFormatPart[];
+
+/**
+ * @deprecated Use {@link formatNumberToParts} instead.
+ */
+export const formatToParts = formatNumberToParts;
+
+/**
+ * Formats a number according to the locale in the country's official currency
+ * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ */
+export const formatCurrencyToParts = formatNumberToPartsFactory(
+  getCurrencyOptions,
+) as (
+  value: number,
+  locales?: Locale | Locale[],
+  currency?: Currency,
+  options?: Intl.NumberFormatOptions,
+) => Intl.NumberFormatPart[];
+
+function formatNumberToPartsFactory<T extends GetOptions>(
+  getOptions: T,
+): (value: number, ...args: Parameters<T>) => Intl.NumberFormatPart[] {
   if (!isNumberFormatToPartsSupported) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (value, _locales, ..._args): Intl.NumberFormatPart[] => [
-      { type: 'integer', value: value.toString() },
+      { type: 'integer', value: value.toLocaleString() },
     ];
   }
 
@@ -74,15 +132,37 @@ export function formatNumberToPartsFactory<T extends Args>(
   };
 }
 
+/**
+ * Resolves the locale and collation options that are used to format a number.
+ */
+export const resolveNumberFormat = resolveNumberFormatFactory(
+  getNumberOptions,
+) as (
+  locales?: Locale | Locale[],
+  options?: Intl.NumberFormatOptions,
+) => NumberFormat | null;
+
+/**
+ * @deprecated Use {@link resolveNumberFormat} instead.
+ */
+export const resolveFormat = resolveNumberFormat;
+
+/**
+ * Resolves the locale and collation options that are used to format a number
+ * in the country's official currency.
+ */
+export const resolveCurrencyFormat = resolveNumberFormatFactory(
+  getCurrencyOptions,
+) as (
+  locales?: Locale | Locale[],
+  options?: Intl.NumberFormatOptions,
+) => NumberFormat | null;
+
 const TEST_VALUE = 1001001001.11111;
 
-function getPart(parts: Intl.NumberFormatPart[], name: string): string {
-  return parts.find((part) => part.type === name)?.value as string;
-}
-
-export function resolveNumberFormatFactory<T extends Args>(
-  getOptions: GetOptions<T>,
-): (locales?: Locale | Locale[], ...args: T) => null | NumberFormat {
+function resolveNumberFormatFactory<T extends GetOptions>(
+  getOptions: T,
+): (...args: Parameters<T>) => NumberFormat | null {
   if (!isNumberFormatToPartsSupported) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (_locales, ..._args) => null;
@@ -115,4 +195,11 @@ export function resolveNumberFormatFactory<T extends Args>(
 
     return { ...resolvedOptions, groupDelimiter, decimalDelimiter };
   };
+}
+
+function getPart(
+  parts: Intl.NumberFormatPart[],
+  name: Intl.NumberFormatPart['type'],
+): string | undefined {
+  return parts.find((part) => part.type === name)?.value;
 }
