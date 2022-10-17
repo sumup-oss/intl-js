@@ -46,6 +46,7 @@ export const isNumberFormatToPartsSupported = (() => {
 
 /**
  * @deprecated Use {@link isNumberFormatSupported} instead.
+ * @hidden
  */
 export const isIntlSupported = isNumberFormatSupported;
 

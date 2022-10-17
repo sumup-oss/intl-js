@@ -1,0 +1,29 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js v16.13
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.13
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn --pure-lockfile --prefer-offline
+      - name: Generate documentation
+        run: yarn docs
+      - name: Upload documentation to GitHub Wiki
+        uses: SwiftDocOrg/github-wiki-publish-action@v1
+        with:
+          path: 'docs'
+        env:
+          GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_ACTIONS_PAT }}

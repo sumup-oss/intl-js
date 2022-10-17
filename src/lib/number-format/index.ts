@@ -43,9 +43,22 @@ type GetOptions = (
 ) => NumericOptions;
 
 /**
- * Formats a number according to the locale with support for various
+ * Formats a number with support for various
  * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ *
+ * @example
+ * import { formatNumber } from '@sumup/intl';
+ *
+ * formatNumber(12345.67, 'de-DE'); // '12.345,67'
+ * formatNumber(-0.89, ['ban', 'id']); // '-0,89'
+ * formatNumber(16, 'en-GB', {
+ *   style: 'unit',
+ *   unit: 'liter',
+ *   unitDisplay: 'long',
+ * }); // 16 litres
+ *
+ * @category Number
  */
 export const formatNumber = formatNumberFactory(getNumberOptions) as (
   value: number,
@@ -55,12 +68,22 @@ export const formatNumber = formatNumberFactory(getNumberOptions) as (
 
 /**
  * @deprecated Use {@link formatNumber} instead.
+ * @hidden
  */
 export const format = formatNumber;
 
 /**
- * Formats a number according to the locale in the country's official currency
+ * Formats a number in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ *
+ * @example
+ * import { formatCurrency } from '@sumup/intl';
+ *
+ * formatCurrency(12345.67, 'de-DE'); // '12.345,67 €'
+ * formatCurrency(89, 'ja-JP', 'JPY'); // '￥89'
+ * formatCurrency(16, 'en-GB', null, { currencyDisplay: 'name' }); // '16.00 British pounds'
+ *
+ * @category Currency
  */
 export const formatCurrency = formatNumberFactory(getCurrencyOptions) as (
   value: number,
@@ -85,9 +108,42 @@ function formatNumberFactory<T extends GetOptions>(
 }
 
 /**
- * Formats a number according to the locale with support for various
+ * Formats a number with support for various
  * [styles, units](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_style_and_unit),
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ *
+ * @example
+ * import { formatNumberToParts } from '@sumup/intl';
+ *
+ * formatNumberToParts(12345.67, 'de-DE');
+ * // [
+ * //   { type: "integer", value: "12" },
+ * //   { type: "group", value: "." },
+ * //   { type: "integer", value: "345" },
+ * //   { type: "decimal", value: "," },
+ * //   { type: "fraction", value: "67" },
+ * // ]
+ *
+ * formatNumberToParts(-0.89, ['ban', 'id']);
+ * // [
+ * //   { type: "minusSign", value: "-" },
+ * //   { type: "integer", value: "0" },
+ * //   { type: "decimal", value: "," },
+ * //   { type: "fraction", value: "89" },
+ * // ]
+ *
+ * formatNumberToParts(16, 'en-GB', {
+ *   style: 'unit',
+ *   unit: 'liter',
+ *   unitDisplay: 'long',
+ * });
+ * // [
+ * //   { type: "integer", value: "16" },
+ * //   { type: "literal", value: " " },
+ * //   { type: "unit", value: "litres" },
+ * // ]
+ *
+ * @category Number
  */
 export const formatNumberToParts = formatNumberToPartsFactory(
   getNumberOptions,
@@ -99,12 +155,46 @@ export const formatNumberToParts = formatNumberToPartsFactory(
 
 /**
  * @deprecated Use {@link formatNumberToParts} instead.
+ * @hidden
  */
 export const formatToParts = formatNumberToParts;
 
+/* eslint-disable no-irregular-whitespace */
 /**
- * Formats a number according to the locale in the country's official currency
+ * Formats a number in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ *
+ * @example
+ * import { formatCurrencyToParts } from '@sumup/intl';
+ *
+ * formatCurrencyToParts(12345.67, 'de-DE');
+ * // [
+ * //   { type: "integer", value: "12" },
+ * //   { type: "group", value: "." },
+ * //   { type: "integer", value: "345" },
+ * //   { type: "decimal", value: "," },
+ * //   { type: "fraction", value: "67" },
+ * //   { type: "literal", value: " " },
+ * //   { type: "currency", value: "€" },
+ * // ]
+ *
+ * formatCurrencyToParts(-89, 'ja-JP', 'JPY');
+ * // [
+ * //   { type: "minusSign", value: "-" },
+ * //   { type: "currency", value: "￥" },
+ * //   { type: "integer", value: "89" },
+ * // ]
+ *
+ * formatCurrencyToParts(16, 'en-GB', null, { currencyDisplay: 'name' });
+ * // [
+ * //   { type: "integer", value: "16" },
+ * //   { type: "decimal", value: "." },
+ * //   { type: "fraction", value: "00" },
+ * //   { type: "literal", value: " " },
+ * //   { type: "currency", value: "British pounds" },
+ * // ]
+ *
+ * @category Currency
  */
 export const formatCurrencyToParts = formatNumberToPartsFactory(
   getCurrencyOptions,
@@ -114,6 +204,7 @@ export const formatCurrencyToParts = formatNumberToPartsFactory(
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
+/* eslint-enable no-irregular-whitespace */
 
 function formatNumberToPartsFactory<T extends GetOptions>(
   getOptions: T,
@@ -134,6 +225,58 @@ function formatNumberToPartsFactory<T extends GetOptions>(
 
 /**
  * Resolves the locale and collation options that are used to format a number.
+ *
+ * @example
+ * import { resolveNumberFormat } from '@sumup/intl';
+ *
+ * resolveNumberFormat();
+ * // {
+ * //   'locale': 'en-US',
+ * //   'numberingSystem': 'latn',
+ * //   'style': 'decimal',
+ * //   'minimumIntegerDigits': 1,
+ * //   'minimumFractionDigits': 0,
+ * //   'maximumFractionDigits': 3,
+ * //   'useGrouping': true,
+ * //   'groupDelimiter': ',',
+ * //   'decimalDelimiter': '.',
+ * // }
+ *
+ * resolveNumberFormat(['ban', 'id']);
+ * // {
+ * //   'locale': 'id',
+ * //   'numberingSystem': 'latn',
+ * //   'style': 'decimal',
+ * //   'minimumIntegerDigits': 1,
+ * //   'minimumFractionDigits': 0,
+ * //   'maximumFractionDigits': 3,
+ * //   'useGrouping': true,
+ * //   'groupDelimiter': '.',
+ * //   'decimalDelimiter': ',',
+ * // }
+ *
+ * resolveNumberFormat('en-GB', {
+ *   style: 'unit',
+ *   unit: 'liter',
+ *   unitDisplay: 'long',
+ * });
+ * // {
+ * //   'locale': 'en-GB',
+ * //   'numberingSystem': 'latn',
+ * //   'style': 'unit',
+ * //   'unit': 'liter',
+ * //   'unitDisplay': 'long',
+ * //   'minimumIntegerDigits': 1,
+ * //   'minimumFractionDigits': 0,
+ * //   'maximumFractionDigits': 3,
+ * //   'useGrouping': true,
+ * //   'notation': 'standard',
+ * //   'signDisplay': 'auto',
+ * //   'groupDelimiter': ',',
+ * //   'decimalDelimiter': '.',
+ * // }
+ *
+ * @category Number
  */
 export const resolveNumberFormat = resolveNumberFormatFactory(
   getNumberOptions,
@@ -144,12 +287,69 @@ export const resolveNumberFormat = resolveNumberFormatFactory(
 
 /**
  * @deprecated Use {@link resolveNumberFormat} instead.
+ * @hidden
  */
 export const resolveFormat = resolveNumberFormat;
 
 /**
  * Resolves the locale and collation options that are used to format a number
  * in the country's official currency.
+ *
+ * @example
+ * import { resolveCurrencyFormat } from '@sumup/intl';
+ *
+ * resolveCurrencyFormat();
+ * // {
+ * //   'locale': 'en-US',
+ * //   'numberingSystem': 'latn',
+ * //   'style': 'currency',
+ * //   'currency': 'USD',
+ * //   'currencyDisplay': 'symbol',
+ * //   'minimumIntegerDigits': 1,
+ * //   'minimumFractionDigits': 2,
+ * //   'maximumFractionDigits': 2,
+ * //   'useGrouping': true,
+ * //   'groupDelimiter': '.',
+ * //   'decimalDelimiter': ',',
+ * //   'currencySymbol': '$',
+ * //   'currencyPosition': 'prefix',
+ * // }
+ *
+ * resolveCurrencyFormat('ja-JP');
+ * // {
+ * //   'locale': 'ja-JP',
+ * //   'numberingSystem': 'latn',
+ * //   'style': 'currency',
+ * //   'currency': 'JPY',
+ * //   'currencyDisplay': 'symbol',
+ * //   'minimumIntegerDigits': 1,
+ * //   'minimumFractionDigits': 0,
+ * //   'maximumFractionDigits': 0,
+ * //   'useGrouping': true,
+ * //   'groupDelimiter': ',',
+ * //   'decimalDelimiter': undefined,
+ * //   'currencySymbol': '￥',
+ * //   'currencyPosition': 'prefix',
+ * // }
+ *
+ * resolveCurrencyFormat('en-GB', { currencyDisplay: 'name' });
+ * // {
+ * //   'locale': 'en-GB',
+ * //   'numberingSystem': 'latn',
+ * //   'style': 'currency',
+ * //   'currency': 'GBP',
+ * //   'currencyDisplay': 'symbol',
+ * //   'minimumIntegerDigits': 1,
+ * //   'minimumFractionDigits': 2,
+ * //   'maximumFractionDigits': 2,
+ * //   'useGrouping': true,
+ * //   'groupDelimiter': ',',
+ * //   'decimalDelimiter': '.',
+ * //   'currencySymbol': 'British pounds',
+ * //   'currencyPosition': 'suffix',
+ * // }
+ *
+ * @category Currency
  */
 export const resolveCurrencyFormat = resolveNumberFormatFactory(
   getCurrencyOptions,
