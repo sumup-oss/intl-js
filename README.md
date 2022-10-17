@@ -13,10 +13,7 @@ Format 🔢 numbers and 💱currency values for any locale with the [ECMAScript 
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Format as string](#format-as-string)
-  - [Format as parts](#format-as-parts)
-  - [Resolve format](#resolve-format)
-  - [Constants](#constants)
+- [API reference](https://github.com/sumup-oss/intl-js/wiki/Exports)
 - [Code of Conduct](#code-of-conduct)
 - [About SumUp](#about-sumup)
 
@@ -41,6 +38,26 @@ $ npm install @sumup/intl
 ## Usage
 
 All functions exported by `@sumup/intl` share a similar interface such as the common [`locales`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument), [`options`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#options_argument), and [`currency`](https://en.wikipedia.org/wiki/ISO_4217) arguments. These are passed on almost unchanged to the [`Intl.NumberFormat`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat) constructor and thus support the same values. If the `locales` argument is not provided or is undefined, the runtime's default locale is used. Please refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) for more details.
+
+## API reference
+
+### Number Functions
+
+- [formatNumber](https://github.com/sumup-oss/intl-js/wiki/Exports#formatnumber)
+- [formatNumberToParts](https://github.com/sumup-oss/intl-js/wiki/Exports#formatnumbertoparts)
+- [resolveNumberFormat](https://github.com/sumup-oss/intl-js/wiki/Exports#resolvenumberformat)
+
+### Currency Functions
+
+- [formatCurrency](https://github.com/sumup-oss/intl-js/wiki/Exports#formatcurrency)
+- [formatCurrencyToParts](https://github.com/sumup-oss/intl-js/wiki/Exports#formatcurrencytoparts)
+- [resolveCurrencyFormat](https://github.com/sumup-oss/intl-js/wiki/Exports#resolvecurrencyformat)
+
+### Variables
+
+- [CURRENCIES](https://github.com/sumup-oss/intl-js/wiki/Exports#currencies)
+- [isNumberFormatSupported](https://github.com/sumup-oss/intl-js/wiki/Exports#isnumberformatsupported)
+- [isNumberFormatToPartsSupported](https://github.com/sumup-oss/intl-js/wiki/Exports#isnumberformattopartssupported)
 
 ## Code of Conduct
 
