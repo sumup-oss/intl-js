@@ -37,5 +37,16 @@ describe('Resolve format', () => {
         currency: expect.any(String),
       });
     });
+
+    it('should accept a custom currency', () => {
+      const locale = 'xx-XX';
+      const currency = 'XXX';
+      const actual = resolveCurrencyFormat(locale, currency);
+      expect(actual).toBeObject();
+      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
+        style: 'currency',
+        currency,
+      });
+    });
   });
 });
