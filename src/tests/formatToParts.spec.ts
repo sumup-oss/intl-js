@@ -49,5 +49,16 @@ describe('Format to parts', () => {
         currency: expect.any(String),
       });
     });
+
+    it('should accept a custom currency', () => {
+      const locale = 'xx-XX';
+      const currency = 'XXX';
+      const actual = formatCurrencyToParts(number, locale, currency);
+      expect(actual).toBeArray();
+      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
+        style: 'currency',
+        currency,
+      });
+    });
   });
 });

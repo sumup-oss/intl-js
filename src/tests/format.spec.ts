@@ -50,10 +50,22 @@ describe('Format', () => {
       });
     });
 
-    it('should format as a unitless number if currency is not found', () => {
-      const actual = formatCurrency(number, 'xx-XX');
+    it('should accept a custom currency', () => {
+      const locale = 'xx-XX';
+      const currency = 'XXX';
+      const actual = formatCurrency(number, locale, currency);
       expect(actual).toBeString();
-      expect(Intl.NumberFormat).toHaveBeenCalledWith('xx-XX', {
+      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
+        style: 'currency',
+        currency,
+      });
+    });
+
+    it('should format as a unitless number if currency is not found', () => {
+      const locale = 'xx-XX';
+      const actual = formatCurrency(number, locale);
+      expect(actual).toBeString();
+      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'decimal',
       });
     });

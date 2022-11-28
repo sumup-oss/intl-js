@@ -355,6 +355,7 @@ export const resolveCurrencyFormat = resolveNumberFormatFactory(
   getCurrencyOptions,
 ) as (
   locales?: Locale | Locale[],
+  currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => NumberFormat | null;
 
