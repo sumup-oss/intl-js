@@ -58,6 +58,10 @@ type GetOptions = (
  *   unitDisplay: 'long',
  * }); // 16 litres
  *
+ * @remarks
+ * In runtimes that don't support the `Intl.NumberFormat` API, the number is
+ * formatted using the `Number.toLocaleString` API.
+ *
  * @category Number
  */
 export const formatNumber = formatNumberFactory(getNumberOptions) as (
@@ -82,6 +86,10 @@ export const format = formatNumber;
  * formatCurrency(12345.67, 'de-DE'); // '12.345,67 €'
  * formatCurrency(89, 'ja-JP', 'JPY'); // '￥89'
  * formatCurrency(16, 'en-GB', null, { currencyDisplay: 'name' }); // '16.00 British pounds'
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.NumberFormat` API, the currency is
+ * formatted using the `Number.toLocaleString` API.
  *
  * @category Currency
  */
@@ -143,6 +151,10 @@ function formatNumberFactory<T extends GetOptions>(
  * //   { type: "unit", value: "litres" },
  * // ]
  *
+ * @remarks
+ * In runtimes that don't support the `Intl.NumberFormat.formatToParts` API,
+ * the number is localized and returned as a single integer part.
+ *
  * @category Number
  */
 export const formatNumberToParts = formatNumberToPartsFactory(
@@ -193,6 +205,10 @@ export const formatToParts = formatNumberToParts;
  * //   { type: "literal", value: " " },
  * //   { type: "currency", value: "British pounds" },
  * // ]
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.NumberFormat.formatToParts` API,
+ * the currency is localized and returned as a single integer part.
  *
  * @category Currency
  */
@@ -276,6 +292,13 @@ function formatNumberToPartsFactory<T extends GetOptions>(
  * //   'decimalDelimiter': '.',
  * // }
  *
+ * @remarks
+ * For convenience, `groupDelimiter` and`decimalDelimiter` are returned in
+ *  addition to the `Intl.ResolvedNumberFormatOptions`.
+ *
+ * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions' API,
+ * `null` is returned.
+ *
  * @category Number
  */
 export const resolveNumberFormat = resolveNumberFormatFactory(
@@ -348,6 +371,14 @@ export const resolveFormat = resolveNumberFormat;
  * //   'currencySymbol': 'British pounds',
  * //   'currencyPosition': 'suffix',
  * // }
+ *
+ * @remarks
+ * For convenience, `groupDelimiter`,`decimalDelimiter`, `currencySymbol`, and
+ * `currencyPosition` are returned in addition to the
+ * `Intl.ResolvedNumberFormatOptions`.
+ *
+ * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions' API,
+ * `null` is returned.
  *
  * @category Currency
  */

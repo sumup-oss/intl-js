@@ -29,12 +29,54 @@ export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
  * Formats a `Date` with support for various
  * [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle)
  * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
+ *
+ * @example
+ * import { formatDateTime } from '@sumup/intl';
+ *
+ * formatDateTime(new Date(2000, 1, 1), 'de-DE'); // '1.2.2000'
+ * formatDateTime(new Date(2000, 1, 1), ['ban', 'id']); // '1/2/2000'
+ * formatDateTime(new Date(2000, 1, 1, 12, 30), 'en-GB', {
+ *   year: 'numeric',
+ *   month: 'short',
+ *   day: 'numeric',
+ *   hour: '2-digit',
+ *   minute: '2-digit',
+ * }); // 1 Feb 2000, 12:30
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat` API, the date is
+ * formatted using the `Date.toLocale(Date|Time)String` API.
+ *
+ * In runtimes that don't support the `dateStyle` and `timeStyle` options, the
+ * styles are approximated using fallback options.
+ *
+ * @category Date & Time
  */
 export const formatDateTime = formatDateTimeFactory();
 
 /**
  * Formats a `Date` with support for various
  * [date styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle).
+ *
+ * @example
+ * import { formatDate } from '@sumup/intl';
+ *
+ * const date = new Date(2000, 1, 1);
+ * const locale = 'en-GB';
+ *
+ * formatDate(date, locale, 'short'); // '01/02/2000'
+ * formatDate(date, locale, 'medium'); // '1 Feb 2000'
+ * formatDate(date, locale, 'long'); // '1 February 2000'
+ * formatDate(date, locale, 'full'); // 'Tuesday, 1 February 2000'
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat` API, the date is
+ * formatted using the `Date.toLocale(Date|Time)String` API.
+ *
+ * In runtimes that don't support the `dateStyle` option, the styles are
+ * approximated using fallback options.
+ *
+ * @category Date & Time
  */
 export function formatDate(
   date: Date, // in UTC
@@ -47,6 +89,26 @@ export function formatDate(
 /**
  * Formats a `Date` with support for various
  * [time styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle).
+ *
+ * @example
+ * import { formatTime } from '@sumup/intl';
+ *
+ * const time = new Date(2000, 1, 1, 9, 55);
+ * const locale = 'en-GB';
+ *
+ * formatTime(time, locale, 'short'); // '09:55'
+ * formatTime(time, locale, 'medium'); // '09:55:00'
+ * formatTime(time, locale, 'long'); // '09:55:00 CET'
+ * formatTime(time, locale, 'full'); // '09:55:00 Central European Standard Time'
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat` API, the date is
+ * formatted using the `Date.toLocale(Date|Time)String` API.
+ *
+ * In runtimes that don't support the `timeStyle` option, the styles are
+ * approximated using fallback options.
+ *
+ * @category Date & Time
  */
 export function formatTime(
   date: Date, // in UTC
@@ -102,6 +164,46 @@ function formatDateTimeFactory(): (
  * Formats a `Date` to parts with support for various
  * [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle)
  * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
+ *
+ * @example
+ * import { formatDateTimeToParts } from '@sumup/intl';
+ *
+ * const time = new Date(2000, 1, 1, 9, 55);
+ *
+ * formatDateTimeToParts(date, 'de-DE');
+ * // [
+ * //   { type: 'day', value: '1' },
+ * //   { type: 'literal', value: '.' },
+ * //   { type: 'month', value: '2' },
+ * //   { type: 'literal', value: '.' },
+ * //   { type: 'year', value: '2000' },
+ * // ]
+ * formatDateTimeToParts(date, ['ban', 'id']);
+ * // [
+ * //   { type: 'day', value: '1' },
+ * //   { type: 'literal', value: '/' },
+ * //   { type: 'month', value: '2' },
+ * //   { type: 'literal', value: '/' },
+ * //   { type: 'year', value: '2000' },
+ * // ]
+ * formatDateTimeToParts(date, 'en-GB', {
+ *   year: 'numeric',
+ *   month: 'short',
+ *   day: 'numeric',
+ * });
+ * // [
+ * //   ({ type: 'day', value: '1' },
+ * //   { type: 'literal', value: ' ' },
+ * //   { type: 'month', value: 'Feb' },
+ * //   { type: 'literal', value: ' ' },
+ * //   { type: 'year', value: '2000' })
+ * // ]
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat.formatToParts` API,
+ * the date is localized and returned as a single string literal part.
+ *
+ * @category Date & Time
  */
 export const formatDateTimeToParts = formatDateTimeToPartsFactory();
 
@@ -112,7 +214,7 @@ function formatDateTimeToPartsFactory(): (
 ) => (Intl.DateTimeFormatPart | { type: 'date'; value: string })[] {
   if (!isDateTimeFormatToPartsSupported) {
     return (date, locales, options) => {
-      // In runtimes that don't support formatting to parts yet, the date is
+      // In runtimes that don't support formatting to parts, the date is
       // localized and returned as a single string literal part.
       const value = formatDateTime(date, locales, options);
       return [{ type: 'literal', value }];
@@ -128,6 +230,50 @@ function formatDateTimeToPartsFactory(): (
 
 /**
  * Resolves the locale and collation options that are used to format a `Date`.
+ *
+ * @example
+ * import { resolveDateTimeFormat } from '@sumup/intl';
+ *
+ * resolveDateTimeFormat();
+ * // {
+ * //   'locale': 'en-DE',
+ * //   'calendar': 'gregory',
+ * //   'numberingSystem': 'latn',
+ * //   'timeZone': 'Europe/Berlin',
+ * //   'year': 'numeric',
+ * //   'month': '2-digit',
+ * //   'day': '2-digit'
+ * // }
+ * resolveDateTimeFormat(['ban', 'id']);
+ * // {
+ * //   'locale': 'id',
+ * //   'calendar': 'gregory',
+ * //   'numberingSystem': 'latn',
+ * //   'timeZone': 'Europe/Berlin',
+ * //   'year': 'numeric',
+ * //   'month': 'numeric',
+ * //   'day': 'numeric'
+ * // }
+ * resolveDateTimeFormat('en-GB', {
+ *   year: 'numeric',
+ *   month: 'short',
+ *   day: 'numeric',
+ * });
+ * // {
+ * //   'locale': 'en-GB',
+ * //   'calendar': 'gregory',
+ * //   'numberingSystem': 'latn',
+ * //   'timeZone': 'Europe/Berlin',
+ * //   'year': 'numeric',
+ * //   'month': 'short',
+ * //   'day': 'numeric'
+ * // }
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat.resolvedOptions' API,
+ * `null` is returned.
+ *
+ * @category Date & Time
  */
 export const resolveDateTimeFormat = resolveDateTimeFormatFactory();
 
@@ -154,7 +300,7 @@ function hasOptions(
 }
 
 // The `dateStyle` and `timeStyle` options were added to the spec recently.
-// In runtimes that don't support them yet, the styles are approximated using
+// In runtimes that don't support them, the styles are approximated using
 // fallback options.
 function getFallbackOptions(options?: Intl.DateTimeFormatOptions) {
   if (
