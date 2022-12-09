@@ -65,8 +65,14 @@ function formatDateTimeFactory(): (
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (date, _locales, options) => {
       const fallbackOptions = getFallbackOptions(options);
-      const includeDate = hasOptions(fallbackOptions, ['day', 'month', 'year']);
+      const includeDate = hasOptions(fallbackOptions, [
+        'dateStyle',
+        'day',
+        'month',
+        'year',
+      ]);
       const includeTime = hasOptions(fallbackOptions, [
+        'timeStyle',
         'hour',
         'minute',
         'second',

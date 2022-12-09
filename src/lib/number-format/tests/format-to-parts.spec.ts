@@ -13,16 +13,12 @@
  * limitations under the License.
  */
 
-import {
-  formatNumberToParts,
-  formatCurrencyToParts,
-  formatDateTimeToParts,
-} from '..';
+import { formatNumberToParts, formatCurrencyToParts } from '..';
 
-import { date, locales, number } from './shared';
+import { locales, number } from './shared';
 
-describe('Format to parts', () => {
-  describe('numbers', () => {
+describe('Numbers', () => {
+  describe('formatNumberToParts', () => {
     it.each(locales)('should format a number for %o', (locale) => {
       const actual = formatNumberToParts(number, locale);
       expect(actual).toBeArray();
@@ -43,8 +39,10 @@ describe('Format to parts', () => {
       });
     });
   });
+});
 
-  describe('currency values', () => {
+describe('Currency values', () => {
+  describe('formatCurrencyToParts', () => {
     it.each(locales)('should format a currency for %o', (locale) => {
       const actual = formatCurrencyToParts(number, locale);
       expect(actual).toBeArray();
@@ -63,14 +61,6 @@ describe('Format to parts', () => {
         style: 'currency',
         currency,
       });
-    });
-  });
-
-  describe('dates and times', () => {
-    it.each(locales)('should format a date for %o', (locale) => {
-      const actual = formatDateTimeToParts(date, locale);
-      expect(actual).toBeArray();
-      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
     });
   });
 });

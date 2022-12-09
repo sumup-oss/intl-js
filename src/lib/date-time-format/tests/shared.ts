@@ -13,15 +13,11 @@
  * limitations under the License.
  */
 
-import { CURRENCIES } from '..';
-
 export const locales: (string | string[])[] = [
-  ...Object.keys(CURRENCIES),
   'de-DE',
   'es-US',
   ['DE', 'US'],
   ['de-DE', 'es-US'],
 ];
 
-export const number = 123456.789;
 export const date = new Date(Date.UTC(0, 0, 0, 0, 0, 0));

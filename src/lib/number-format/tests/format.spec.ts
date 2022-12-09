@@ -13,18 +13,12 @@
  * limitations under the License.
  */
 
-import {
-  formatNumber,
-  formatCurrency,
-  formatDateTime,
-  formatDate,
-  formatTime,
-} from '..';
+import { formatNumber, formatCurrency } from '..';
 
-import { date, locales, number } from './shared';
+import { locales, number } from './shared';
 
-describe('Format', () => {
-  describe('numbers', () => {
+describe('Numbers', () => {
+  describe('formatNumber', () => {
     it.each(locales)('should format a number for %o', (locale) => {
       const actual = formatNumber(number, locale);
       expect(actual).toBeString();
@@ -45,8 +39,10 @@ describe('Format', () => {
       });
     });
   });
+});
 
-  describe('currency values', () => {
+describe('Currency values', () => {
+  describe('formatCurrency', () => {
     it.each(locales)('should format a currency for %o', (locale) => {
       const actual = formatCurrency(number, locale);
       expect(actual).toBeString();
@@ -73,30 +69,6 @@ describe('Format', () => {
       expect(actual).toBeString();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'decimal',
-      });
-    });
-  });
-
-  describe('dates and times', () => {
-    it.each(locales)('should format a date time for %o', (locale) => {
-      const actual = formatDateTime(date, locale);
-      expect(actual).toBeString();
-      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
-    });
-
-    it.each(locales)('should format a date for %o', (locale) => {
-      const actual = formatDate(date, locale);
-      expect(actual).toBeString();
-      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
-        dateStyle: 'short',
-      });
-    });
-
-    it.each(locales)('should format a time for %o', (locale) => {
-      const actual = formatTime(date, locale);
-      expect(actual).toBeString();
-      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
-        timeStyle: 'short',
       });
     });
   });
