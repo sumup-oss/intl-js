@@ -17,8 +17,8 @@ import { resolveNumberFormat, resolveCurrencyFormat } from '..';
 
 import { locales } from './shared';
 
-describe('Resolve format', () => {
-  describe('number', () => {
+describe('Numbers', () => {
+  describe('resolveNumberFormat', () => {
     it.each(locales)('should get the format for %o', (locale) => {
       const actual = resolveNumberFormat(locale);
       expect(actual).toBeObject();
@@ -26,9 +26,18 @@ describe('Resolve format', () => {
         style: 'decimal',
       });
     });
-  });
 
-  describe('currency', () => {
+    it('should include additional options', () => {
+      const locale = 'en-US';
+      const actual = resolveNumberFormat(locale);
+      expect(actual).toHaveProperty('groupDelimiter', ',');
+      expect(actual).toHaveProperty('decimalDelimiter', '.');
+    });
+  });
+});
+
+describe('Currency values', () => {
+  describe('resolveCurrencyFormat', () => {
     it.each(locales)('should get the currency format for %o', (locale) => {
       const actual = resolveCurrencyFormat(locale);
       expect(actual).toBeObject();
@@ -36,6 +45,15 @@ describe('Resolve format', () => {
         style: 'currency',
         currency: expect.any(String),
       });
+    });
+
+    it('should include additional options', () => {
+      const locale = 'en-US';
+      const actual = resolveCurrencyFormat(locale);
+      expect(actual).toHaveProperty('groupDelimiter', ',');
+      expect(actual).toHaveProperty('decimalDelimiter', '.');
+      expect(actual).toHaveProperty('currencySymbol', '$');
+      expect(actual).toHaveProperty('currencyPosition', 'prefix');
     });
 
     it('should accept a custom currency', () => {

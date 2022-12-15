@@ -1,7 +1,7 @@
 {
   "name": "@sumup/intl",
   "version": "0.0.0-semantically-released",
-  "description": "Format numbers and currency values for any locale with the ECMAScript Internationalization API",
+  "description": "Format numbers, currency values, dates, and times for any locale with the ECMAScript Internationalization API",
   "repository": "git@github.com:sumup-oss/intl-js.git",
   "author": "Connor Bär <connor.baer@sumup.com>",
   "license": "Apache-2.0",

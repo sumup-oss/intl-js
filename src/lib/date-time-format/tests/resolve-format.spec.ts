@@ -13,27 +13,16 @@
  * limitations under the License.
  */
 
-export {
-  format,
-  formatNumber,
-  formatCurrency,
-  formatToParts,
-  formatNumberToParts,
-  formatCurrencyToParts,
-  resolveFormat,
-  resolveNumberFormat,
-  resolveCurrencyFormat,
-  isNumberFormatSupported,
-  isNumberFormatToPartsSupported,
-  isIntlSupported,
-} from './lib/number-format';
-export {
-  formatDate,
-  formatTime,
-  formatDateTime,
-  formatDateTimeToParts,
-  resolveDateTimeFormat,
-  isDateTimeFormatSupported,
-  isDateTimeFormatToPartsSupported,
-} from './lib/date-time-format';
-export { CURRENCIES } from './data/currencies';
+import { resolveDateTimeFormat } from '..';
+
+import { locales } from './shared';
+
+describe('Dates & times', () => {
+  describe('resolveDateTimeFormat', () => {
+    it.each(locales)('should get the date time format for %o', (locale) => {
+      const actual = resolveDateTimeFormat(locale);
+      expect(actual).toBeObject();
+      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
+    });
+  });
+});

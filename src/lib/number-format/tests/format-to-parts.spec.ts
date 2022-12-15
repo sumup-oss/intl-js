@@ -13,37 +13,39 @@
  * limitations under the License.
  */
 
-import { formatNumber, formatCurrency } from '..';
+import { formatNumberToParts, formatCurrencyToParts } from '..';
 
 import { locales, number } from './shared';
 
-describe('Format', () => {
-  describe('number', () => {
+describe('Numbers', () => {
+  describe('formatNumberToParts', () => {
     it.each(locales)('should format a number for %o', (locale) => {
-      const actual = formatNumber(number, locale);
-      expect(actual).toBeString();
+      const actual = formatNumberToParts(number, locale);
+      expect(actual).toBeArray();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'decimal',
       });
     });
 
     it.each(locales)('should format a unit number for %o', (locale) => {
-      const actual = formatNumber(number, locale, {
+      const actual = formatNumberToParts(number, locale, {
         style: 'unit',
         unit: 'hour',
       });
-      expect(actual).toBeString();
+      expect(actual).toBeArray();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'unit',
         unit: 'hour',
       });
     });
   });
+});
 
-  describe('currency', () => {
+describe('Currency values', () => {
+  describe('formatCurrencyToParts', () => {
     it.each(locales)('should format a currency for %o', (locale) => {
-      const actual = formatCurrency(number, locale);
-      expect(actual).toBeString();
+      const actual = formatCurrencyToParts(number, locale);
+      expect(actual).toBeArray();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'currency',
         currency: expect.any(String),
@@ -53,20 +55,11 @@ describe('Format', () => {
     it('should accept a custom currency', () => {
       const locale = 'xx-XX';
       const currency = 'XXX';
-      const actual = formatCurrency(number, locale, currency);
-      expect(actual).toBeString();
+      const actual = formatCurrencyToParts(number, locale, currency);
+      expect(actual).toBeArray();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'currency',
         currency,
-      });
-    });
-
-    it('should format as a unitless number if currency is not found', () => {
-      const locale = 'xx-XX';
-      const actual = formatCurrency(number, locale);
-      expect(actual).toBeString();
-      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
-        style: 'decimal',
       });
     });
   });

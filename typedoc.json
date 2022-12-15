@@ -1,6 +1,6 @@
 {
   "entryPoints": ["src/index.ts"],
   "sort": ["source-order"],
-  "categoryOrder": ["Number", "Currency", "*"],
+  "categoryOrder": ["Number", "Currency", "Date & Time", "*"],
   "theme": "github-wiki"
 }
