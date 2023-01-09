@@ -1632,9 +1632,9 @@ atob-lite@^2.0.0:
   integrity sha1-D+9a1G8b16hQLGVyfwNn1e5D1pY=
 
 audit-ci@^6.1.0:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/audit-ci/-/audit-ci-6.4.1.tgz#dd410b395afec78dd18042868e889b4ff1c58a01"
-  integrity sha512-NfGfsFjF5khdox0ycE/Mgc9vVASMymbagz+nqcIuuBeXN2espeZjuHSnXbwoL19PBS3NlLBLiddHb/t2vnVyFQ==
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/audit-ci/-/audit-ci-6.5.0.tgz#5241fb84c741841ff3cf29f81b1486395d38c08b"
+  integrity sha512-mULJtyRrKjgaU9SDZJlClYJ85+0QacvLKljq2MX9Jc4fxsKFlJtSGGYAAkBeVmu/uDlg8YL/nQccX+loNm4OZw==
   dependencies:
     JSONStream "^1.3.5"
     cross-spawn "^7.0.3"
@@ -4248,9 +4248,9 @@ jest-environment-node@^29.3.1:
     jest-util "^29.3.1"
 
 jest-extended@^3.0.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-3.2.1.tgz#d1e7d7731cfa2174f48036822ee4ee5dfc09d44b"
-  integrity sha512-+c+jL/KI/3OsU+jTFa8HFtwBzWhFixFYfOEfFdPIACN97HdgEcjkzKnotQQPZidwU4B/VqgA7LTy0yhAxfSCIw==
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/jest-extended/-/jest-extended-3.2.2.tgz#5a1a60f3187428fbf60e10d2eb23b3fb8f848ccf"
+  integrity sha512-hjnKdy3xBUTbe3CH8nc5WDDvX2btn5x04XXcN1AGqUKT48dzqeF4oWvz+wW21N66lV5+OFmJB387dU3YRZfOSA==
   dependencies:
     jest-diff "^29.0.0"
     jest-get-type "^29.0.0"
