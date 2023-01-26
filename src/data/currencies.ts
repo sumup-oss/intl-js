@@ -213,7 +213,7 @@ export const CURRENCIES: { [country: string]: Currency } = {
   // Honduras
   HN: 'HNL',
   // Croatia (Hrvatska)
-  HR: 'HRK',
+  HR: 'EUR',
   // Haiti
   HT: 'HTG',
   // Hungary
