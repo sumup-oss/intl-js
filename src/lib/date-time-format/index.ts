@@ -270,7 +270,7 @@ function formatDateTimeToPartsFactory(): (
  * // }
  *
  * @remarks
- * In runtimes that don't support the `Intl.DateTimeFormat.resolvedOptions' API,
+ * In runtimes that don't support the `Intl.DateTimeFormat.resolvedOptions` API,
  * `null` is returned.
  *
  * @category Date & Time

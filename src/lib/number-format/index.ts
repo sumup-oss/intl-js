@@ -296,7 +296,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
  * For convenience, `groupDelimiter` and`decimalDelimiter` are returned in
  *  addition to the `Intl.ResolvedNumberFormatOptions`.
  *
- * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions' API,
+ * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions` API,
  * `null` is returned.
  *
  * @category Number
@@ -377,7 +377,7 @@ export const resolveFormat = resolveNumberFormat;
  * `currencyPosition` are returned in addition to the
  * `Intl.ResolvedNumberFormatOptions`.
  *
- * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions' API,
+ * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions` API,
  * `null` is returned.
  *
  * @category Currency
