@@ -1,5 +1,5 @@
 /**
- * Copyright 2019, SumUp Ltd.
+ * Copyright 2023, SumUp Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,13 +13,6 @@
  * limitations under the License.
  */
 
-module.exports = {
-  preset: 'ts-jest',
-  clearMocks: true,
-  rootDir: 'src',
-  coverageDirectory: '../__reports__',
-  reporters: ['default'],
-  coveragePathIgnorePatterns: ['node_modules'],
-  setupFilesAfterEnv: ['jest-extended/all', '../jest.setup.js'],
-  globalSetup: '../jest.global-setup.js',
+module.exports = async () => {
+  process.env.TZ = 'UTC';
 };
