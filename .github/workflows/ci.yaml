@@ -7,30 +7,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js v18.14
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 18.14
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn --pure-lockfile --prefer-offline
+        run: npm ci
+
       - name: Check licenses
-        run: yarn check:licenses
+        run: npm run check:licenses
+
       - name: Check security vulnerabilities
-        run: yarn check:security
+        run: npm run check:security
+
       - name: Lint
-        run: yarn lint:ci
+        run: npm run lint
+
       - name: Test
-        run: yarn test:ci
+        run: npm run test:ci
+
       - name: Upload code coverage
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn release
+        run: npm run release
