@@ -29,10 +29,53 @@ If you feel another member of the community violated our CoC or you are experien
 
 ## Common commands
 
-- Continuously transpile and typecheck the code: `npm run start`
+- Continuously transpile and typecheck the code: `npm run dev`
 - Continuously run the tests: `npm run test`
 - Run the linter: `npm run lint`
 
 ## Troubleshooting
 
 Make sure that you use Node v18.14 _exactly_, otherwise, the unit tests will probably fail. Node's localisation data for the `Intl.NumberFormat` API tends to change between minor versions.
+
+## Release process
+
+`@sumup/intl` follows semantic versioning. In short, this means we use patch versions for bugfixes, minor versions for new features, and major versions for breaking changes.
+
+### Changesets
+
+`@sumup/intl` uses [changesets](https://github.com/atlassian/changesets) to do versioning. A changeset is a piece of information about changes made in a branch or commit. It holds three bits of information:
+
+- What needs to be released
+- What version the packages should be released at (using a [semver bump type](https://semver.org/))
+- A changelog entry for the released packages
+
+Refer to the [official documentation](https://github.com/atlassian/changesets/blob/main/docs/adding-a-changeset.md#i-am-in-a-multi-package-repository-a-mono-repo) for more information.
+
+### Release branches
+
+We have a couple of special branches that are used for stable releases and [pre-releases](#pre-releases).
+
+- **`main`** - The code in the `main` branch is stable and production-tested. When a PR is merged to `main` that contains a new changeset, `changesets` opens a PR and keeps it up to date with the latest changes. When the PR is merged, a new version is automatically published to NPM and the changesets since the last release are added to `CHANGELOG.md` files in GitHub.
+- **`canary`** - This is a branch you can use to publish a prerelease version if you need to deploy the changes somewhere to test them. `canary` is a throw-away branch that can be recreated from `main` at any time. **Hint**: If you only need to test your changes locally, you can use `npm install ./path-to-foundry` to link the development version.
+- **`next`** — This branch is used to develop the next major version in parallel. It is the only branch that can contain breaking changes.
+
+To install the most recent version from a release channel in your project, run:
+
+```sh
+npm install --dev @sumup/intl@<release-channel>
+```
+
+#### Pre-releases
+
+Pre-releases can be done for either the `next` or the `canary` release channels.
+
+To publish a pre-release version, check out on the branch for your release channel and run the `changesets pre enter` command:
+
+```sh
+git checkout next # or `canary`
+npx changeset pre enter next # or `canary`
+```
+
+This will generate a `pre.json` file in the `.changeset` directory.
+
+Push it to the branch, then verify and merge the `changesets` "Version Package" PR for your release channel. `changesets` will publish the pre-release version in CI.
