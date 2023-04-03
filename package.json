@@ -29,11 +29,12 @@
     "docs": "typedoc",
     "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
-    "prerelease": "npm run build",
     "test": "jest --watch",
     "test:ci": "jest --ci --runInBand --coverage --reporters default --reporters \"github-actions\"",
     "check:security": "audit-ci --critical",
-    "check:licenses": "license-checker --production --summary --failOn=GPLv3"
+    "check:licenses": "license-checker --production --summary --failOn=GPLv3",
+    "prerelease": "npm run build",
+    "release": "changeset publish"
   },
   "engines": {
     "node": ">=10"
