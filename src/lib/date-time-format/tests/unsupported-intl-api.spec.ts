@@ -38,7 +38,7 @@ describe('Dates & times', () => {
 
     it('should format a time', () => {
       const actual = formatDateTime(date, locale, { timeStyle: 'short' });
-      expect(actual).toMatchInlineSnapshot('"12:00:00 AM"');
+      expect(actual).toMatchInlineSnapshot('"12:00:00 AM"');
     });
 
     it('should format a date time', () => {
@@ -46,14 +46,14 @@ describe('Dates & times', () => {
         dateStyle: 'short',
         timeStyle: 'short',
       });
-      expect(actual).toMatchInlineSnapshot('"12/31/1899, 12:00:00 AM"');
+      expect(actual).toMatchInlineSnapshot('"12/31/1899, 12:00:00 AM"');
     });
 
     it('should format a date time to a single literal part', () => {
       const parts = formatDateTimeToParts(date, locale);
       expect(parts).toHaveLength(1);
       expect(parts[0]).toHaveProperty('type', 'literal');
-      expect(parts[0]).toHaveProperty('value', '12/31/1899, 12:00:00 AM');
+      expect(parts[0]).toHaveProperty('value', '12/31/1899, 12:00:00 AM');
     });
 
     it('should return `null` for the date time format', () => {

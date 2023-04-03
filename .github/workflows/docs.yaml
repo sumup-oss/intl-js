@@ -11,16 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js v16.13
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v3
+
+      - name: Use Node.js v18.14
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.13
-          cache: 'yarn'
+          node-version: 18.14
+          cache: 'npm'
+
       - name: Install dependencies
-        run: yarn --pure-lockfile --prefer-offline
+        run: npm ci
+
       - name: Generate documentation
-        run: yarn docs
+        run: npm run docs
+
       - name: Upload documentation to GitHub Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
         with:
