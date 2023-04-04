@@ -1,6 +1,6 @@
 {
   "name": "@sumup/intl",
-  "version": "0.0.0-semantically-released",
+  "version": "1.5.0",
   "description": "Format numbers, currency values, dates, and times for any locale with the ECMAScript Internationalization API",
   "repository": "git@github.com:sumup-oss/intl-js.git",
   "author": "Connor Bär <connor.baer@sumup.com>",
@@ -20,9 +20,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "foundry": {
-    "publish": true
-  },
   "scripts": {
     "start": "tsc --watch",
     "dev": "npm run start",
@@ -32,12 +29,12 @@
     "docs": "typedoc",
     "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
-    "prerelease": "npm run build",
-    "release": "foundry run semantic-release",
     "test": "jest --watch",
     "test:ci": "jest --ci --runInBand --coverage --reporters default --reporters \"github-actions\"",
     "check:security": "audit-ci --critical",
-    "check:licenses": "license-checker --production --summary --failOn=GPLv3"
+    "check:licenses": "license-checker --production --summary --failOn=GPLv3",
+    "prerelease": "npm run build",
+    "release": "changeset publish"
   },
   "engines": {
     "node": ">=10"
@@ -46,6 +43,8 @@
     "intl-format-cache": "^4.2.27"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1",
     "@sumup/foundry": "^5.0.0",
     "@types/jest": "^29.1.2",
     "audit-ci": "^6.1.0",

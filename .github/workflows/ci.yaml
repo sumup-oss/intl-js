@@ -35,8 +35,11 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
-      - name: Release
+      - name: Create release PR or publish to npm
+        if: (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' || github.ref == 'refs/heads/canary')
+        uses: changesets/action@master
+        with:
+          publish: npm run release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run release
