@@ -11,3 +11,4 @@ __reports__/
 /*.config.js
 /*rc.js
 jest.setup.js
+jest.global-setup.js
