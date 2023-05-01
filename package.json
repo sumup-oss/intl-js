@@ -52,7 +52,7 @@
     "jest-extended": "^3.0.0",
     "license-checker": "^25.0.1",
     "ts-jest": "^29.0.3",
-    "typedoc": "^0.23.16",
+    "typedoc": "^0.24.6",
     "typedoc-github-wiki-theme": "^1.0.1",
     "typedoc-plugin-markdown": "^3.13.6",
     "typescript": "^5.0.2"
