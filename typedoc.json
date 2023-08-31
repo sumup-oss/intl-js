@@ -2,5 +2,5 @@
   "entryPoints": ["src/index.ts"],
   "sort": ["source-order"],
   "categoryOrder": ["Number", "Currency", "Date & Time", "*"],
-  "theme": "github-wiki"
+  "plugin": ["typedoc-plugin-markdown", "typedoc-github-wiki-theme"]
 }
