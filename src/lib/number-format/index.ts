@@ -91,6 +91,8 @@ export const format = formatNumber;
  * In runtimes that don't support the `Intl.NumberFormat` API, the currency is
  * formatted using the `Number.toLocaleString` API.
  *
+ * The COP and HUF currencies are formatted without decimals.
+ *
  * @category Currency
  */
 export const formatCurrency = formatNumberFactory(getCurrencyOptions) as (
@@ -209,6 +211,8 @@ export const formatToParts = formatNumberToParts;
  * @remarks
  * In runtimes that don't support the `Intl.NumberFormat.formatToParts` API,
  * the currency is localized and returned as a single integer part.
+ *
+ * The COP and HUF currencies are formatted without decimals.
  *
  * @category Currency
  */
@@ -379,6 +383,8 @@ export const resolveFormat = resolveNumberFormat;
  *
  * In runtimes that don't support the `Intl.NumberFormat.resolvedOptions` API,
  * `null` is returned.
+ *
+ * The COP and HUF currencies are formatted without decimals.
  *
  * @category Currency
  */

@@ -16,7 +16,7 @@
 /* eslint-disable no-continue */
 
 import type { Locale, Currency, NumericOptions } from '../../types';
-import { CURRENCIES } from '../../data/currencies';
+import { CURRENCIES, CURRENCIES_WITHOUT_DECIMALS } from '../../data/currencies';
 
 import { resolveLocale } from './intl';
 
@@ -71,8 +71,24 @@ export function getCurrencyOptions(
   const finalCurrency = currency || resolveCurrency(locales);
 
   if (!finalCurrency) {
-    return { ...options, style: 'decimal' };
+    return {
+      ...options,
+      style: 'decimal',
+    };
   }
 
-  return { ...options, style: 'currency', currency: finalCurrency };
+  if (CURRENCIES_WITHOUT_DECIMALS.includes(finalCurrency)) {
+    return {
+      ...options,
+      style: 'currency',
+      currency: finalCurrency,
+      minimumFractionDigits: 0,
+    };
+  }
+
+  return {
+    ...options,
+    style: 'currency',
+    currency: finalCurrency,
+  };
 }
