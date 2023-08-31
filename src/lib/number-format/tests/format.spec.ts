@@ -14,6 +14,7 @@
  */
 
 import { formatNumber, formatCurrency } from '..';
+import { CURRENCIES_WITHOUT_DECIMALS } from '../../../data/currencies';
 
 import { locales, number } from './shared';
 
@@ -46,11 +47,31 @@ describe('Currency values', () => {
     it.each(locales)('should format a currency for %o', (locale) => {
       const actual = formatCurrency(number, locale);
       expect(actual).toBeString();
-      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
-        style: 'currency',
-        currency: expect.any(String),
-      });
+      expect(Intl.NumberFormat).toHaveBeenCalledWith(
+        locale,
+        expect.objectContaining({
+          style: 'currency',
+          currency: expect.any(String),
+        }),
+      );
     });
+
+    it.each(CURRENCIES_WITHOUT_DECIMALS)(
+      'should format the %o currency without decimals',
+      (currency) => {
+        const actual = formatCurrency(number, undefined, currency);
+        expect(actual).toBeString();
+
+        expect(Intl.NumberFormat).toHaveBeenCalledWith(
+          undefined,
+          expect.objectContaining({
+            style: 'currency',
+            currency,
+            minimumFractionDigits: 0,
+          }),
+        );
+      },
+    );
 
     it('should accept a custom currency', () => {
       const locale = 'xx-XX';

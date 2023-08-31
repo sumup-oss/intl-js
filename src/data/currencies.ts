@@ -513,3 +513,9 @@ export const CURRENCIES: { [country: string]: Currency } = {
   // Zimbabwe
   ZW: 'ZWD',
 };
+
+/**
+ * An array of currencies that support decimals according to the ISO standard
+ * but don't use decimals in everyday life.
+ */
+export const CURRENCIES_WITHOUT_DECIMALS = ['COP', 'HUF'];
