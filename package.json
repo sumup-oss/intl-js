@@ -44,17 +44,17 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
-    "@changesets/cli": "^2.26.1",
-    "@sumup/foundry": "^6.0.0",
-    "@types/jest": "^29.1.2",
-    "audit-ci": "^6.1.0",
-    "jest": "^29.1.2",
-    "jest-extended": "^4.0.0",
+    "@changesets/cli": "^2.26.2",
+    "@sumup/foundry": "^6.1.0",
+    "@types/jest": "^29.5.4",
+    "audit-ci": "^6.6.1",
+    "jest": "^29.6.4",
+    "jest-extended": "^4.0.1",
     "license-checker": "^25.0.1",
-    "ts-jest": "^29.0.3",
-    "typedoc": "^0.24.6",
-    "typedoc-github-wiki-theme": "^1.0.1",
-    "typedoc-plugin-markdown": "^3.13.6",
-    "typescript": "^5.0.2"
+    "ts-jest": "^29.1.1",
+    "typedoc": "^0.25.0",
+    "typedoc-github-wiki-theme": "^1.1.0",
+    "typedoc-plugin-markdown": "^3.16.0",
+    "typescript": "^5.2.2"
   }
 }

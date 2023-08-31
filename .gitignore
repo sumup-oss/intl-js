@@ -6,6 +6,9 @@ junit.xml
 __coverage__
 __reports__
 
+# System files
+.DS_Store
+
 # Logs
 logs
 *.log
