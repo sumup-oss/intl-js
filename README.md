@@ -95,7 +95,6 @@ If you feel another member of the community violated our CoC or you are experien
 ### Maintainers
 
 - [Connor Bär](mailto:connor.baer@sumup.com)
-- [Robin Métral](mailto:robin.metral@sumup.com)
 
 ## About SumUp
 
