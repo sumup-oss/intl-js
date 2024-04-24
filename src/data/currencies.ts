@@ -80,6 +80,8 @@ export const CURRENCIES: { [country: string]: Currency } = {
   BN: 'BND',
   // Bolivia
   BO: 'BOB',
+  // Bonaire, Sint Eustatius and Saba
+  BQ: 'USD',
   // Brazil
   BR: 'BRL',
   // Bahamas
@@ -124,6 +126,8 @@ export const CURRENCIES: { [country: string]: Currency } = {
   CU: 'CUP',
   // Cape Verde
   CV: 'CVE',
+  // Curaçao
+  CW: 'ANG',
   // Christmas Island
   CX: 'AUD',
   // Cyprus
@@ -432,12 +436,16 @@ export const CURRENCIES: { [country: string]: Currency } = {
   SO: 'SOS',
   // Suriname
   SR: 'SRD',
+  // South Sudan
+  SS: 'SSP',
   // Sao Tome and Principe
   ST: 'STD',
   // El Salvador
   SV: 'USD',
   // Syrian Arab Republic
   SY: 'SYP',
+  // Sint Maarten
+  SX: 'ANG',
   // Swaziland
   SZ: 'SZL',
   // Turks and Caicos Islands
@@ -502,6 +510,8 @@ export const CURRENCIES: { [country: string]: Currency } = {
   WF: 'XPF',
   // Samoa
   WS: 'WST',
+  // Kosovo
+  XK: 'EUR',
   // Yemen
   YE: 'YER',
   // Mayotte

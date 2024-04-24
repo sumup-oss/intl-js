@@ -37,3 +37,4 @@ export {
   isDateTimeFormatToPartsSupported,
 } from './lib/date-time-format';
 export { CURRENCIES } from './data/currencies';
+export { TELEPHONE_COUNTRY_CODES } from './data/telephone-country-codes';
