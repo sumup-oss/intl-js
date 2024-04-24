@@ -15,7 +15,7 @@
 
 import type {
   Currency,
-  Locale,
+  Locales,
   NumberFormat,
   NumericOptions,
 } from '../../types';
@@ -37,7 +37,7 @@ export {
 };
 
 type GetOptions = (
-  locales: Locale | Locale[],
+  locales: Locales,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ...args: any[]
 ) => NumericOptions;
@@ -66,7 +66,7 @@ type GetOptions = (
  */
 export const formatNumber = formatNumberFactory(getNumberOptions) as (
   value: number,
-  locales?: Locale | Locale[],
+  locales?: Locales,
   options?: Intl.NumberFormatOptions,
 ) => string;
 
@@ -97,7 +97,7 @@ export const format = formatNumber;
  */
 export const formatCurrency = formatNumberFactory(getCurrencyOptions) as (
   value: number,
-  locales?: Locale | Locale[],
+  locales?: Locales,
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => string;
@@ -163,7 +163,7 @@ export const formatNumberToParts = formatNumberToPartsFactory(
   getNumberOptions,
 ) as (
   value: number,
-  locales?: Locale | Locale[],
+  locales?: Locales,
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
 
@@ -220,7 +220,7 @@ export const formatCurrencyToParts = formatNumberToPartsFactory(
   getCurrencyOptions,
 ) as (
   value: number,
-  locales?: Locale | Locale[],
+  locales?: Locales,
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
@@ -308,7 +308,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
 export const resolveNumberFormat = resolveNumberFormatFactory(
   getNumberOptions,
 ) as (
-  locales?: Locale | Locale[],
+  locales?: Locales,
   options?: Intl.NumberFormatOptions,
 ) => NumberFormat | null;
 
@@ -391,7 +391,7 @@ export const resolveFormat = resolveNumberFormat;
 export const resolveCurrencyFormat = resolveNumberFormatFactory(
   getCurrencyOptions,
 ) as (
-  locales?: Locale | Locale[],
+  locales?: Locales,
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => NumberFormat | null;

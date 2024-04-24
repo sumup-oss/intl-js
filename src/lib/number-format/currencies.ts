@@ -15,23 +15,22 @@
 
 /* eslint-disable no-continue */
 
-import type { Locale, Currency, NumericOptions } from '../../types';
+import type { Locales, Currency, NumericOptions } from '../../types';
 import { CURRENCIES, CURRENCIES_WITHOUT_DECIMALS } from '../../data/currencies';
 
 import { resolveLocale } from './intl';
 
-export function extractCountry(locale: string): string {
-  if (locale.length === 2) {
-    return locale.toUpperCase();
-  }
-  const country = locale.split('-')[1];
-  return country && country.toUpperCase();
+export function extractCountry(locale: string | Intl.Locale): string {
+  const { region } =
+    typeof locale === 'string' ? new Intl.Locale(locale) : locale;
+  return region || (locale as string).slice(-2).toUpperCase();
 }
 
-export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
+export function resolveCurrency(locales?: Locales): Currency | null {
   const inferredLocale = resolveLocale(locales);
-  const localesArray =
-    typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;
+  const localesArray = Array.isArray(inferredLocale)
+    ? inferredLocale
+    : [inferredLocale];
   // eslint-disable-next-line no-restricted-syntax
   for (const locale of localesArray) {
     const country = extractCountry(locale);
@@ -64,7 +63,7 @@ export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
 }
 
 export function getCurrencyOptions(
-  locales?: Locale | Locale[],
+  locales?: Locales,
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ): NumericOptions {

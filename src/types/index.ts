@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-export type Locale = string;
+export type Locales = string | Intl.Locale | (string | Intl.Locale)[];
 
 export type Currency = string;
 

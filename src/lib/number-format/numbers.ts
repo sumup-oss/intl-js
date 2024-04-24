@@ -13,10 +13,10 @@
  * limitations under the License.
  */
 
-import type { Locale } from '../../types';
+import type { Locales } from '../../types';
 
 export function getNumberOptions(
-  locales?: Locale | Locale[],
+  locales?: Locales,
   options?: Intl.NumberFormatOptions,
 ): Intl.NumberFormatOptions {
   return { style: 'decimal', ...options };

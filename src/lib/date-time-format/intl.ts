@@ -15,7 +15,7 @@
 
 import memoizeFormatConstructor from 'intl-format-cache';
 
-import { Locale } from '../../types';
+import { Locales } from '../../types';
 
 /**
  * Whether the `Intl` and `Intl.DateTimeFormat` APIs
@@ -63,6 +63,6 @@ export const isDateTimeStyleSupported = (() => {
 export const getDateTimeFormat = memoizeFormatConstructor(
   Intl.DateTimeFormat,
 ) as (
-  locales?: Locale | Locale[],
+  locales?: Locales,
   options?: Intl.DateTimeFormatOptions,
 ) => Intl.DateTimeFormat;

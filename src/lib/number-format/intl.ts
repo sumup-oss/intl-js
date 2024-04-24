@@ -15,7 +15,7 @@
 
 import memoizeFormatConstructor from 'intl-format-cache';
 
-import type { Locale } from '../../types';
+import type { Locales } from '../../types';
 
 /**
  * Whether the `Intl` and `Intl.NumberFormat` APIs
@@ -51,13 +51,13 @@ export const isNumberFormatToPartsSupported = (() => {
 export const isIntlSupported = isNumberFormatSupported;
 
 export const getNumberFormat = memoizeFormatConstructor(Intl.NumberFormat) as (
-  locales?: Locale | Locale[],
+  locales?: Locales,
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormat;
 
-export function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
-  if (locales && locales.length >= 0) {
-    return locales;
+export function resolveLocale(locales?: Locales): Locales {
+  if (Array.isArray(locales) ? locales.length >= 0 : Boolean(locales)) {
+    return locales as Locales;
   }
   const numberFormat = getNumberFormat();
   return numberFormat.resolvedOptions().locale;
