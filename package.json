@@ -55,7 +55,7 @@
     "license-checker": "^25.0.1",
     "ts-jest": "^29.1.1",
     "typedoc": "^0.25.0",
-    "typedoc-github-wiki-theme": "^1.1.0",
+    "typedoc-github-wiki-theme": "^2.0.0",
     "typedoc-plugin-markdown": "^4.0.3",
     "typescript": "^5.2.2"
   }
