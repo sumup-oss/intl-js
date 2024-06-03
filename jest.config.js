@@ -22,4 +22,5 @@ module.exports = {
   coveragePathIgnorePatterns: ['node_modules'],
   setupFilesAfterEnv: ['jest-extended/all', '../jest.setup.js'],
   globalSetup: '../jest.global-setup.js',
+  prettierPath: null,
 };
