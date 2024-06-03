@@ -1,6 +1,13 @@
 {
+  "$schema": "https://typedoc-plugin-markdown.org/schema.json",
   "entryPoints": ["src/index.ts"],
   "sort": ["source-order"],
   "categoryOrder": ["Number", "Currency", "Date & Time", "*"],
-  "plugin": ["typedoc-plugin-markdown", "typedoc-github-wiki-theme"]
+  "plugin": ["typedoc-plugin-markdown", "typedoc-github-wiki-theme"],
+  "readme": "none",
+  "enumMembersFormat": "table",
+  "parametersFormat": "table",
+  "propertiesFormat": "table",
+  "typeDeclarationFormat": "table",
+  "indexFormat": "table"
 }
