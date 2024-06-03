@@ -14,7 +14,7 @@ Format 🔢 numbers, 💱 currency values, 📅 dates, and 🕘 times for any lo
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [API reference](https://github.com/sumup-oss/intl-js/wiki/Exports)
+- [API reference](https://github.com/sumup-oss/intl-js/wiki)
 - [Code of Conduct](#code-of-conduct)
 - [About SumUp](#about-sumup)
 
@@ -60,31 +60,31 @@ Each type of data can be formatted with three increasingly advanced functions:
 
 ### Number Functions
 
-- [formatNumber](https://github.com/sumup-oss/intl-js/wiki/Exports#formatnumber)
-- [formatNumberToParts](https://github.com/sumup-oss/intl-js/wiki/Exports#formatnumbertoparts)
-- [resolveNumberFormat](https://github.com/sumup-oss/intl-js/wiki/Exports#resolvenumberformat)
+- [formatNumber](https://github.com/sumup-oss/intl-js/wiki/Function.formatnumber)
+- [formatNumberToParts](https://github.com/sumup-oss/intl-js/wiki/Function.formatnumbertoparts)
+- [resolveNumberFormat](https://github.com/sumup-oss/intl-js/wiki/Function.resolvenumberformat)
 
 ### Currency Functions
 
-- [formatCurrency](https://github.com/sumup-oss/intl-js/wiki/Exports#formatcurrency)
-- [formatCurrencyToParts](https://github.com/sumup-oss/intl-js/wiki/Exports#formatcurrencytoparts)
-- [resolveCurrencyFormat](https://github.com/sumup-oss/intl-js/wiki/Exports#resolvecurrencyformat)
+- [formatCurrency](https://github.com/sumup-oss/intl-js/wiki/Function.formatcurrency)
+- [formatCurrencyToParts](https://github.com/sumup-oss/intl-js/wiki/Function.formatcurrencytoparts)
+- [resolveCurrencyFormat](https://github.com/sumup-oss/intl-js/wiki/Function.resolvecurrencyformat)
 
 ### Date & Time Functions
 
-- [formatDate](https://github.com/sumup-oss/intl-js/wiki/Exports#formatdate)
-- [formatTime](https://github.com/sumup-oss/intl-js/wiki/Exports#formattime)
-- [formatDateTime](https://github.com/sumup-oss/intl-js/wiki/Exports#formatdatetime)
-- [formatDateTimeToParts](https://github.com/sumup-oss/intl-js/wiki/Exports#formatdatetimetoparts)
-- [resolveDateTimeFormat](https://github.com/sumup-oss/intl-js/wiki/Exports#resolvedatetimeformat)
+- [formatDate](https://github.com/sumup-oss/intl-js/wiki/Function.formatdate)
+- [formatTime](https://github.com/sumup-oss/intl-js/wiki/Function.formattime)
+- [formatDateTime](https://github.com/sumup-oss/intl-js/wiki/Function.formatdatetime)
+- [formatDateTimeToParts](https://github.com/sumup-oss/intl-js/wiki/Function.formatdatetimetoparts)
+- [resolveDateTimeFormat](https://github.com/sumup-oss/intl-js/wiki/Function.resolvedatetimeformat)
 
 ### Variables
 
-- [CURRENCIES](https://github.com/sumup-oss/intl-js/wiki/Exports#currencies)
-- [isNumberFormatSupported](https://github.com/sumup-oss/intl-js/wiki/Exports#isnumberformatsupported)
-- [isNumberFormatToPartsSupported](https://github.com/sumup-oss/intl-js/wiki/Exports#isnumberformattopartssupported)
-- [isDateTimeFormatSupported](https://github.com/sumup-oss/intl-js/wiki/Exports#isdatetimeformatsupported)
-- [isDateTimeFormatToPartsSupported](https://github.com/sumup-oss/intl-js/wiki/Exports#isdatetimeformattopartssupported)
+- [CURRENCIES](https://github.com/sumup-oss/intl-js/wiki/Variable.currencies)
+- [isNumberFormatSupported](https://github.com/sumup-oss/intl-js/wiki/Variable.isnumberformatsupported)
+- [isNumberFormatToPartsSupported](https://github.com/sumup-oss/intl-js/wiki/Variable.isnumberformattopartssupported)
+- [isDateTimeFormatSupported](https://github.com/sumup-oss/intl-js/wiki/Variable.isdatetimeformatsupported)
+- [isDateTimeFormatToPartsSupported](https://github.com/sumup-oss/intl-js/wiki/Variable.isdatetimeformattopartssupported)
 
 ## Code of Conduct
 
