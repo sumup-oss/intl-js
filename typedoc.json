@@ -9,5 +9,8 @@
   "parametersFormat": "table",
   "propertiesFormat": "table",
   "typeDeclarationFormat": "table",
-  "indexFormat": "table"
+  "indexFormat": "table",
+  "sidebar": {
+    "autoConfiguration": false
+  }
 }
