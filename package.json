@@ -1,5 +1,5 @@
 {
-  "name": "@sumup/intl",
+  "name": "@sumup-oss/intl",
   "version": "1.6.0",
   "description": "Format numbers, currency values, dates, and times for any locale with the ECMAScript Internationalization API",
   "repository": "git@github.com:sumup-oss/intl-js.git",

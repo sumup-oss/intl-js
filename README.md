@@ -20,33 +20,33 @@ Format 🔢 numbers, 💱 currency values, 📅 dates, and 🕘 times for any lo
 
 ## Introduction
 
-`@sumup/intl` is a light abstraction layer on top of the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl). In addition to a simplified API, it offers the following benefits:
+`@sumup-oss/intl` is a light abstraction layer on top of the [ECMAScript Internationalization API](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl). In addition to a simplified API, it offers the following benefits:
 
 ### Performance
 
-Creating instances of `Intl.*` formatters is an [expensive operation](https://blog.david-reess.de/posts/hBEx9w-on-number-formatting-and-performance). `@sumup/intl` solves this by [memoizing](https://github.com/formatjs/intl-format-cache) the `Intl` formatters with a cache key based on the arguments passed to the constructor.
+Creating instances of `Intl.*` formatters is an [expensive operation](https://blog.david-reess.de/posts/hBEx9w-on-number-formatting-and-performance). `@sumup-oss/intl` solves this by [memoizing](https://github.com/formatjs/intl-format-cache) the `Intl` formatters with a cache key based on the arguments passed to the constructor.
 
 ### Compatibility
 
-`@sumup/intl` works in [modern browsers](https://caniuse.com/mdn-javascript_builtins_intl_numberformat_numberformat,mdn-javascript_builtins_intl_datetimeformat_datetimeformat) as well as server runtimes with support for the `Intl` APIs (such as Node 10+[^1]). When the `Intl` APIs aren't (fully) available, `@sumup/intl` tries to gracefully degrade. Please refer to the [API reference](#api-reference) to learn how certain functions behave when the runtime doesn't support the necessary APIs. If you need to support legacy browsers, consider including [polyfills](https://formatjs.io/docs/polyfills/).
+`@sumup-oss/intl` works in [modern browsers](https://caniuse.com/mdn-javascript_builtins_intl_numberformat_numberformat,mdn-javascript_builtins_intl_datetimeformat_datetimeformat) as well as server runtimes with support for the `Intl` APIs (such as Node 10+[^1]). When the `Intl` APIs aren't (fully) available, `@sumup-oss/intl` tries to gracefully degrade. Please refer to the [API reference](#api-reference) to learn how certain functions behave when the runtime doesn't support the necessary APIs. If you need to support legacy browsers, consider including [polyfills](https://formatjs.io/docs/polyfills/).
 
-`@sumup/intl` integrates [`temporal-polyfill`](https://www.npmjs.com/package/temporal-polyfill) to support formatting [`Temporal`](https://github.com/tc39/proposal-temporal) date-time objects.
+`@sumup-oss/intl` integrates [`temporal-polyfill`](https://www.npmjs.com/package/temporal-polyfill) to support formatting [`Temporal`](https://github.com/tc39/proposal-temporal) date-time objects.
 
 [^1]: [Node](https://nodejs.org/en/) supports the `Intl` APIs since v8, however, it includes only the English localizations up to v12. Node v13 and above support all locales. If you're unable to use Node v13+, you can either include [polyfills](https://formatjs.io/docs/polyfills/) or use a [custom Node build](https://nodejs.org/docs/latest-v8.x/api/intl.html#intl_options_for_building_node_js).
 
 ## Installation
 
-[`@sumup/intl`](https://www.npmjs.com/package/@sumup/intl) can be installed as a dependency via the [npm](https://www.npmjs.com) package manager. The [`temporal-polyfill`](https://www.npmjs.com/package/temporal-polyfill) package is a required peer dependency.
+[`@sumup-oss/intl`](https://www.npmjs.com/package/@sumup-oss/intl) can be installed as a dependency via the [npm](https://www.npmjs.com) package manager. The [`temporal-polyfill`](https://www.npmjs.com/package/temporal-polyfill) package is a required peer dependency.
 
 ```sh
-npm install @sumup/intl temporal-polyfill
+npm install @sumup-oss/intl temporal-polyfill
 ```
 
-`@sumup/intl` requires Node v10+.
+`@sumup-oss/intl` requires Node v10+.
 
 ## Usage
 
-The functions exported by `@sumup/intl` share a similar interface such as the common [`locales`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument), [`options`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#options_argument), and [`currency`](https://en.wikipedia.org/wiki/ISO_4217) arguments. These are passed on almost unchanged to the [`Intl.*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#constructor_properties) constructors and thus support the same values. If the `locales` argument is not provided or is undefined, the runtime's default locale is used. Please refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) for more details.
+The functions exported by `@sumup-oss/intl` share a similar interface such as the common [`locales`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#locales_argument), [`options`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#options_argument), and [`currency`](https://en.wikipedia.org/wiki/ISO_4217) arguments. These are passed on almost unchanged to the [`Intl.*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#constructor_properties) constructors and thus support the same values. If the `locales` argument is not provided or is undefined, the runtime's default locale is used. Please refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) for more details.
 
 Each type of data can be formatted with three increasingly advanced functions:
 

@@ -43,7 +43,7 @@ type GetOptions = (
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  *
  * @example
- * import { formatNumber } from '@sumup/intl';
+ * import { formatNumber } from '@sumup-oss/intl';
  *
  * formatNumber(12345.67, 'de-DE'); // '12.345,67'
  * formatNumber(-0.89, ['ban', 'id']); // '-0,89'
@@ -70,7 +70,7 @@ export const formatNumber = formatNumberFactory(getNumberOptions) as (
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  *
  * @example
- * import { formatCurrency } from '@sumup/intl';
+ * import { formatCurrency } from '@sumup-oss/intl';
  *
  * formatCurrency(12345.67, 'de-DE'); // '12.345,67 €'
  * formatCurrency(89, 'ja-JP', 'JPY'); // '￥89'
@@ -112,7 +112,7 @@ function formatNumberFactory<T extends GetOptions>(
  * and [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  *
  * @example
- * import { formatNumberToParts } from '@sumup/intl';
+ * import { formatNumberToParts } from '@sumup-oss/intl';
  *
  * formatNumberToParts(12345.67, 'de-DE');
  * // [
@@ -162,7 +162,7 @@ export const formatNumberToParts = formatNumberToPartsFactory(
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  *
  * @example
- * import { formatCurrencyToParts } from '@sumup/intl';
+ * import { formatCurrencyToParts } from '@sumup-oss/intl';
  *
  * formatCurrencyToParts(12345.67, 'de-DE');
  * // [
@@ -230,7 +230,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
  * Resolves the locale and collation options that are used to format a number.
  *
  * @example
- * import { resolveNumberFormat } from '@sumup/intl';
+ * import { resolveNumberFormat } from '@sumup-oss/intl';
  *
  * resolveNumberFormat();
  * // {
@@ -300,7 +300,7 @@ export const resolveNumberFormat = resolveNumberFormatFactory(
  * in the country's official currency.
  *
  * @example
- * import { resolveCurrencyFormat } from '@sumup/intl';
+ * import { resolveCurrencyFormat } from '@sumup-oss/intl';
  *
  * resolveCurrencyFormat();
  * // {

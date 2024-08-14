@@ -39,11 +39,11 @@ Make sure that you use Node v20.14 _exactly_, otherwise, the unit tests will pro
 
 ## Release process
 
-`@sumup/intl` follows semantic versioning. In short, this means we use patch versions for bugfixes, minor versions for new features, and major versions for breaking changes.
+`@sumup-oss/intl` follows semantic versioning. In short, this means we use patch versions for bugfixes, minor versions for new features, and major versions for breaking changes.
 
 ### Changesets
 
-`@sumup/intl` uses [changesets](https://github.com/atlassian/changesets) to do versioning. A changeset is a piece of information about changes made in a branch or commit. It holds three bits of information:
+`@sumup-oss/intl` uses [changesets](https://github.com/atlassian/changesets) to do versioning. A changeset is a piece of information about changes made in a branch or commit. It holds three bits of information:
 
 - What needs to be released
 - What version the packages should be released at (using a [semver bump type](https://semver.org/))
@@ -62,7 +62,7 @@ We have a couple of special branches that are used for stable releases and [pre-
 To install the most recent version from a release channel in your project, run:
 
 ```sh
-npm install --dev @sumup/intl@<release-channel>
+npm install --dev @sumup-oss/intl@<release-channel>
 ```
 
 #### Pre-releases
