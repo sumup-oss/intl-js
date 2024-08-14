@@ -1,10 +1,11 @@
 import { vi, expect } from 'vitest';
 import * as matchers from 'jest-extended';
+import { Intl as IntlWithTemporal } from 'temporal-polyfill';
 
 expect.extend(matchers);
 
 vi.spyOn(Intl, 'NumberFormat');
-vi.spyOn(Intl, 'DateTimeFormat');
+vi.spyOn(IntlWithTemporal, 'DateTimeFormat');
 
 // Apparently, Node.js doesn't implement these APIs.
 // The mocked return value is based on the test value `1001001001.11111`

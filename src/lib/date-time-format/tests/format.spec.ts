@@ -14,6 +14,7 @@
  */
 
 import { describe, it, expect } from 'vitest';
+import { Intl } from 'temporal-polyfill';
 
 import { formatDateTime, formatDate, formatTime } from '..';
 

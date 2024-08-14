@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+import { Intl as IntlWithTemporal } from 'temporal-polyfill';
 import memoizeFormatConstructor from 'intl-format-cache';
 
 import { Locale } from '../../types';
@@ -61,8 +62,8 @@ export const isDateTimeStyleSupported = (() => {
 })();
 
 export const getDateTimeFormat = memoizeFormatConstructor(
-  Intl.DateTimeFormat,
+  IntlWithTemporal.DateTimeFormat,
 ) as (
   locales?: Locale | Locale[],
   options?: Intl.DateTimeFormatOptions,
-) => Intl.DateTimeFormat;
+) => IntlWithTemporal.DateTimeFormat;
