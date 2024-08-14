@@ -1,5 +1,20 @@
 # @sumup-oss/intl
 
+## 2.0.0
+
+### Major Changes
+
+- [#251](https://github.com/sumup-oss/intl-js/pull/251) [`ae93e19`](https://github.com/sumup-oss/intl-js/commit/ae93e19cf675f287d85f99230c156c4989de8685) Thanks [@connor-baer](https://github.com/connor-baer)! - Renamed the package scope from `@sumup` to `@sumup-oss`. Replace `@sumup/intl` with `@sumup-oss/intl` in your `package.json` file, then update all imports:
+
+  ```diff
+  -import { formatNumber } from '@sumup/intl';
+  +import { formatNumber } from '@sumup-oss/intl';
+  ```
+
+- [#252](https://github.com/sumup-oss/intl-js/pull/252) [`53a8574`](https://github.com/sumup-oss/intl-js/commit/53a857412703dd684bb2579b4d231802d85c3035) Thanks [@connor-baer](https://github.com/connor-baer)! - Removed the deprecated `format`, `formatToParts`, `resolveFormat`, and `isIntlSupported` exports. Use the explicitly named `formatNumber`, `formatNumberToParts`, `resolveNumberFormat`, and `isNumberFormatSupported` exports instead.
+
+- [#250](https://github.com/sumup-oss/intl-js/pull/250) [`bf12d97`](https://github.com/sumup-oss/intl-js/commit/bf12d9748d4eb6f626123d2996c1c2cbd2c253d2) Thanks [@connor-baer](https://github.com/connor-baer)! - Added support for [`Temporal`](https://github.com/tc39/proposal-temporal) objects to the date and time formatting functions. The [`temporal-polyfill`](https://www.npmjs.com/package/temporal-polyfill) package is now a required peer dependency.
+
 ## 1.6.0
 
 ### Minor Changes
