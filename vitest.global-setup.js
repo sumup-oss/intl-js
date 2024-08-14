@@ -13,6 +13,6 @@
  * limitations under the License.
  */
 
-module.exports = async () => {
+export const setup = () => {
   process.env.TZ = 'UTC';
 };

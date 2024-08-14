@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+import { vi } from 'vitest';
+
 import {
   formatCurrency,
   formatCurrencyToParts,
@@ -24,11 +26,14 @@ import {
 
 import { number } from './shared';
 
-jest.mock('../intl', () => ({
-  ...jest.requireActual<typeof import('../intl')>('../intl'),
-  isNumberFormatSupported: false,
-  isNumberFormatToPartsSupported: false,
-}));
+vi.mock('../intl', async () => {
+  const intl = await vi.importActual('../intl');
+  return {
+    ...intl,
+    isNumberFormatSupported: false,
+    isNumberFormatToPartsSupported: false,
+  };
+});
 
 const locale = 'xx-XX';
 
