@@ -14,18 +14,14 @@
  */
 
 export {
-  format,
   formatNumber,
   formatCurrency,
-  formatToParts,
   formatNumberToParts,
   formatCurrencyToParts,
-  resolveFormat,
   resolveNumberFormat,
   resolveCurrencyFormat,
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
-  isIntlSupported,
 } from './lib/number-format';
 export {
   formatDate,

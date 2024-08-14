@@ -22,7 +22,6 @@ import type {
 import { findIndex } from '../find-index';
 
 import {
-  isIntlSupported,
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
   getNumberFormat,
@@ -30,11 +29,7 @@ import {
 import { getNumberOptions } from './numbers';
 import { getCurrencyOptions } from './currencies';
 
-export {
-  isIntlSupported,
-  isNumberFormatSupported,
-  isNumberFormatToPartsSupported,
-};
+export { isNumberFormatSupported, isNumberFormatToPartsSupported };
 
 type GetOptions = (
   locales: Locale | Locale[],
@@ -69,12 +64,6 @@ export const formatNumber = formatNumberFactory(getNumberOptions) as (
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
 ) => string;
-
-/**
- * @deprecated Use {@link formatNumber} instead.
- * @hidden
- */
-export const format = formatNumber;
 
 /**
  * Formats a number in the country's official currency
@@ -166,12 +155,6 @@ export const formatNumberToParts = formatNumberToPartsFactory(
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
-
-/**
- * @deprecated Use {@link formatNumberToParts} instead.
- * @hidden
- */
-export const formatToParts = formatNumberToParts;
 
 /* eslint-disable no-irregular-whitespace */
 /**
@@ -311,12 +294,6 @@ export const resolveNumberFormat = resolveNumberFormatFactory(
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
 ) => NumberFormat | null;
-
-/**
- * @deprecated Use {@link resolveNumberFormat} instead.
- * @hidden
- */
-export const resolveFormat = resolveNumberFormat;
 
 /**
  * Resolves the locale and collation options that are used to format a number
