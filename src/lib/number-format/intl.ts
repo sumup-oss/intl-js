@@ -44,12 +44,6 @@ export const isNumberFormatToPartsSupported = (() => {
   }
 })();
 
-/**
- * @deprecated Use {@link isNumberFormatSupported} instead.
- * @hidden
- */
-export const isIntlSupported = isNumberFormatSupported;
-
 export const getNumberFormat = memoizeFormatConstructor(Intl.NumberFormat) as (
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
