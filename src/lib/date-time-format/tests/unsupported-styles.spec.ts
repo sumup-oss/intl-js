@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { vi } from 'vitest';
+import { vi, describe, it, expect } from 'vitest';
 
 import { formatDateTime } from '..';
 

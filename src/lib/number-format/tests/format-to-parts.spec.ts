@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+import { describe, it, expect } from 'vitest';
+
 import { formatNumberToParts, formatCurrencyToParts } from '..';
 import { CURRENCIES_WITHOUT_DECIMALS } from '../../../data/currencies';
 
