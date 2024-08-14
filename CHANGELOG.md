@@ -1,4 +1,4 @@
-# @sumup/intl
+# @sumup-oss/intl
 
 ## 1.6.0
 

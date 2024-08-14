@@ -31,7 +31,7 @@ export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
  * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
  *
  * @example
- * import { formatDateTime } from '@sumup/intl';
+ * import { formatDateTime } from '@sumup-oss/intl';
  *
  * formatDateTime(new Date(2000, 1, 1), 'de-DE'); // '1.2.2000'
  * formatDateTime(new Date(2000, 1, 1), ['ban', 'id']); // '1/2/2000'
@@ -59,7 +59,7 @@ export const formatDateTime = formatDateTimeFactory();
  * [date styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle).
  *
  * @example
- * import { formatDate } from '@sumup/intl';
+ * import { formatDate } from '@sumup-oss/intl';
  *
  * const date = new Date(2000, 1, 1);
  * const locale = 'en-GB';
@@ -91,7 +91,7 @@ export function formatDate(
  * [time styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle).
  *
  * @example
- * import { formatTime } from '@sumup/intl';
+ * import { formatTime } from '@sumup-oss/intl';
  *
  * const time = new Date(2000, 1, 1, 9, 55);
  * const locale = 'en-GB';
@@ -166,7 +166,7 @@ function formatDateTimeFactory(): (
  * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
  *
  * @example
- * import { formatDateTimeToParts } from '@sumup/intl';
+ * import { formatDateTimeToParts } from '@sumup-oss/intl';
  *
  * const time = new Date(2000, 1, 1, 9, 55);
  *
@@ -232,7 +232,7 @@ function formatDateTimeToPartsFactory(): (
  * Resolves the locale and collation options that are used to format a `Date`.
  *
  * @example
- * import { resolveDateTimeFormat } from '@sumup/intl';
+ * import { resolveDateTimeFormat } from '@sumup-oss/intl';
  *
  * resolveDateTimeFormat();
  * // {
