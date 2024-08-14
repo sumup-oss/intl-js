@@ -13,14 +13,12 @@
  * limitations under the License.
  */
 
-module.exports = {
-  preset: 'ts-jest',
-  clearMocks: true,
-  rootDir: 'src',
-  coverageDirectory: '../__reports__',
-  reporters: ['default'],
-  coveragePathIgnorePatterns: ['node_modules'],
-  setupFilesAfterEnv: ['jest-extended/all', '../jest.setup.js'],
-  globalSetup: '../jest.global-setup.js',
-  prettierPath: null,
-};
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    globals: true,
+    globalSetup: './vitest.global-setup.js',
+    setupFiles: ['./vitest.setup.js'],
+  },
+})

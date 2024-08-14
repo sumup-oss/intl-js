@@ -9,6 +9,5 @@ coverage/
 __coverage__/
 __reports__/
 /*.config.js
+/*.setup.js
 /*rc.js
-jest.setup.js
-jest.global-setup.js

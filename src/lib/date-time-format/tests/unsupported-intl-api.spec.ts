@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+import { vi, describe, it, expect } from 'vitest';
+
 import {
   formatDateTime,
   formatDateTimeToParts,
@@ -21,11 +23,14 @@ import {
 
 import { date } from './shared';
 
-jest.mock('../intl', () => ({
-  ...jest.requireActual<typeof import('../intl')>('../intl'),
-  isDateTimeFormatSupported: false,
-  isDateTimeFormatToPartsSupported: false,
-}));
+vi.mock('../intl', async () => {
+  const intl = await vi.importActual('../intl');
+  return {
+    ...intl,
+    isDateTimeFormatSupported: false,
+    isDateTimeFormatToPartsSupported: false,
+  };
+});
 
 const locale = 'xx-XX';
 
