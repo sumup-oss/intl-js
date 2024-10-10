@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+import type { Temporal } from 'temporal-polyfill';
+
 export type Locale = string;
 
 export type Currency = string;
@@ -23,6 +25,21 @@ export type NumberFormat = Intl.ResolvedNumberFormatOptions & {
   currencySymbol?: string;
   currencyPosition?: 'prefix' | 'suffix';
 };
+
+export type FormattableTime =
+  | Date
+  | Temporal.Instant
+  | Temporal.PlainTime
+  | Temporal.PlainDateTime;
+export type FormattableDate =
+  | Date
+  | Temporal.Instant
+  | Temporal.PlainDate
+  | Temporal.PlainDateTime
+  | Temporal.PlainYearMonth
+  | Temporal.PlainMonthDay;
+
+export type FormattableDateTime = FormattableDate | FormattableTime;
 
 export interface CurrencyFormatOptions extends Intl.NumberFormatOptions {
   style: 'currency';

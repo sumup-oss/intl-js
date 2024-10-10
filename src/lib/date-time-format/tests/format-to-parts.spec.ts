@@ -18,11 +18,19 @@ import { Intl } from 'temporal-polyfill';
 
 import { formatDateTimeToParts } from '..';
 
-import { date, locales } from './shared';
+import { datetimes, locales } from './shared';
 
 describe('Dates & times', () => {
   describe('formatDateTimeToParts', () => {
     it.each(locales)('should format a date for %o', (locale) => {
+      const date = datetimes[0];
+      const actual = formatDateTimeToParts(date, locale);
+      expect(actual).toBeArray();
+      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
+    });
+
+    it.each(datetimes)('should format a %o', (date) => {
+      const locale = locales[0];
       const actual = formatDateTimeToParts(date, locale);
       expect(actual).toBeArray();
       expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
