@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+import { Temporal } from 'temporal-polyfill';
+
 export const locales: (string | string[])[] = [
   'de-DE',
   'es-US',
@@ -20,4 +22,28 @@ export const locales: (string | string[])[] = [
   ['de-DE', 'es-US'],
 ];
 
-export const date = new Date(Date.UTC(0, 0, 0, 0, 0, 0));
+export const dates = [
+  new Date(Date.UTC(0, 0, 0, 0, 0, 0)),
+  new Temporal.Instant(BigInt(0)),
+  new Temporal.PlainDate(2024, 1, 1, 'gregory'),
+  new Temporal.PlainDateTime(2024, 1, 1, 0, 0, 0, 0, 0, 0, 'gregory'),
+  new Temporal.PlainYearMonth(2024, 1, 'gregory'),
+  new Temporal.PlainMonthDay(1, 1, 'gregory'),
+];
+
+export const times = [
+  new Date(Date.UTC(0, 0, 0, 0, 0, 0)),
+  new Temporal.Instant(BigInt(0)),
+  new Temporal.PlainTime(0, 0, 0),
+  new Temporal.PlainDateTime(2024, 1, 1, 0, 0, 0, 0, 0, 0, 'gregory'),
+];
+
+export const datetimes = [
+  new Date(Date.UTC(0, 0, 0, 0, 0, 0)),
+  new Temporal.Instant(BigInt(0)),
+  new Temporal.PlainDate(2024, 1, 1, 'gregory'),
+  new Temporal.PlainTime(0, 0, 0),
+  new Temporal.PlainDateTime(2024, 1, 1, 0, 0, 0, 0, 0, 0, 'gregory'),
+  new Temporal.PlainYearMonth(2024, 1, 'gregory'),
+  new Temporal.PlainMonthDay(1, 1, 'gregory'),
+];

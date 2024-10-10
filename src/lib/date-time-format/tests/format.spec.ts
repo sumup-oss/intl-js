@@ -18,11 +18,19 @@ import { Intl } from 'temporal-polyfill';
 
 import { formatDateTime, formatDate, formatTime } from '..';
 
-import { date, locales } from './shared';
+import { locales, dates, times, datetimes } from './shared';
 
 describe('Dates & times', () => {
   describe('formatDateTime', () => {
     it.each(locales)('should format a date time for %o', (locale) => {
+      const date = datetimes[0];
+      const actual = formatDateTime(date, locale);
+      expect(actual).toBeString();
+      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
+    });
+
+    it.each(datetimes)('should format a %o', (date) => {
+      const locale = locales[0];
       const actual = formatDateTime(date, locale);
       expect(actual).toBeString();
       expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, undefined);
@@ -31,6 +39,16 @@ describe('Dates & times', () => {
 
   describe('formatDate', () => {
     it.each(locales)('should format a date for %o', (locale) => {
+      const date = dates[0];
+      const actual = formatDate(date, locale);
+      expect(actual).toBeString();
+      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
+        dateStyle: 'short',
+      });
+    });
+
+    it.each(dates)('should format a %o', (date) => {
+      const locale = locales[0];
       const actual = formatDate(date, locale);
       expect(actual).toBeString();
       expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
@@ -41,7 +59,16 @@ describe('Dates & times', () => {
 
   describe('formatTime', () => {
     it.each(locales)('should format a time for %o', (locale) => {
-      const actual = formatTime(date, locale);
+      const time = times[0];
+      const actual = formatTime(time, locale);
+      expect(actual).toBeString();
+      expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
+        timeStyle: 'short',
+      });
+    });
+    it.each(times)('should format a %o', (time) => {
+      const locale = locales[0];
+      const actual = formatTime(time, locale);
       expect(actual).toBeString();
       expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
         timeStyle: 'short',

@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a 1899-12-31T00:00:00.000Z as a date 1`] = `"12/31/1899"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a 1899-12-31T00:00:00.000Z as a date time 1`] = `"12/31/1899, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a 1899-12-31T00:00:00.000Z as a time 1`] = `"12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{} as a date 1`] = `"1/1/1970, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{} as a date time 1`] = `"1/1/1970, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{} as a time 1`] = `"1/1/1970, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDate{} as a date 1`] = `"1/1/2024"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDate{} as a date time 1`] = `"1/1/2024"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{} as a date 1`] = `"1/1/2024, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{} as a date time 1`] = `"1/1/2024, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{} as a time 1`] = `"1/1/2024, 12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainMonthDay{} as a date 1`] = `"1/1"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainMonthDay{} as a date time 1`] = `"1/1"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainTime{} as a date time 1`] = `"12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainTime{} as a time 1`] = `"12:00:00 AM"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainYearMonth{} as a date 1`] = `"1/2024"`;
+
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainYearMonth{} as a date time 1`] = `"1/2024"`;

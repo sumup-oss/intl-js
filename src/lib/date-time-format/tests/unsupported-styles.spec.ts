@@ -18,7 +18,7 @@ import { Intl } from 'temporal-polyfill';
 
 import { formatDateTime } from '..';
 
-import { date } from './shared';
+import { dates, datetimes, times } from './shared';
 
 vi.mock('../intl', async () => {
   const intl = await vi.importActual('../intl');
@@ -30,6 +30,7 @@ const locale = 'xx-XX';
 describe('Dates & times', () => {
   describe('when the `dateStyle` and `timeStyle` options are unsupported', () => {
     it('should fallback to an approximate date format', () => {
+      const date = dates[0];
       const actual = formatDateTime(date, locale, { dateStyle: 'short' });
       expect(actual).toBeString();
       expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
@@ -40,7 +41,8 @@ describe('Dates & times', () => {
     });
 
     it('should fallback to an approximate time format', () => {
-      const actual = formatDateTime(date, locale, { timeStyle: 'short' });
+      const time = times[0];
+      const actual = formatDateTime(time, locale, { timeStyle: 'short' });
       expect(actual).toBeString();
       expect(Intl.DateTimeFormat).toHaveBeenCalledWith(locale, {
         hour: '2-digit',
@@ -49,6 +51,7 @@ describe('Dates & times', () => {
     });
 
     it('should fallback to an approximate date time format', () => {
+      const date = datetimes[0];
       const actual = formatDateTime(date, locale, {
         dateStyle: 'short',
         timeStyle: 'short',

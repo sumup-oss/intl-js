@@ -21,7 +21,7 @@ import {
   resolveDateTimeFormat,
 } from '..';
 
-import { date } from './shared';
+import { dates, datetimes, times } from './shared';
 
 vi.mock('../intl', async () => {
   const intl = await vi.importActual('../intl');
@@ -36,25 +36,26 @@ const locale = 'xx-XX';
 
 describe('Dates & times', () => {
   describe('when Intl.DateTimeFormat is unsupported', () => {
-    it('should format a date', () => {
+    it.each(dates)('should format a %o as a date', (date) => {
       const actual = formatDateTime(date, locale, { dateStyle: 'short' });
-      expect(actual).toMatchInlineSnapshot('"12/31/1899"');
+      expect(actual).toMatchSnapshot();
     });
 
-    it('should format a time', () => {
-      const actual = formatDateTime(date, locale, { timeStyle: 'short' });
-      expect(actual).toMatchInlineSnapshot('"12:00:00 AM"');
+    it.each(times)('should format a %o as a time', (time) => {
+      const actual = formatDateTime(time, locale, { timeStyle: 'short' });
+      expect(actual).toMatchSnapshot();
     });
 
-    it('should format a date time', () => {
+    it.each(datetimes)('should format a %o as a date time', (date) => {
       const actual = formatDateTime(date, locale, {
         dateStyle: 'short',
         timeStyle: 'short',
       });
-      expect(actual).toMatchInlineSnapshot('"12/31/1899, 12:00:00 AM"');
+      expect(actual).toMatchSnapshot();
     });
 
     it('should format a date time to a single literal part', () => {
+      const date = datetimes[0];
       const parts = formatDateTimeToParts(date, locale);
       expect(parts).toHaveLength(1);
       expect(parts[0]).toHaveProperty('type', 'literal');
