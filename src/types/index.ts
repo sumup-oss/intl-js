@@ -31,6 +31,7 @@ export type FormattableTime =
   | Temporal.Instant
   | Temporal.PlainTime
   | Temporal.PlainDateTime;
+
 export type FormattableDate =
   | Date
   | Temporal.Instant
