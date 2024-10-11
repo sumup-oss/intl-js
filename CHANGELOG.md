@@ -1,5 +1,11 @@
 # @sumup-oss/intl
 
+## 2.0.1
+
+### Patch Changes
+
+- [#266](https://github.com/sumup-oss/intl-js/pull/266) [`d817935`](https://github.com/sumup-oss/intl-js/commit/d81793501ebcd4d5fd61a11c1c0f5398da63146d) Thanks [@connor-baer](https://github.com/connor-baer)! - Improved the types to allow passing Temporal objects to the date and time formatting functions.
+
 ## 2.0.0
 
 ### Major Changes
