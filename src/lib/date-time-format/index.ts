@@ -13,7 +13,12 @@
  * limitations under the License.
  */
 
-import type { Locale } from '../../types';
+import type {
+  FormattableDate,
+  FormattableDateTime,
+  FormattableTime,
+  Locale,
+} from '../../types';
 import { DATE_STYLES, TIME_STYLES } from '../../data/date-time-styles';
 
 import {
@@ -79,7 +84,7 @@ export const formatDateTime = formatDateTimeFactory();
  * @category Date & Time
  */
 export function formatDate(
-  date: Date, // in UTC
+  date: FormattableDate, // in UTC
   locales?: Locale | Locale[],
   dateStyle: Intl.DateTimeFormatOptions['dateStyle'] = 'short',
 ) {
@@ -111,7 +116,7 @@ export function formatDate(
  * @category Date & Time
  */
 export function formatTime(
-  date: Date, // in UTC
+  date: FormattableTime, // in UTC
   locales?: Locale | Locale[],
   timeStyle: Intl.DateTimeFormatOptions['timeStyle'] = 'short',
 ) {
@@ -119,7 +124,7 @@ export function formatTime(
 }
 
 function formatDateTimeFactory(): (
-  date: Date, // in UTC
+  date: FormattableDateTime, // in UTC
   locales?: Locale | Locale[],
   options?: Intl.DateTimeFormatOptions,
 ) => string {
@@ -143,10 +148,10 @@ function formatDateTimeFactory(): (
       if (includeDate && includeTime) {
         return date.toLocaleString();
       }
-      if (includeDate) {
+      if (includeDate && 'toLocaleDateString' in date) {
         return date.toLocaleDateString();
       }
-      if (includeTime) {
+      if (includeTime && 'toLocaleTimeString' in date) {
         return date.toLocaleTimeString();
       }
       return date.toLocaleString();
@@ -208,7 +213,7 @@ function formatDateTimeFactory(): (
 export const formatDateTimeToParts = formatDateTimeToPartsFactory();
 
 function formatDateTimeToPartsFactory(): (
-  date: Date, // in UTC
+  date: FormattableDateTime, // in UTC
   locales?: Locale | Locale[],
   options?: Intl.DateTimeFormatOptions,
 ) => (Intl.DateTimeFormatPart | { type: 'date'; value: string })[] {
