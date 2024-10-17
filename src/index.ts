@@ -22,7 +22,7 @@ export {
   resolveCurrencyFormat,
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
-} from './lib/number-format';
+} from './lib/number-format/index.js';
 export {
   formatDate,
   formatTime,
@@ -31,5 +31,5 @@ export {
   resolveDateTimeFormat,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
-} from './lib/date-time-format';
-export { CURRENCIES } from './data/currencies';
+} from './lib/date-time-format/index.js';
+export { CURRENCIES } from './data/currencies.js';

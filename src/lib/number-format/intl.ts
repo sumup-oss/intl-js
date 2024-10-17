@@ -15,7 +15,7 @@
 
 import memoizeFormatConstructor from 'intl-format-cache';
 
-import type { Locale } from '../../types';
+import type { Locale } from '../../types/index.js';
 
 /**
  * Whether the `Intl` and `Intl.NumberFormat` APIs
@@ -44,6 +44,7 @@ export const isNumberFormatToPartsSupported = (() => {
   }
 })();
 
+// @ts-expect-error intl-format-cache is bundled in a non-standard way.
 export const getNumberFormat = memoizeFormatConstructor(Intl.NumberFormat) as (
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,

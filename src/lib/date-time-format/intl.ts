@@ -16,7 +16,7 @@
 import { Intl as IntlWithTemporal } from 'temporal-polyfill';
 import memoizeFormatConstructor from 'intl-format-cache';
 
-import { Locale } from '../../types';
+import { Locale } from '../../types/index.js';
 
 /**
  * Whether the `Intl` and `Intl.DateTimeFormat` APIs
@@ -61,6 +61,7 @@ export const isDateTimeStyleSupported = (() => {
   }
 })();
 
+// @ts-expect-error intl-format-cache is bundled in a non-standard way.
 export const getDateTimeFormat = memoizeFormatConstructor(
   IntlWithTemporal.DateTimeFormat,
 ) as (

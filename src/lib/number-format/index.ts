@@ -18,16 +18,16 @@ import type {
   Locale,
   NumberFormat,
   NumericOptions,
-} from '../../types';
-import { findIndex } from '../find-index';
+} from '../../types/index.js';
+import { findIndex } from '../find-index.js';
 
 import {
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
   getNumberFormat,
-} from './intl';
-import { getNumberOptions } from './numbers';
-import { getCurrencyOptions } from './currencies';
+} from './intl.js';
+import { getNumberOptions } from './numbers.js';
+import { getCurrencyOptions } from './currencies.js';
 
 export { isNumberFormatSupported, isNumberFormatToPartsSupported };
 

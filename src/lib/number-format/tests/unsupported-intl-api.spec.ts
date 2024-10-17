@@ -22,9 +22,9 @@ import {
   formatNumberToParts,
   resolveCurrencyFormat,
   resolveNumberFormat,
-} from '..';
+} from '../index.js';
 
-import { number } from './shared';
+import { number } from './shared.js';
 
 vi.mock('../intl', async () => {
   const intl = await vi.importActual('../intl');

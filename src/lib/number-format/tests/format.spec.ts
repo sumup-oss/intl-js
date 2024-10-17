@@ -15,10 +15,10 @@
 
 import { describe, it, expect } from 'vitest';
 
-import { formatNumber, formatCurrency } from '..';
-import { CURRENCIES_WITHOUT_DECIMALS } from '../../../data/currencies';
+import { formatNumber, formatCurrency } from '../index.js';
+import { CURRENCIES_WITHOUT_DECIMALS } from '../../../data/currencies.js';
 
-import { locales, number } from './shared';
+import { locales, number } from './shared.js';
 
 describe('Numbers', () => {
   describe('formatNumber', () => {
