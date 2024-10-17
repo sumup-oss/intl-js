@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import type { Locale } from '../../types';
+import type { Locale } from '../../types/index.js';
 
 export function getNumberOptions(
   locales?: Locale | Locale[],

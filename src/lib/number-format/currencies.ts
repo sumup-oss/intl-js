@@ -15,10 +15,13 @@
 
 /* eslint-disable no-continue */
 
-import type { Locale, Currency, NumericOptions } from '../../types';
-import { CURRENCIES, CURRENCIES_WITHOUT_DECIMALS } from '../../data/currencies';
+import type { Locale, Currency, NumericOptions } from '../../types/index.js';
+import {
+  CURRENCIES,
+  CURRENCIES_WITHOUT_DECIMALS,
+} from '../../data/currencies.js';
 
-import { resolveLocale } from './intl';
+import { resolveLocale } from './intl.js';
 
 export function extractCountry(locale: string): string {
   if (locale.length === 2) {

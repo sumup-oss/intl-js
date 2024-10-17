@@ -6,9 +6,12 @@
   "author": "Connor Bär <connor.baer@sumup.com>",
   "license": "Apache-2.0",
   "private": false,
-  "main": "dist/cjs/index.js",
-  "module": "dist/es/index.js",
-  "types": "dist/es/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "sideEffects": false,
   "files": [
     "dist",
@@ -23,9 +26,7 @@
   "scripts": {
     "start": "tsc --watch",
     "dev": "npm run start",
-    "build": "npm run build:es && npm run build:cjs",
-    "build:es": "tsc",
-    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build": "tsc",
     "docs": "typedoc",
     "lint": "foundry run eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm run lint -- --fix",
@@ -37,7 +38,7 @@
     "release": "changeset publish"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=18"
   },
   "dependencies": {
     "intl-format-cache": "^4.2.27"

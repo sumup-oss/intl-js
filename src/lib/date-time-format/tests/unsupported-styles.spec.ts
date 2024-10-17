@@ -16,9 +16,9 @@
 import { vi, describe, it, expect } from 'vitest';
 import { Intl } from 'temporal-polyfill';
 
-import { formatDateTime } from '..';
+import { formatDateTime } from '../index.js';
 
-import { dates, datetimes, times } from './shared';
+import { dates, datetimes, times } from './shared.js';
 
 vi.mock('../intl', async () => {
   const intl = await vi.importActual('../intl');

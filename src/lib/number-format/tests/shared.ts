@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { CURRENCIES } from '../../..';
+import { CURRENCIES } from '../../../index.js';
 
 export const locales: (string | string[])[] = [
   ...Object.keys(CURRENCIES),

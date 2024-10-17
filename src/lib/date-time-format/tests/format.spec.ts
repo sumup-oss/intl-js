@@ -16,9 +16,9 @@
 import { describe, it, expect } from 'vitest';
 import { Intl } from 'temporal-polyfill';
 
-import { formatDateTime, formatDate, formatTime } from '..';
+import { formatDateTime, formatDate, formatTime } from '../index.js';
 
-import { locales, dates, times, datetimes } from './shared';
+import { locales, dates, times, datetimes } from './shared.js';
 
 describe('Dates & times', () => {
   describe('formatDateTime', () => {

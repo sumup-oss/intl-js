@@ -18,15 +18,15 @@ import type {
   FormattableDateTime,
   FormattableTime,
   Locale,
-} from '../../types';
-import { DATE_STYLES, TIME_STYLES } from '../../data/date-time-styles';
+} from '../../types/index.js';
+import { DATE_STYLES, TIME_STYLES } from '../../data/date-time-styles.js';
 
 import {
   getDateTimeFormat,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
   isDateTimeStyleSupported,
-} from './intl';
+} from './intl.js';
 
 export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
 
