@@ -28,11 +28,9 @@ Creating instances of `Intl.*` formatters is an [expensive operation](https://bl
 
 ### Compatibility
 
-`@sumup-oss/intl` works in [modern browsers](https://caniuse.com/mdn-javascript_builtins_intl_numberformat_numberformat,mdn-javascript_builtins_intl_datetimeformat_datetimeformat) as well as server runtimes with support for the `Intl` APIs (such as Node 10+[^1]). When the `Intl` APIs aren't (fully) available, `@sumup-oss/intl` tries to gracefully degrade. Please refer to the [API reference](#api-reference) to learn how certain functions behave when the runtime doesn't support the necessary APIs. If you need to support legacy browsers, consider including [polyfills](https://formatjs.io/docs/polyfills/).
+`@sumup-oss/intl` works in [modern browsers](https://caniuse.com/mdn-javascript_builtins_intl_numberformat_numberformat,mdn-javascript_builtins_intl_datetimeformat_datetimeformat) as well as server runtimes with support for the `Intl` APIs (such as Node 13+). When the `Intl` APIs aren't (fully) available, `@sumup-oss/intl` tries to gracefully degrade. Please refer to the [API reference](#api-reference) to learn how certain functions behave when the runtime doesn't support the necessary APIs. If you need to support legacy browsers, consider including [polyfills](https://formatjs.io/docs/polyfills/).
 
 `@sumup-oss/intl` integrates [`temporal-polyfill`](https://www.npmjs.com/package/temporal-polyfill) to support formatting [`Temporal`](https://github.com/tc39/proposal-temporal) date-time objects.
-
-[^1]: [Node](https://nodejs.org/en/) supports the `Intl` APIs since v8, however, it includes only the English localizations up to v12. Node v13 and above support all locales. If you're unable to use Node v13+, you can either include [polyfills](https://formatjs.io/docs/polyfills/) or use a [custom Node build](https://nodejs.org/docs/latest-v8.x/api/intl.html#intl_options_for_building_node_js).
 
 ## Installation
 
@@ -42,7 +40,7 @@ Creating instances of `Intl.*` formatters is an [expensive operation](https://bl
 npm install @sumup-oss/intl temporal-polyfill
 ```
 
-`@sumup-oss/intl` requires Node v10+.
+`@sumup-oss/intl` requires Node v18+.
 
 ## Usage
 
