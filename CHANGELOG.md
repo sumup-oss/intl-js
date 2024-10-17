@@ -1,5 +1,11 @@
 # @sumup-oss/intl
 
+## 3.0.1
+
+### Patch Changes
+
+- [#270](https://github.com/sumup-oss/intl-js/pull/270) [`44ad012`](https://github.com/sumup-oss/intl-js/commit/44ad012bd8c9cdd6d101501fe7f188d8d792efb1) Thanks [@connor-baer](https://github.com/connor-baer)! - Removed the `intl-format-cache` dependency.
+
 ## 3.0.0
 
 ### Major Changes
