@@ -19,10 +19,9 @@ import { formatNumber, formatNumberToParts } from '../number-format/index.js';
 import {
   getRelativeTimeFormat,
   isRelativeTimeFormatSupported,
-  isRelativeTimeFormatToPartsSupported,
 } from './intl.js';
 
-export { isRelativeTimeFormatSupported, isRelativeTimeFormatToPartsSupported };
+export { isRelativeTimeFormatSupported };
 
 /**
  * Formats a relative time with support for various [styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/RelativeTimeFormat#style).
@@ -103,7 +102,7 @@ function formatRelativeTimeToPartsFactory(): (
   locales?: Locale | Locale[],
   options?: Intl.RelativeTimeFormatOptions,
 ) => Intl.RelativeTimeFormatPart[] {
-  if (!isRelativeTimeFormatToPartsSupported) {
+  if (!isRelativeTimeFormatSupported) {
     return (value, unit, locales, options) => {
       // In runtimes that don't support formatting to parts, the relative time
       // is formatted using the `Intl.NumberFormat` API instead.

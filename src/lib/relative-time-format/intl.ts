@@ -31,21 +31,6 @@ export const isRelativeTimeFormatSupported = (() => {
   }
 })();
 
-/**
- * Whether the `Intl`, `Intl.RelativeTimeFormat`, and
- * `Intl.RelativeTimeFormat.formatToParts` APIs are supported by the runtime.
- */
-export const isRelativeTimeFormatToPartsSupported = (() => {
-  try {
-    return (
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-      typeof Intl.RelativeTimeFormat.prototype.formatToParts !== 'undefined'
-    );
-  } catch (error) {
-    return false;
-  }
-})();
-
 export const getRelativeTimeFormat = memoize(Intl.RelativeTimeFormat) as (
   locales?: Locale | Locale[],
   options?: Intl.RelativeTimeFormatOptions,

@@ -28,7 +28,6 @@ vi.mock('../intl', async () => {
   return {
     ...intl,
     isRelativeTimeFormatSupported: false,
-    isRelativeTimeFormatToPartsSupported: false,
   };
 });
 
