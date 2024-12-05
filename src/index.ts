@@ -32,4 +32,10 @@ export {
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
 } from './lib/date-time-format/index.js';
+export {
+  formatRelativeTime,
+  formatRelativeTimeToParts,
+  resolveRelativeTimeFormat,
+  isRelativeTimeFormatSupported,
+} from './lib/relative-time-format/index.js';
 export { CURRENCIES } from './data/currencies.js';

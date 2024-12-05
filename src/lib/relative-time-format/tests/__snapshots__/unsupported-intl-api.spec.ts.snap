@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Relative times > when Intl.RelativeTimeFormat is unsupported > should format -5 months as a relative time 1`] = `"-5 months"`;
+
+exports[`Relative times > when Intl.RelativeTimeFormat is unsupported > should format 1 day as a relative time 1`] = `"1 day"`;
+
+exports[`Relative times > when Intl.RelativeTimeFormat is unsupported > should format 3 quarters as a relative time 1`] = `"9 months"`;
+
+exports[`Relative times > when Intl.RelativeTimeFormat is unsupported > should format 7 years as a relative time 1`] = `"7 years"`;
