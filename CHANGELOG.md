@@ -1,5 +1,17 @@
 # @sumup-oss/intl
 
+## 3.1.0
+
+### Minor Changes
+
+- [`4cd3fbe`](https://github.com/sumup-oss/intl-js/commit/4cd3fbe35a2df0a959ce56e596acae5b151774f9) Thanks [@connor-baer](https://github.com/connor-baer)! - Added support for formatting relative times.
+
+  ```ts
+  import { formatRelativeTime } from '@sumup-oss/intl';
+
+  formatRelativeTime(7, 'years', 'pt-BR'); // 'em 7 anos'
+  ```
+
 ## 3.0.1
 
 ### Patch Changes
