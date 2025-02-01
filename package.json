@@ -55,7 +55,7 @@
     "typedoc-github-wiki-theme": "^2.1.0",
     "typedoc-plugin-markdown": "^4.3.1",
     "typescript": "^5.4.5",
-    "vitest": "^2.0.5"
+    "vitest": "^3.0.4"
   },
   "peerDependencies": {
     "temporal-polyfill": "0.2.x"
