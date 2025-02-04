@@ -14,3 +14,7 @@ updates:
         patterns:
           - 'typedoc'
           - 'typedoc-*'
+      vitest:
+        patterns:
+          - 'vitest'
+          - '@vitest/*'
