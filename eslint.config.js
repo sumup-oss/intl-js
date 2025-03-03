@@ -13,4 +13,22 @@
  * limitations under the License.
  */
 
-module.exports = require('@sumup-oss/foundry/husky')();
+import { configs } from '@sumup-oss/foundry/eslint';
+import vitest from '@vitest/eslint-plugin';
+
+export default [
+  configs.ignore,
+  configs.javascript,
+  configs.typescript,
+  configs.browser,
+  configs.tests({ plugins: { vitest } }),
+  configs.openSource,
+  {
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+];
