@@ -21,19 +21,19 @@ import type {
 } from '../../types/index.js';
 import { findIndex } from '../find-index.js';
 
+import { getCurrencyOptions } from './currencies.js';
 import {
+  getNumberFormat,
   isNumberFormatSupported,
   isNumberFormatToPartsSupported,
-  getNumberFormat,
 } from './intl.js';
 import { getNumberOptions } from './numbers.js';
-import { getCurrencyOptions } from './currencies.js';
 
 export { isNumberFormatSupported, isNumberFormatToPartsSupported };
 
 type GetOptions = (
   locales: Locale | Locale[],
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // biome-ignore lint/suspicious/noExplicitAny:
   ...args: any[]
 ) => NumericOptions;
 
@@ -95,7 +95,6 @@ function formatNumberFactory<T extends GetOptions>(
   getOptions: T,
 ): (value: number, ...args: Parameters<T>) => string {
   if (!isNumberFormatSupported) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (value, _locales, ..._args): string => value.toLocaleString();
   }
 
@@ -213,7 +212,6 @@ function formatNumberToPartsFactory<T extends GetOptions>(
   getOptions: T,
 ): (value: number, ...args: Parameters<T>) => Intl.NumberFormatPart[] {
   if (!isNumberFormatToPartsSupported) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (value, _locales, ..._args): Intl.NumberFormatPart[] => [
       { type: 'integer', value: value.toLocaleString() },
     ];
@@ -379,7 +377,6 @@ function resolveNumberFormatFactory<T extends GetOptions>(
   getOptions: T,
 ): (...args: Parameters<T>) => NumberFormat | null {
   if (!isNumberFormatToPartsSupported) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (_locales, ..._args) => null;
   }
 
