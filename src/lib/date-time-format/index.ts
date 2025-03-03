@@ -13,13 +13,13 @@
  * limitations under the License.
  */
 
+import { DATE_STYLES, TIME_STYLES } from '../../data/date-time-styles.js';
 import type {
   FormattableDate,
   FormattableDateTime,
   FormattableTime,
   Locale,
 } from '../../types/index.js';
-import { DATE_STYLES, TIME_STYLES } from '../../data/date-time-styles.js';
 
 import {
   getDateTimeFormat,
@@ -129,7 +129,6 @@ function formatDateTimeFactory(): (
   options?: Intl.DateTimeFormatOptions,
 ) => string {
   if (!isDateTimeFormatSupported) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return (date, _locales, options) => {
       const fallbackOptions = getFallbackOptions(options);
       const includeDate = hasOptions(fallbackOptions, [
