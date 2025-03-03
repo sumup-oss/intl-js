@@ -13,12 +13,13 @@
  * limitations under the License.
  */
 
-import { describe, it, expect } from 'vitest';
+// biome-ignore lint/suspicious/noShadowRestrictedNames:
 import { Intl } from 'temporal-polyfill';
+import { describe, expect, it } from 'vitest';
 
-import { formatDateTime, formatDate, formatTime } from '../index.js';
+import { formatDate, formatDateTime, formatTime } from '../index.js';
 
-import { locales, dates, times, datetimes } from './shared.js';
+import { dates, datetimes, locales, times } from './shared.js';
 
 describe('Dates & times', () => {
   describe('formatDateTime', () => {

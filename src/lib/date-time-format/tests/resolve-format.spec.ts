@@ -13,8 +13,9 @@
  * limitations under the License.
  */
 
-import { describe, it, expect } from 'vitest';
+// biome-ignore lint/suspicious/noShadowRestrictedNames:
 import { Intl } from 'temporal-polyfill';
+import { describe, expect, it } from 'vitest';
 
 import { resolveDateTimeFormat } from '../index.js';
 

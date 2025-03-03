@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// biome-ignore lint/suspicious/noExplicitAny:
 type Constructor<T> = new (...args: any[]) => T;
 
 export function memoize<

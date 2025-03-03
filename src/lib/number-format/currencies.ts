@@ -15,11 +15,11 @@
 
 /* eslint-disable no-continue */
 
-import type { Locale, Currency, NumericOptions } from '../../types/index.js';
 import {
   CURRENCIES,
   CURRENCIES_WITHOUT_DECIMALS,
 } from '../../data/currencies.js';
+import type { Currency, Locale, NumericOptions } from '../../types/index.js';
 
 import { resolveLocale } from './intl.js';
 
@@ -28,14 +28,14 @@ export function extractCountry(locale: string): string {
     return locale.toUpperCase();
   }
   const country = locale.split('-')[1];
-  return country && country.toUpperCase();
+  return country?.toUpperCase();
 }
 
 export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
   const inferredLocale = resolveLocale(locales);
   const localesArray =
     typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;
-  // eslint-disable-next-line no-restricted-syntax
+
   for (const locale of localesArray) {
     const country = extractCountry(locale);
     if (!country) {

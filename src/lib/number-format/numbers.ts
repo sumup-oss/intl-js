@@ -16,7 +16,7 @@
 import type { Locale } from '../../types/index.js';
 
 export function getNumberOptions(
-  locales?: Locale | Locale[],
+  _locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
 ): Intl.NumberFormatOptions {
   return { style: 'decimal', ...options };
