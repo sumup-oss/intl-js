@@ -1,5 +1,11 @@
 # @sumup-oss/intl
 
+## 3.1.1
+
+### Patch Changes
+
+- [#306](https://github.com/sumup-oss/intl-js/pull/306) [`ac277ae`](https://github.com/sumup-oss/intl-js/commit/ac277aebd5c47e2221352e34c743f75f974f5f0a) Thanks [@connor-baer](https://github.com/connor-baer)! - Widened the allowed version range for the `temporal-polyfill` peer dependency which recently added support for the March 2025 version of the Temporal spec.
+
 ## 3.1.0
 
 ### Minor Changes
