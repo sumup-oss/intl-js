@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { Currency } from '../types/index.js';
+import type { Currency } from '../types/index.js';
 
 /**
  * An object that maps a 2 char country code to its official 3 char currency code.
