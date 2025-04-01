@@ -13,12 +13,12 @@
  * limitations under the License.
  */
 
-import { describe, it, expect } from 'vitest';
 import type { SpyImpl } from 'tinyspy';
+import { describe, expect, it } from 'vitest';
 
 import { formatRelativeTimeToParts } from '../index.js';
 
-import { relativeTimes, locales } from './shared.js';
+import { locales, relativeTimes } from './shared.js';
 
 const spy = Intl.RelativeTimeFormat as unknown as SpyImpl;
 

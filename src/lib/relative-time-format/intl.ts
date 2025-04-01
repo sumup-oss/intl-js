@@ -26,7 +26,7 @@ export const isRelativeTimeFormatSupported = (() => {
       typeof Intl !== 'undefined' &&
       typeof Intl.RelativeTimeFormat !== 'undefined'
     );
-  } catch (error) {
+  } catch (_error) {
     return false;
   }
 })();
