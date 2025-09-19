@@ -13,4 +13,6 @@
  * limitations under the License.
  */
 
-module.exports = require('@sumup-oss/foundry/husky')();
+import { defineConfig } from '@sumup-oss/foundry/lint-staged';
+
+export default defineConfig();

@@ -13,22 +13,26 @@
  * limitations under the License.
  */
 
-import { configs } from '@sumup-oss/foundry/eslint';
+import { configs, defineConfig } from '@sumup-oss/foundry/eslint';
 import vitest from '@vitest/eslint-plugin';
 
-export default [
-  configs.ignore,
+export default defineConfig([
+  configs.ignores,
   configs.javascript,
-  configs.typescript,
-  configs.browser,
-  configs.tests({ plugins: { vitest } }),
-  configs.openSource,
   {
+    extends: [configs.typescript],
     languageOptions: {
       parserOptions: {
         projectService: true,
+        // eslint-disable-next-line n/no-unsupported-features/node-builtins
         tsconfigRootDir: import.meta.dirname,
       },
     },
   },
-];
+  configs.browser,
+  configs.node,
+  {
+    extends: [vitest.configs.recommended, configs.tests],
+  },
+  configs.openSource,
+]);
