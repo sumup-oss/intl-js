@@ -13,78 +13,26 @@
  * limitations under the License.
  */
 
-/* eslint-disable no-continue */
-
-import type { Locale, Currency, NumericOptions } from '../../types/index.js';
-import {
-  CURRENCIES,
-  CURRENCIES_WITHOUT_DECIMALS,
-} from '../../data/currencies.js';
-
-import { resolveLocale } from './intl.js';
-
-export function extractCountry(locale: string): string {
-  if (locale.length === 2) {
-    return locale.toUpperCase();
-  }
-  const country = locale.split('-')[1];
-  return country && country.toUpperCase();
-}
-
-export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
-  const inferredLocale = resolveLocale(locales);
-  const localesArray =
-    typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;
-  // eslint-disable-next-line no-restricted-syntax
-  for (const locale of localesArray) {
-    const country = extractCountry(locale);
-    if (!country) {
-      continue;
-    }
-
-    const currency = CURRENCIES[country];
-    if (!currency) {
-      continue;
-    }
-
-    return currency;
-  }
-
-  if (
-    process.env.NODE_ENV !== 'production' &&
-    process.env.NODE_ENV !== 'test'
-  ) {
-    throw new TypeError(
-      [
-        `No currency found for "${localesArray.join(', ')}".`,
-        'Explicitly pass a currency as part of the options',
-        'or submit a new one on GitHub.',
-      ].join(' '),
-    );
-  }
-
-  return null;
-}
+import type { Currency, Locale, NumericOptions } from '../../types/index.js';
+import { CURRENCIES_WITHOUT_DECIMALS } from '../../data/currencies.js';
 
 export function getCurrencyOptions(
-  locales?: Locale | Locale[],
-  currency?: Currency,
+  currency: Currency,
+  _locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,
 ): NumericOptions {
-  const finalCurrency = currency || resolveCurrency(locales);
-
-  if (!finalCurrency) {
+  if (!currency) {
     return {
       ...options,
       style: 'decimal',
     };
   }
 
-  if (CURRENCIES_WITHOUT_DECIMALS.includes(finalCurrency)) {
+  if (CURRENCIES_WITHOUT_DECIMALS.includes(currency)) {
     return {
       ...options,
       style: 'currency',
-      currency: finalCurrency,
+      currency,
       minimumFractionDigits: 0,
     };
   }
@@ -92,6 +40,6 @@ export function getCurrencyOptions(
   return {
     ...options,
     style: 'currency',
-    currency: finalCurrency,
+    currency,
   };
 }

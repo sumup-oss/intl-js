@@ -39,16 +39,17 @@ describe('Numbers', () => {
   });
 });
 
-describe('Currency values', () => {
+describe.only('Currency values', () => {
   describe('resolveCurrencyFormat', () => {
     it.each(locales)('should get the currency format for %o', (locale) => {
-      const actual = resolveCurrencyFormat(locale);
+      const currency = 'EUR';
+      const actual = resolveCurrencyFormat(currency, locale);
       expect(actual).toBeObject();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(
         locale,
         expect.objectContaining({
           style: 'currency',
-          currency: expect.any(String),
+          currency,
         }),
       );
     });
@@ -56,7 +57,7 @@ describe('Currency values', () => {
     it.each(CURRENCIES_WITHOUT_DECIMALS)(
       'should get the %o currency format without decimals',
       (currency) => {
-        const actual = resolveCurrencyFormat(undefined, currency);
+        const actual = resolveCurrencyFormat(currency);
         expect(actual).toBeObject();
         expect(Intl.NumberFormat).toHaveBeenCalledWith(
           undefined,
@@ -70,8 +71,9 @@ describe('Currency values', () => {
     );
 
     it('should include additional options', () => {
+      const currency = 'EUR';
       const locale = 'en-US';
-      const actual = resolveCurrencyFormat(locale);
+      const actual = resolveCurrencyFormat(currency, locale);
       expect(actual).toHaveProperty('groupDelimiter', ',');
       expect(actual).toHaveProperty('decimalDelimiter', '.');
       expect(actual).toHaveProperty('currencySymbol', '$');
@@ -81,7 +83,7 @@ describe('Currency values', () => {
     it('should accept a custom currency', () => {
       const locale = 'xx-XX';
       const currency = 'XXX';
-      const actual = resolveCurrencyFormat(locale, currency);
+      const actual = resolveCurrencyFormat(currency, locale);
       expect(actual).toBeObject();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'currency',

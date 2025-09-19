@@ -32,7 +32,6 @@ import { getCurrencyOptions } from './currencies.js';
 export { isNumberFormatSupported, isNumberFormatToPartsSupported };
 
 type GetOptions = (
-  locales: Locale | Locale[],
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ...args: any[]
 ) => NumericOptions;
@@ -86,8 +85,8 @@ export const formatNumber = formatNumberFactory(getNumberOptions) as (
  */
 export const formatCurrency = formatNumberFactory(getCurrencyOptions) as (
   value: number,
+  currency: Currency,
   locales?: Locale | Locale[],
-  currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => string;
 
@@ -96,11 +95,11 @@ function formatNumberFactory<T extends GetOptions>(
 ): (value: number, ...args: Parameters<T>) => string {
   if (!isNumberFormatSupported) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    return (value, _locales, ..._args): string => value.toLocaleString();
+    return (value, ..._args): string => value.toLocaleString();
   }
 
-  return (value, locales, ...args): string => {
-    const options = getOptions(locales, ...args);
+  return (value, locales, opts): string => {
+    const options = getOptions(opts);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.format(value);
   };
@@ -203,8 +202,8 @@ export const formatCurrencyToParts = formatNumberToPartsFactory(
   getCurrencyOptions,
 ) as (
   value: number,
+  currency: Currency,
   locales?: Locale | Locale[],
-  currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
 /* eslint-enable no-irregular-whitespace */
@@ -368,8 +367,8 @@ export const resolveNumberFormat = resolveNumberFormatFactory(
 export const resolveCurrencyFormat = resolveNumberFormatFactory(
   getCurrencyOptions,
 ) as (
+  currency: Currency,
   locales?: Locale | Locale[],
-  currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => NumberFormat | null;
 
@@ -380,7 +379,7 @@ function resolveNumberFormatFactory<T extends GetOptions>(
 ): (...args: Parameters<T>) => NumberFormat | null {
   if (!isNumberFormatToPartsSupported) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    return (_locales, ..._args) => null;
+    return (..._args) => null;
   }
 
   return (locales, ...args): NumberFormat => {

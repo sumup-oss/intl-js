@@ -47,13 +47,14 @@ describe('Numbers', () => {
 describe('Currency values', () => {
   describe('formatCurrency', () => {
     it.each(locales)('should format a currency for %o', (locale) => {
-      const actual = formatCurrency(number, locale);
+      const currency = 'EUR';
+      const actual = formatCurrency(number, currency, locale);
       expect(actual).toBeString();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(
         locale,
         expect.objectContaining({
           style: 'currency',
-          currency: expect.any(String),
+          currency,
         }),
       );
     });
@@ -61,7 +62,7 @@ describe('Currency values', () => {
     it.each(CURRENCIES_WITHOUT_DECIMALS)(
       'should format the %o currency without decimals',
       (currency) => {
-        const actual = formatCurrency(number, undefined, currency);
+        const actual = formatCurrency(number, currency);
         expect(actual).toBeString();
 
         expect(Intl.NumberFormat).toHaveBeenCalledWith(
@@ -78,20 +79,11 @@ describe('Currency values', () => {
     it('should accept a custom currency', () => {
       const locale = 'xx-XX';
       const currency = 'XXX';
-      const actual = formatCurrency(number, locale, currency);
+      const actual = formatCurrency(number, currency, locale);
       expect(actual).toBeString();
       expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
         style: 'currency',
         currency,
-      });
-    });
-
-    it('should format as a unitless number if the currency is not found', () => {
-      const locale = 'xx-XX';
-      const actual = formatCurrency(number, locale);
-      expect(actual).toBeString();
-      expect(Intl.NumberFormat).toHaveBeenCalledWith(locale, {
-        style: 'decimal',
       });
     });
   });

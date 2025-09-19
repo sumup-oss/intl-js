@@ -38,4 +38,3 @@ export {
   resolveRelativeTimeFormat,
   isRelativeTimeFormatSupported,
 } from './lib/relative-time-format/index.js';
-export { CURRENCIES } from './data/currencies.js';
