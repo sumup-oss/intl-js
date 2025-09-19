@@ -23,7 +23,7 @@ import type { Currency, Locale, NumericOptions } from '../../types/index.js';
 
 import { resolveLocale } from './intl.js';
 
-export function extractCountry(locale: string): string {
+function extractCountry(locale: string): string {
   if (locale.length === 2) {
     return locale.toUpperCase();
   }
@@ -31,7 +31,7 @@ export function extractCountry(locale: string): string {
   return country?.toUpperCase();
 }
 
-export function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
+function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
   const inferredLocale = resolveLocale(locales);
   const localesArray =
     typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;

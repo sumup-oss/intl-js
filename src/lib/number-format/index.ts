@@ -33,7 +33,7 @@ export { isNumberFormatSupported, isNumberFormatToPartsSupported };
 
 type GetOptions = (
   locales: Locale | Locale[],
-  // biome-ignore lint/suspicious/noExplicitAny:
+  // biome-ignore lint/suspicious/noExplicitAny: A more specific type doesn't work here
   ...args: any[]
 ) => NumericOptions;
 
@@ -155,7 +155,6 @@ export const formatNumberToParts = formatNumberToPartsFactory(
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
 
-/* eslint-disable no-irregular-whitespace */
 /**
  * Formats a number in the country's official currency
  * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
@@ -206,7 +205,6 @@ export const formatCurrencyToParts = formatNumberToPartsFactory(
   currency?: Currency,
   options?: Intl.NumberFormatOptions,
 ) => Intl.NumberFormatPart[];
-/* eslint-enable no-irregular-whitespace */
 
 function formatNumberToPartsFactory<T extends GetOptions>(
   getOptions: T,

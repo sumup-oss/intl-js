@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-// biome-ignore lint/suspicious/noShadowRestrictedNames:
+// biome-ignore lint/suspicious/noShadowRestrictedNames: Necessary for the polyfill to work
 import { Intl } from 'temporal-polyfill';
 import { describe, expect, it, vi } from 'vitest';
 
