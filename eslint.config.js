@@ -23,9 +23,11 @@ export default defineConfig([
     extends: [configs.typescript],
     languageOptions: {
       parserOptions: {
-        projectService: true,
         // eslint-disable-next-line n/no-unsupported-features/node-builtins
         tsconfigRootDir: import.meta.dirname,
+        projectService: {
+          allowDefaultProject: ['*.js', '*.cjs'],
+        },
       },
     },
   },
