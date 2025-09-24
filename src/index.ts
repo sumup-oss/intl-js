@@ -13,29 +13,29 @@
  * limitations under the License.
  */
 
-export {
-  formatNumber,
-  formatCurrency,
-  formatNumberToParts,
-  formatCurrencyToParts,
-  resolveNumberFormat,
-  resolveCurrencyFormat,
-  isNumberFormatSupported,
-  isNumberFormatToPartsSupported,
-} from './lib/number-format/index.js';
+export { CURRENCIES } from './data/currencies.js';
 export {
   formatDate,
-  formatTime,
   formatDateTime,
   formatDateTimeToParts,
-  resolveDateTimeFormat,
+  formatTime,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
+  resolveDateTimeFormat,
 } from './lib/date-time-format/index.js';
+export {
+  formatCurrency,
+  formatCurrencyToParts,
+  formatNumber,
+  formatNumberToParts,
+  isNumberFormatSupported,
+  isNumberFormatToPartsSupported,
+  resolveCurrencyFormat,
+  resolveNumberFormat,
+} from './lib/number-format/index.js';
 export {
   formatRelativeTime,
   formatRelativeTimeToParts,
-  resolveRelativeTimeFormat,
   isRelativeTimeFormatSupported,
+  resolveRelativeTimeFormat,
 } from './lib/relative-time-format/index.js';
-export { CURRENCIES } from './data/currencies.js';

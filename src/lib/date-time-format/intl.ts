@@ -15,7 +15,7 @@
 
 import { Intl as IntlWithTemporal } from 'temporal-polyfill';
 
-import { Locale } from '../../types/index.js';
+import type { Locale } from '../../types/index.js';
 import { memoize } from '../memoize.js';
 
 /**
@@ -27,7 +27,7 @@ export const isDateTimeFormatSupported = (() => {
     return (
       typeof Intl !== 'undefined' && typeof Intl.DateTimeFormat !== 'undefined'
     );
-  } catch (error) {
+  } catch (_error) {
     return false;
   }
 })();
@@ -38,9 +38,8 @@ export const isDateTimeFormatSupported = (() => {
  */
 export const isDateTimeFormatToPartsSupported = (() => {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     return typeof Intl.DateTimeFormat.prototype.formatToParts !== 'undefined';
-  } catch (error) {
+  } catch (_error) {
     return false;
   }
 })();
@@ -56,7 +55,7 @@ export const isDateTimeStyleSupported = (() => {
       timeStyle: 'short',
     }).resolvedOptions() as Intl.DateTimeFormatOptions;
     return Boolean(options.dateStyle && options.timeStyle);
-  } catch (error) {
+  } catch (_error) {
     return false;
   }
 })();

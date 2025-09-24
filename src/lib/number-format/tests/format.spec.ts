@@ -13,10 +13,10 @@
  * limitations under the License.
  */
 
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
-import { formatNumber, formatCurrency } from '../index.js';
 import { CURRENCIES_WITHOUT_DECIMALS } from '../../../data/currencies.js';
+import { formatCurrency, formatNumber } from '../index.js';
 
 import { locales, number } from './shared.js';
 

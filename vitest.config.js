@@ -21,4 +21,4 @@ export default defineConfig({
     globalSetup: './vitest.global-setup.js',
     setupFiles: ['./vitest.setup.js'],
   },
-})
+});
