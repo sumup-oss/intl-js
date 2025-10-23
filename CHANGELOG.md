@@ -1,5 +1,11 @@
 # @sumup-oss/intl
 
+## 3.2.0
+
+### Minor Changes
+
+- [#339](https://github.com/sumup-oss/intl-js/pull/339) [`2dad98b`](https://github.com/sumup-oss/intl-js/commit/2dad98bbfc76e597f492d49f9ecb9645af81e63d) Thanks [@connor-baer](https://github.com/connor-baer)! - Added deprecation warnings when no explicit currency is passed to the `formatCurrency`, `formatCurrencyToParts`, and `resolveCurrencyFormat` functions.
+
 ## 3.1.1
 
 ### Patch Changes
@@ -13,9 +19,9 @@
 - [`4cd3fbe`](https://github.com/sumup-oss/intl-js/commit/4cd3fbe35a2df0a959ce56e596acae5b151774f9) Thanks [@connor-baer](https://github.com/connor-baer)! - Added support for formatting relative times.
 
   ```ts
-  import { formatRelativeTime } from '@sumup-oss/intl';
+  import { formatRelativeTime } from "@sumup-oss/intl";
 
-  formatRelativeTime(7, 'years', 'pt-BR'); // 'em 7 anos'
+  formatRelativeTime(7, "years", "pt-BR"); // 'em 7 anos'
   ```
 
 ## 3.0.1
