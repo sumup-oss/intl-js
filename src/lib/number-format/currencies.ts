@@ -31,7 +31,22 @@ function extractCountry(locale: string): string {
   return country?.toUpperCase();
 }
 
+class DeprecationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'DeprecationError';
+  }
+}
+
 function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
+  if (process.env.NODE_ENV !== 'production') {
+    const deprecation = new DeprecationError(
+      '[@sumup-oss/intl] The `currency` argument will become required in a future version.',
+    );
+    // biome-ignore lint/suspicious/noConsole: Development-only warning
+    console.warn(deprecation);
+  }
+
   const inferredLocale = resolveLocale(locales);
   const localesArray =
     typeof inferredLocale === 'string' ? [inferredLocale] : inferredLocale;

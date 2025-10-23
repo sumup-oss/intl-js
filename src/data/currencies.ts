@@ -16,6 +16,9 @@
 import type { Currency } from '../types/index.js';
 
 /**
+ * @deprecated The currencies data is outdated and will be removed in a future
+ * version.
+ *
  * An object that maps a 2 char country code to its official 3 char currency code.
  * [View all supported countries](https://github.com/sumup-oss/intl-js/blob/main/src/data/currencies.ts).
  */
