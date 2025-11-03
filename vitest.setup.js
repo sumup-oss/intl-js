@@ -15,14 +15,11 @@
 
 import * as matchers from 'jest-extended';
 import { Intl as IntlWithTemporal } from 'temporal-polyfill';
-import { spyOn } from 'tinyspy';
 import { expect, vi } from 'vitest';
 
 expect.extend(matchers);
 
-// Intl.RelativeTimeFormat can't be spied upon (https://github.com/vitest-dev/vitest/issues/6104)
-spyOn(Intl, 'RelativeTimeFormat');
-
+vi.spyOn(Intl, 'RelativeTimeFormat');
 vi.spyOn(Intl, 'NumberFormat');
 vi.spyOn(IntlWithTemporal, 'DateTimeFormat');
 

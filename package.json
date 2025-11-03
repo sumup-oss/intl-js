@@ -50,7 +50,6 @@
     "jest-extended": "^6.0.0",
     "license-checker": "^25.0.1",
     "temporal-polyfill": "^0.3.0",
-    "tinyspy": "^4.0.4",
     "typedoc": "^0.28.13",
     "typedoc-github-wiki-theme": "^2.1.0",
     "typedoc-plugin-markdown": "^4.9.0",
