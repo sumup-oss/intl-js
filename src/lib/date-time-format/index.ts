@@ -29,7 +29,11 @@ import {
   isDateTimeStyleSupported,
 } from './intl.js';
 
-export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
+export {
+  isDateTimeFormatSupported,
+  isDateTimeFormatToPartsSupported,
+  isDateTimeFormatRangeSupported,
+};
 
 /**
  * Formats a datetime with support for various

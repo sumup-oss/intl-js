@@ -21,6 +21,7 @@ export {
   formatDateTimeRangeToParts,
   formatDateTimeToParts,
   formatTime,
+  isDateTimeFormatRangeSupported,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
   resolveDateTimeFormat,
