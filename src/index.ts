@@ -17,8 +17,11 @@ export { CURRENCIES } from './data/currencies.js';
 export {
   formatDate,
   formatDateTime,
+  formatDateTimeRange,
+  formatDateTimeRangeToParts,
   formatDateTimeToParts,
   formatTime,
+  isDateTimeFormatRangeSupported,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
   resolveDateTimeFormat,

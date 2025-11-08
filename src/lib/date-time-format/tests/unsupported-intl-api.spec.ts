@@ -13,10 +13,13 @@
  * limitations under the License.
  */
 
+import { Temporal } from 'temporal-polyfill';
 import { describe, expect, it, vi } from 'vitest';
 
 import {
   formatDateTime,
+  formatDateTimeRange,
+  formatDateTimeRangeToParts,
   formatDateTimeToParts,
   resolveDateTimeFormat,
 } from '../index.js';
@@ -29,6 +32,7 @@ vi.mock('../intl', async () => {
     ...intl,
     isDateTimeFormatSupported: false,
     isDateTimeFormatToPartsSupported: false,
+    isDateTimeFormatRangeSupported: false,
   };
 });
 
@@ -52,6 +56,33 @@ describe('Dates & times', () => {
         timeStyle: 'short',
       });
       expect(actual).toMatchSnapshot();
+    });
+
+    it('should format a datetime range', () => {
+      const startDate = new Temporal.PlainDate(2024, 1, 1, 'gregory');
+      const endDate = new Temporal.PlainDate(2024, 2, 1, 'gregory');
+      const actual = formatDateTimeRange(startDate, endDate, locale);
+      expect(actual).toBe('1/1/2024 – 2/1/2024');
+    });
+
+    it('should format a datetime range to parts', () => {
+      const startDate = new Temporal.PlainDate(2024, 1, 1, 'gregory');
+      const endDate = new Temporal.PlainDate(2024, 2, 1, 'gregory');
+      const actual = formatDateTimeRangeToParts(startDate, endDate, locale);
+      expect(actual).toEqual([
+        {
+          'type': 'literal',
+          'value': '1/1/2024',
+        },
+        {
+          'type': 'literal',
+          'value': ' – ',
+        },
+        {
+          'type': 'literal',
+          'value': '2/1/2024',
+        },
+      ]);
     });
 
     it('should format a date time to a single literal part', () => {
