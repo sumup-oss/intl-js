@@ -1,5 +1,20 @@
 # @sumup-oss/intl
 
+## 3.3.0
+
+### Minor Changes
+
+- [#344](https://github.com/sumup-oss/intl-js/pull/344) [`29cf350`](https://github.com/sumup-oss/intl-js/commit/29cf3508cf716024da3873215496e39b399b50d5) Thanks [@connor-baer](https://github.com/connor-baer)! - Added support for formatting datetime ranges.
+
+  ```ts
+  import { formatDateTimeRange } from "@sumup-oss/intl";
+
+  const start = new Temporal.PlainDate(2025, 11, 1);
+  const end = new Temporal.PlainDate(2025, 11, 30);
+
+  formatDateTimeRange(start, end, "de-DE"); // '01.–30.11.2025'
+  ```
+
 ## 3.2.0
 
 ### Minor Changes
