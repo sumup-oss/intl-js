@@ -19,11 +19,14 @@ import { expect, vi } from 'vitest';
 
 expect.extend(matchers);
 
-vi.spyOn(Intl, 'RelativeTimeFormat');
+vi.mock('./src/lib/memoize.ts', () => ({
+  memoize: (obj) => obj,
+}));
+
 vi.spyOn(Intl, 'NumberFormat');
+// vi.spyOn(Intl, 'RelativeTimeFormat');
 vi.spyOn(IntlWithTemporal, 'DateTimeFormat');
 
-// Apparently, Node.js doesn't implement these APIs.
 // The mocked return value is based on the test value `1001001001.11111`
 Intl.NumberFormat.prototype.formatToParts = vi.fn(() => [
   { type: 'currency', value: '$' },
@@ -37,4 +40,4 @@ Intl.NumberFormat.prototype.formatToParts = vi.fn(() => [
   { type: 'decimal', value: '.' },
   { type: 'fraction', value: '111' },
 ]);
-Intl.DateTimeFormat.prototype.formatToParts = vi.fn(() => []);
+// Intl.DateTimeFormat.prototype.formatToParts = vi.fn(() => []);
