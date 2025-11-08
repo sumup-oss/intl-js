@@ -31,16 +31,16 @@ import {
 export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
 
 /**
- * Formats a `Date` with support for various
+ * Formats a datetime with support for various
  * [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle)
  * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
  *
  * @example
  * import { formatDateTime } from '@sumup-oss/intl';
  *
- * formatDateTime(new Date(2000, 1, 1), 'de-DE'); // '1.2.2000'
- * formatDateTime(new Date(2000, 1, 1), ['ban', 'id']); // '1/2/2000'
- * formatDateTime(new Date(2000, 1, 1, 12, 30), 'en-GB', {
+ * formatDateTime(new Temporal.PlainDate(2000, 2, 1), 'de-DE'); // '1.2.2000'
+ * formatDateTime(new Temporal.PlainDate(2000, 2, 1), ['ban', 'id']); // '1/2/2000'
+ * formatDateTime(new Temporal.PlainDate(2000, 2, 1, 12, 30), 'en-GB', {
  *   year: 'numeric',
  *   month: 'short',
  *   day: 'numeric',
@@ -49,7 +49,7 @@ export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
  * }); // 1 Feb 2000, 12:30
  *
  * @remarks
- * In runtimes that don't support the `Intl.DateTimeFormat` API, the date is
+ * In runtimes that don't support the `Intl.DateTimeFormat` API, the datetime is
  * formatted using the `Date.toLocale(Date|Time)String` API.
  *
  * In runtimes that don't support the `dateStyle` and `timeStyle` options, the
@@ -60,13 +60,13 @@ export { isDateTimeFormatSupported, isDateTimeFormatToPartsSupported };
 export const formatDateTime = formatDateTimeFactory();
 
 /**
- * Formats a `Date` with support for various
+ * Formats a date with support for various
  * [date styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle).
  *
  * @example
  * import { formatDate } from '@sumup-oss/intl';
  *
- * const date = new Date(2000, 1, 1);
+ * const date = new Temporal.PlainDate(2000, 2, 1);
  * const locale = 'en-GB';
  *
  * formatDate(date, locale, 'short'); // '01/02/2000'
@@ -92,22 +92,22 @@ export function formatDate(
 }
 
 /**
- * Formats a `Date` with support for various
+ * Formats a time with support for various
  * [time styles](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle).
  *
  * @example
  * import { formatTime } from '@sumup-oss/intl';
  *
- * const time = new Date(2000, 1, 1, 9, 55);
+ * const time = new Temporal.PlainTime(9, 55);
  * const locale = 'en-GB';
  *
  * formatTime(time, locale, 'short'); // '09:55'
  * formatTime(time, locale, 'medium'); // '09:55:00'
- * formatTime(time, locale, 'long'); // '09:55:00 CET'
- * formatTime(time, locale, 'full'); // '09:55:00 Central European Standard Time'
+ * formatTime(time, locale, 'long'); // '09:55:00 UTC'
+ * formatTime(time, locale, 'full'); // '09:55:00 Coordinated Universal Time'
  *
  * @remarks
- * In runtimes that don't support the `Intl.DateTimeFormat` API, the date is
+ * In runtimes that don't support the `Intl.DateTimeFormat` API, the time is
  * formatted using the `Date.toLocale(Date|Time)String` API.
  *
  * In runtimes that don't support the `timeStyle` option, the styles are
@@ -218,7 +218,7 @@ function formatDateTimeToPartsFactory(): (
 ) => (Intl.DateTimeFormatPart | { type: 'date'; value: string })[] {
   if (!isDateTimeFormatToPartsSupported) {
     return (date, locales, options) => {
-      // In runtimes that don't support formatting to parts, the date is
+      // In runtimes that don't support formatting to parts, the datetime is
       // localized and returned as a single string literal part.
       const value = formatDateTime(date, locales, options);
       return [{ type: 'literal', value }];
@@ -233,7 +233,7 @@ function formatDateTimeToPartsFactory(): (
 }
 
 /**
- * Resolves the locale and collation options that are used to format a `Date`.
+ * Resolves the locale and collation options that are used to format a datetime.
  *
  * @example
  * import { resolveDateTimeFormat } from '@sumup-oss/intl';
