@@ -25,10 +25,20 @@ describe('Dates & times', () => {
   describe('formatDateTimeRange', () => {
     it('should format a datetime range', () => {
       const locale = locales[0];
-      const startDate = new Temporal.PlainDate(2024, 1, 1);
-      const endDate = new Temporal.PlainDate(2024, 2, 1);
-      const actual = formatDateTimeRange(startDate, endDate, locale);
+      const start = new Temporal.PlainDate(2024, 1, 1);
+      const end = new Temporal.PlainDate(2024, 2, 1);
+      const actual = formatDateTimeRange(start, end, locale);
       expect(actual).toBe('01.01. – 01.02.2024');
+    });
+
+    it('should format a time range', () => {
+      const locale = locales[1];
+      const start = new Temporal.PlainTime(11, 30);
+      const end = new Temporal.PlainTime(12, 45);
+      const actual = formatDateTimeRange(start, end, locale, {
+        timeStyle: 'short',
+      });
+      expect(actual).toBe('11:30 a.m. – 12:45 p.m.');
     });
 
     it.each(locales)('should format a date time range for %o', (locale) => {
