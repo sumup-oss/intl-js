@@ -45,6 +45,19 @@ export const isDateTimeFormatToPartsSupported = (() => {
 })();
 
 /**
+ * Whether the `Intl`, `Intl.DateTimeFormat`, and
+ * `Intl.DateTimeFormat.formatRange` APIs are supported by the runtime.
+ */
+export const isDateTimeFormatRangeSupported = (() => {
+  try {
+    // @ts-expect-error
+    return typeof Intl.DateTimeFormat.prototype.formatRange !== 'undefined';
+  } catch (_error) {
+    return false;
+  }
+})();
+
+/**
  * Whether the `dateStyle` and `timeStyle` DateTimeFormat options
  * are supported by the runtime.
  */

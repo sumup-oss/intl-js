@@ -23,6 +23,7 @@ import type {
 
 import {
   getDateTimeFormat,
+  isDateTimeFormatRangeSupported,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
   isDateTimeStyleSupported,
@@ -165,14 +166,14 @@ function formatDateTimeFactory(): (
 }
 
 /**
- * Formats a `Date` to parts with support for various
+ * Formats a datetime to parts with support for various
  * [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle)
  * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
  *
  * @example
  * import { formatDateTimeToParts } from '@sumup-oss/intl';
  *
- * const time = new Date(2000, 1, 1, 9, 55);
+ * const date = new Temporal.PlainDateTime(2000, 2, 1, 9, 55);
  *
  * formatDateTimeToParts(date, 'de-DE');
  * // [
@@ -205,7 +206,7 @@ function formatDateTimeFactory(): (
  *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat.formatToParts` API,
- * the date is localized and returned as a single string literal part.
+ * the datetime is localized and returned as a single string literal part.
  *
  * @category Date & Time
  */
@@ -229,6 +230,129 @@ function formatDateTimeToPartsFactory(): (
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.formatToParts(date);
+  };
+}
+
+/**
+ * Formats a datetime range with support for various
+ * [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle)
+ * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
+ *
+ * @example
+ * import { formatDateTimeRange } from '@sumup-oss/intl';
+ *
+ * const startDate = new Temporal.PlainDate(2000, 2, 1);
+ * const endDate = new Temporal.PlainDate(2000, 2, 29);
+ *
+ * formatDateTimeRange(startDate, endDate, 'de-DE');
+ * // 01.–29.02.2000
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat.formatRange` API,
+ * the start and end dates are localized individually and joined using an en dash.
+ *
+ * @category Date & Time
+ */
+export const formatDateTimeRange = formatDateTimeRangeFactory();
+
+function formatDateTimeRangeFactory(): (
+  startDate: FormattableDateTime, // in UTC
+  endDate: FormattableDateTime, // in UTC
+  locales?: Locale | Locale[],
+  options?: Intl.DateTimeFormatOptions,
+) => string {
+  if (!isDateTimeFormatRangeSupported) {
+    return (startDate, endDate, locales, options) => {
+      const start = formatDateTime(startDate, locales, options);
+      const end = formatDateTime(endDate, locales, options);
+      return `${start} – ${end}`;
+    };
+  }
+
+  return (startDate, endDate, locales, options) => {
+    const fallbackOptions = getFallbackOptions(options);
+    const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
+    return dateTimeFormat.formatRange(startDate, endDate);
+  };
+}
+
+/**
+ * Formats a datetime range to parts with support for various
+ * [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#datestyle)
+ * and [time](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat#timestyle) styles.
+ *
+ * @example
+ * import { formatDateTimeRangeToParts } from '@sumup-oss/intl';
+ *
+ * const startDate = new Temporal.PlainDate(2000, 2, 1);
+ * const endDate = new Temporal.PlainDate(2000, 2, 29);
+ *
+ * formatDateTimeRangeToParts(startDate, endDate, 'de-DE');
+ * // [
+ * //   {
+ * //     "source": "startRange",
+ * //     "type": "day",
+ * //     "value": "01",
+ * //   },
+ * //   {
+ * //     "source": "shared",
+ * //     "type": "literal",
+ * //     "value": ".–",
+ * //   },
+ * //   {
+ * //     "source": "endRange",
+ * //     "type": "day",
+ * //     "value": "29",
+ * //   },
+ * //   {
+ * //     "source": "shared",
+ * //     "type": "literal",
+ * //     "value": ".",
+ * //   },
+ * //   {
+ * //     "source": "shared",
+ * //     "type": "month",
+ * //     "value": "02",
+ * //   },
+ * //   {
+ * //     "source": "shared",
+ * //     "type": "literal",
+ * //     "value": ".",
+ * //   },
+ * //   {
+ * //     "source": "shared",
+ * //     "type": "year",
+ * //     "value": "2000",
+ * //   },
+ * // ]
+ *
+ * @remarks
+ * In runtimes that don't support the `Intl.DateTimeFormat.formatDateTimeRangeToParts` API,
+ * the start and end dates are localized individually and joined using an en dash.
+ *
+ * @category Date & Time
+ */
+export const formatDateTimeRangeToParts = formatDateTimeRangeToPartsFactory();
+
+function formatDateTimeRangeToPartsFactory(): (
+  startDate: FormattableDateTime, // in UTC
+  endDate: FormattableDateTime, // in UTC
+  locales?: Locale | Locale[],
+  options?: Intl.DateTimeFormatOptions,
+) => (Intl.DateTimeFormatPart | { type: 'date'; value: string })[] {
+  if (!isDateTimeFormatRangeSupported) {
+    return (startDate, endDate, locales, options) => {
+      const start = formatDateTimeToParts(startDate, locales, options);
+      const end = formatDateTimeToParts(endDate, locales, options);
+      return [...start, { type: 'literal', value: ' – ' }, ...end];
+    };
+  }
+
+  return (startDate, endDate, locales, options) => {
+    const fallbackOptions = getFallbackOptions(options);
+    const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return dateTimeFormat.formatRangeToParts(startDate, endDate);
   };
 }
 
