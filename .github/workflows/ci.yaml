@@ -2,15 +2,19 @@ name: Continuous Integration
 
 on: [push]
 
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Use Node.js v22.18
-        uses: actions/setup-node@v4
+      - name: Use Node.js v24.18
+        uses: actions/setup-node@v6
         with:
           node-version: 22.18
           cache: 'npm'
