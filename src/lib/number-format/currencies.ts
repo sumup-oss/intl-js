@@ -39,7 +39,7 @@ class DeprecationError extends Error {
 }
 
 function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
-  if (process.env.NODE_ENV !== 'production') {
+  if (process?.env?.NODE_ENV !== 'production') {
     const deprecation = new DeprecationError(
       '[@sumup-oss/intl] The `currency` argument will become required in a future version.',
     );
@@ -66,8 +66,8 @@ function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
   }
 
   if (
-    process.env.NODE_ENV !== 'production' &&
-    process.env.NODE_ENV !== 'test'
+    process?.env?.NODE_ENV !== 'production' &&
+    process?.env?.NODE_ENV !== 'test'
   ) {
     throw new TypeError(
       [
