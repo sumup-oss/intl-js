@@ -35,7 +35,7 @@ If you feel another member of the community violated our CoC or you are experien
 
 ## Troubleshooting
 
-Make sure that you use Node v22.18 _exactly_, otherwise, the unit tests will probably fail. Node's localisation data for the `Intl.NumberFormat` API tends to change between minor versions.
+Make sure that you use Node v24.12 _exactly_, otherwise, the unit tests will probably fail. Node's localisation data for the `Intl.NumberFormat` API tends to change between minor versions.
 
 ## Release process
 
