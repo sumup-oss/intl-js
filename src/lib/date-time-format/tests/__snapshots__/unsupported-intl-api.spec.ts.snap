@@ -6,30 +6,30 @@ exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format
 
 exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a 1899-12-31T00:00:00.000Z as a time 1`] = `"12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{} as a date 1`] = `"1/1/1970, 12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{ o: '1970-01-01T00:00:00Z' } as a date 1`] = `"1/1/1970, 12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{} as a date time 1`] = `"1/1/1970, 12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{ o: '1970-01-01T00:00:00Z' } as a date time 1`] = `"1/1/1970, 12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{} as a time 1`] = `"1/1/1970, 12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.Instant{ o: '1970-01-01T00:00:00Z' } as a time 1`] = `"1/1/1970, 12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDate{} as a date 1`] = `"1/1/2024"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDate{ o: '2024-01-01[u-ca=gregory]' } as a date 1`] = `"1/1/2024"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDate{} as a date time 1`] = `"1/1/2024"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDate{ o: '2024-01-01[u-ca=gregory]' } as a date time 1`] = `"1/1/2024"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{} as a date 1`] = `"1/1/2024, 12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{ o: '2024-01-01T00:00:00[u-ca=gregory]' } as a date 1`] = `"1/1/2024, 12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{} as a date time 1`] = `"1/1/2024, 12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{ o: '2024-01-01T00:00:00[u-ca=gregory]' } as a date time 1`] = `"1/1/2024, 12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{} as a time 1`] = `"1/1/2024, 12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainDateTime{ o: '2024-01-01T00:00:00[u-ca=gregory]' } as a time 1`] = `"1/1/2024, 12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainMonthDay{} as a date 1`] = `"1/1"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainMonthDay{ o: '1972-01-01[u-ca=gregory]' } as a date 1`] = `"1/1"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainMonthDay{} as a date time 1`] = `"1/1"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainMonthDay{ o: '1972-01-01[u-ca=gregory]' } as a date time 1`] = `"1/1"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainTime{} as a date time 1`] = `"12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainTime{ o: '00:00:00' } as a date time 1`] = `"12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainTime{} as a time 1`] = `"12:00:00 AM"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainTime{ o: '00:00:00' } as a time 1`] = `"12:00:00 AM"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainYearMonth{} as a date 1`] = `"1/2024"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainYearMonth{ o: '2024-01-01[u-ca=gregory]' } as a date 1`] = `"1/2024"`;
 
-exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainYearMonth{} as a date time 1`] = `"1/2024"`;
+exports[`Dates & times > when Intl.DateTimeFormat is unsupported > should format a Temporal.PlainYearMonth{ o: '2024-01-01[u-ca=gregory]' } as a date time 1`] = `"1/2024"`;
