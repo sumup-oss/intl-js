@@ -41,7 +41,7 @@
     "node": ">=18"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/changelog-github": "^0.6.0",
     "@changesets/cli": "^2.29.7",
     "@sumup-oss/foundry": "^9.0.0",
     "@types/node": "^25.0.10",
