@@ -42,6 +42,7 @@ export const isNumberFormatToPartsSupported = (() => {
   }
 })();
 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 export const getNumberFormat = memoize(Intl.NumberFormat) as (
   locales?: Locale | Locale[],
   options?: Intl.NumberFormatOptions,

@@ -11,6 +11,7 @@
     "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "rootDir": "./src",
     "outDir": "./dist"
   },
   "include": ["src/**/*"],

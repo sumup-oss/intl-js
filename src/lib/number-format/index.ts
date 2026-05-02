@@ -14,7 +14,6 @@
  */
 
 import type {
-  Currency,
   Locale,
   NumberFormat,
   NumericOptions,
@@ -59,11 +58,7 @@ type GetOptions = (
  *
  * @category Number
  */
-export const formatNumber = formatNumberFactory(getNumberOptions) as (
-  value: number,
-  locales?: Locale | Locale[],
-  options?: Intl.NumberFormatOptions,
-) => string;
+export const formatNumber = formatNumberFactory(getNumberOptions);
 
 /**
  * Formats a number in the country's official currency
@@ -84,12 +79,7 @@ export const formatNumber = formatNumberFactory(getNumberOptions) as (
  *
  * @category Currency
  */
-export const formatCurrency = formatNumberFactory(getCurrencyOptions) as (
-  value: number,
-  locales?: Locale | Locale[],
-  currency?: Currency,
-  options?: Intl.NumberFormatOptions,
-) => string;
+export const formatCurrency = formatNumberFactory(getCurrencyOptions);
 
 function formatNumberFactory<T extends GetOptions>(
   getOptions: T,
@@ -147,13 +137,7 @@ function formatNumberFactory<T extends GetOptions>(
  *
  * @category Number
  */
-export const formatNumberToParts = formatNumberToPartsFactory(
-  getNumberOptions,
-) as (
-  value: number,
-  locales?: Locale | Locale[],
-  options?: Intl.NumberFormatOptions,
-) => Intl.NumberFormatPart[];
+export const formatNumberToParts = formatNumberToPartsFactory(getNumberOptions);
 
 /**
  * Formats a number in the country's official currency
@@ -197,14 +181,8 @@ export const formatNumberToParts = formatNumberToPartsFactory(
  *
  * @category Currency
  */
-export const formatCurrencyToParts = formatNumberToPartsFactory(
-  getCurrencyOptions,
-) as (
-  value: number,
-  locales?: Locale | Locale[],
-  currency?: Currency,
-  options?: Intl.NumberFormatOptions,
-) => Intl.NumberFormatPart[];
+export const formatCurrencyToParts =
+  formatNumberToPartsFactory(getCurrencyOptions);
 
 function formatNumberToPartsFactory<T extends GetOptions>(
   getOptions: T,
@@ -284,12 +262,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
  *
  * @category Number
  */
-export const resolveNumberFormat = resolveNumberFormatFactory(
-  getNumberOptions,
-) as (
-  locales?: Locale | Locale[],
-  options?: Intl.NumberFormatOptions,
-) => NumberFormat | null;
+export const resolveNumberFormat = resolveNumberFormatFactory(getNumberOptions);
 
 /**
  * Resolves the locale and collation options that are used to format a number
@@ -361,13 +334,8 @@ export const resolveNumberFormat = resolveNumberFormatFactory(
  *
  * @category Currency
  */
-export const resolveCurrencyFormat = resolveNumberFormatFactory(
-  getCurrencyOptions,
-) as (
-  locales?: Locale | Locale[],
-  currency?: Currency,
-  options?: Intl.NumberFormatOptions,
-) => NumberFormat | null;
+export const resolveCurrencyFormat =
+  resolveNumberFormatFactory(getCurrencyOptions);
 
 const TEST_VALUE = 1001001001.11111;
 
