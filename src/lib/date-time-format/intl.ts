@@ -73,6 +73,7 @@ export const isDateTimeStyleSupported = (() => {
   }
 })();
 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 export const getDateTimeFormat = memoize(IntlWithTemporal.DateTimeFormat) as (
   locales?: Locale | Locale[],
   options?: Intl.DateTimeFormatOptions,
