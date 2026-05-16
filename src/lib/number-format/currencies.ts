@@ -95,12 +95,17 @@ export function getCurrencyOptions(
     };
   }
 
+  // Some currencies support decimals according to ISO 4217 but don't use them
+  // in everyday life. In order to ensure consistency between computer systems
+  // which strictly follow ISO 4217 (Node, Firefox, Safari) and those that don't
+  // (Chrome), we hard-code the minimum and maximum fraction digits.
   if (CURRENCIES_WITHOUT_DECIMALS.includes(finalCurrency)) {
     return {
       ...options,
       style: 'currency',
       currency: finalCurrency,
       minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
     };
   }
 
