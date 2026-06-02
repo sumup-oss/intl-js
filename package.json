@@ -46,7 +46,7 @@
     "@sumup-oss/foundry": "^9.0.0",
     "@types/node": "^25.0.10",
     "@vitest/coverage-v8": "^4.1.8",
-    "@vitest/eslint-plugin": "^1.3.12",
+    "@vitest/eslint-plugin": "^1.6.19",
     "audit-ci": "^7.1.0",
     "jest-extended": "^7.0.0",
     "license-checker": "^25.0.1",
