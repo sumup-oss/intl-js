@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { CURRENCIES_WITHOUT_DECIMALS } from '../../../data/currencies.js';
 import { resolveCurrencyFormat, resolveNumberFormat } from '../index.js';
@@ -40,6 +40,16 @@ describe('Numbers', () => {
 });
 
 describe('Currency values', () => {
+  let warnSpy: ReturnType<typeof vi.spyOn>;
+
+  beforeEach(() => {
+    warnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    warnSpy.mockRestore();
+  });
+
   describe('resolveCurrencyFormat', () => {
     it.each(locales)('should get the currency format for %o', (locale) => {
       const actual = resolveCurrencyFormat(locale);

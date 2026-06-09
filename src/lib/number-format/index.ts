@@ -19,6 +19,7 @@ import type {
   NumericOptions,
 } from '../../types/index.js';
 import { findIndex } from '../find-index.js';
+import { warnIfLocaleOmitted } from '../locale-deprecation.js';
 
 import { getCurrencyOptions } from './currencies.js';
 import {
@@ -52,6 +53,10 @@ type GetOptions = (
  *   unitDisplay: 'long',
  * }); // 16 litres
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.NumberFormat` API, the number is
  * formatted using the `Number.toLocaleString` API.
@@ -61,17 +66,26 @@ type GetOptions = (
 export const formatNumber = formatNumberFactory(getNumberOptions);
 
 /**
- * Formats a number in the country's official currency
- * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ * Formats a number as currency with support for various
+ * [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  *
  * @example
  * import { formatCurrency } from '@sumup-oss/intl';
  *
- * formatCurrency(12345.67, 'de-DE'); // '12.345,67 €'
+ * formatCurrency(12345.67, 'de-DE', 'EUR'); // '12.345,67 €'
  * formatCurrency(89, 'ja-JP', 'JPY'); // '￥89'
- * formatCurrency(16, 'en-GB', null, { currencyDisplay: 'name' }); // '16.00 British pounds'
+ * formatCurrency(16, 'en-GB', 'GBP', { currencyDisplay: 'name' }); // '16.00 British pounds'
+ *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ * @param currency - ISO 4217 currency code. Omitting this is deprecated and will become
+ *   required in a future major version.
  *
  * @remarks
+ * When `currency` is omitted, it is inferred from the locale's region. This behavior
+ * is deprecated — always pass an explicit currency code.
+ *
  * In runtimes that don't support the `Intl.NumberFormat` API, the currency is
  * formatted using the `Number.toLocaleString` API.
  *
@@ -89,6 +103,7 @@ function formatNumberFactory<T extends GetOptions>(
   }
 
   return (value, locales, ...args): string => {
+    warnIfLocaleOmitted(locales);
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.format(value);
@@ -131,6 +146,10 @@ function formatNumberFactory<T extends GetOptions>(
  * //   { type: "unit", value: "litres" },
  * // ]
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.NumberFormat.formatToParts` API,
  * the number is localized and returned as a single integer part.
@@ -140,13 +159,13 @@ function formatNumberFactory<T extends GetOptions>(
 export const formatNumberToParts = formatNumberToPartsFactory(getNumberOptions);
 
 /**
- * Formats a number in the country's official currency
- * with support for various [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
+ * Formats a number as currency to parts with support for various
+ * [notations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat#Using_notation).
  *
  * @example
  * import { formatCurrencyToParts } from '@sumup-oss/intl';
  *
- * formatCurrencyToParts(12345.67, 'de-DE');
+ * formatCurrencyToParts(12345.67, 'de-DE', 'EUR');
  * // [
  * //   { type: "integer", value: "12" },
  * //   { type: "group", value: "." },
@@ -164,7 +183,7 @@ export const formatNumberToParts = formatNumberToPartsFactory(getNumberOptions);
  * //   { type: "integer", value: "89" },
  * // ]
  *
- * formatCurrencyToParts(16, 'en-GB', null, { currencyDisplay: 'name' });
+ * formatCurrencyToParts(16, 'en-GB', 'GBP', { currencyDisplay: 'name' });
  * // [
  * //   { type: "integer", value: "16" },
  * //   { type: "decimal", value: "." },
@@ -173,7 +192,16 @@ export const formatNumberToParts = formatNumberToPartsFactory(getNumberOptions);
  * //   { type: "currency", value: "British pounds" },
  * // ]
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ * @param currency - ISO 4217 currency code. Omitting this is deprecated and will become
+ *   required in a future major version.
+ *
  * @remarks
+ * When `currency` is omitted, it is inferred from the locale's region. This behavior
+ * is deprecated — always pass an explicit currency code.
+ *
  * In runtimes that don't support the `Intl.NumberFormat.formatToParts` API,
  * the currency is localized and returned as a single integer part.
  *
@@ -194,6 +222,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
   }
 
   return (value, locales, ...args): Intl.NumberFormatPart[] => {
+    warnIfLocaleOmitted(locales);
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.formatToParts(value);
@@ -206,7 +235,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
  * @example
  * import { resolveNumberFormat } from '@sumup-oss/intl';
  *
- * resolveNumberFormat();
+ * resolveNumberFormat('en-US');
  * // {
  * //   'locale': 'en-US',
  * //   'numberingSystem': 'latn',
@@ -253,6 +282,10 @@ function formatNumberToPartsFactory<T extends GetOptions>(
  * //   'decimalDelimiter': '.',
  * // }
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * For convenience, `groupDelimiter` and`decimalDelimiter` are returned in
  *  addition to the `Intl.ResolvedNumberFormatOptions`.
@@ -265,13 +298,13 @@ function formatNumberToPartsFactory<T extends GetOptions>(
 export const resolveNumberFormat = resolveNumberFormatFactory(getNumberOptions);
 
 /**
- * Resolves the locale and collation options that are used to format a number
- * in the country's official currency.
+ * Resolves the locale and collation options that are used to format a currency
+ * value.
  *
  * @example
  * import { resolveCurrencyFormat } from '@sumup-oss/intl';
  *
- * resolveCurrencyFormat();
+ * resolveCurrencyFormat('en-US', 'USD');
  * // {
  * //   'locale': 'en-US',
  * //   'numberingSystem': 'latn',
@@ -288,7 +321,7 @@ export const resolveNumberFormat = resolveNumberFormatFactory(getNumberOptions);
  * //   'currencyPosition': 'prefix',
  * // }
  *
- * resolveCurrencyFormat('ja-JP');
+ * resolveCurrencyFormat('ja-JP', 'JPY');
  * // {
  * //   'locale': 'ja-JP',
  * //   'numberingSystem': 'latn',
@@ -305,7 +338,7 @@ export const resolveNumberFormat = resolveNumberFormatFactory(getNumberOptions);
  * //   'currencyPosition': 'prefix',
  * // }
  *
- * resolveCurrencyFormat('en-GB', { currencyDisplay: 'name' });
+ * resolveCurrencyFormat('en-GB', 'GBP', { currencyDisplay: 'name' });
  * // {
  * //   'locale': 'en-GB',
  * //   'numberingSystem': 'latn',
@@ -322,7 +355,16 @@ export const resolveNumberFormat = resolveNumberFormatFactory(getNumberOptions);
  * //   'currencyPosition': 'suffix',
  * // }
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ * @param currency - ISO 4217 currency code. Omitting this is deprecated and will become
+ *   required in a future major version.
+ *
  * @remarks
+ * When `currency` is omitted, it is inferred from the locale's region. This behavior
+ * is deprecated — always pass an explicit currency code.
+ *
  * For convenience, `groupDelimiter`,`decimalDelimiter`, `currencySymbol`, and
  * `currencyPosition` are returned in addition to the
  * `Intl.ResolvedNumberFormatOptions`.
@@ -347,6 +389,7 @@ function resolveNumberFormatFactory<T extends GetOptions>(
   }
 
   return (locales, ...args): NumberFormat => {
+    warnIfLocaleOmitted(locales);
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     const resolvedOptions = numberFormat.resolvedOptions();
