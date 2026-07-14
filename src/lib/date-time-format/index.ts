@@ -30,9 +30,9 @@ import {
 } from './intl.js';
 
 export {
+  isDateTimeFormatRangeSupported,
   isDateTimeFormatSupported,
   isDateTimeFormatToPartsSupported,
-  isDateTimeFormatRangeSupported,
 };
 
 /**
