@@ -35,13 +35,12 @@ const locale = 'xx-XX';
 
 describe('Relative times', () => {
   describe('when Intl.RelativeTimeFormat is unsupported', () => {
-    it.each(relativeTimes)(
-      'should format %s %s as a relative time',
-      (value, unit) => {
-        const actual = formatRelativeTime(value, unit, locale);
-        expect(actual).toMatchSnapshot();
-      },
-    );
+    it.each(
+      relativeTimes,
+    )('should format %s %s as a relative time', (value, unit) => {
+      const actual = formatRelativeTime(value, unit, locale);
+      expect(actual).toMatchSnapshot();
+    });
 
     it('should format a relative time to numeric parts', () => {
       const [value, unit] = relativeTimes[0];
