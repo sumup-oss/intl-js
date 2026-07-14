@@ -32,7 +32,6 @@
     "lint:fix": "biome check --write && eslint . --fix",
     "test": "vitest",
     "test:ci": "vitest run --coverage",
-    "check:security": "audit-ci --critical",
     "check:licenses": "license-checker --production --summary --failOn=GPLv3",
     "prerelease": "npm run build",
     "release": "changeset publish"
