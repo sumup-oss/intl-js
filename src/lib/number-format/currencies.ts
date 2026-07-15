@@ -33,9 +33,11 @@ function extractCountry(locale: string): string {
 }
 
 function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
-  deprecationWarning(
-    '[@sumup-oss/intl] The `currency` argument will become required in a future version.',
-  );
+  if (process?.env?.NODE_ENV !== 'production') {
+    deprecationWarning(
+      '[@sumup-oss/intl] The `currency` argument will become required in a future version.',
+    );
+  }
 
   const inferredLocale = resolveLocale(locales);
   const localesArray =
@@ -66,11 +68,13 @@ export function getCurrencyOptions(
   const finalCurrency = currency || resolveCurrency(locales);
 
   if (!finalCurrency) {
-    deprecationWarning(
-      '[@sumup-oss/intl] Could not resolve a currency for the given locale. ' +
-        'The number will be formatted as a plain decimal (no currency symbol). ' +
-        'Pass an explicit `currency` argument to fix this.',
-    );
+    if (process?.env?.NODE_ENV !== 'production') {
+      deprecationWarning(
+        '[@sumup-oss/intl] Could not resolve a currency for the given locale. ' +
+          'The number will be formatted as a plain decimal (no currency symbol). ' +
+          'Pass an explicit `currency` argument to fix this.',
+      );
+    }
 
     return {
       ...options,
