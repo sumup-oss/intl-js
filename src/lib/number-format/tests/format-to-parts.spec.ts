@@ -69,22 +69,21 @@ describe('Currency values', () => {
       );
     });
 
-    it.each(CURRENCIES_WITHOUT_DECIMALS)(
-      'should format the %o currency without decimals',
-      (currency) => {
-        const actual = formatCurrencyToParts(number, undefined, currency);
-        expect(actual).toBeArray();
+    it.each(
+      CURRENCIES_WITHOUT_DECIMALS,
+    )('should format the %o currency without decimals', (currency) => {
+      const actual = formatCurrencyToParts(number, undefined, currency);
+      expect(actual).toBeArray();
 
-        expect(Intl.NumberFormat).toHaveBeenCalledWith(
-          undefined,
-          expect.objectContaining({
-            style: 'currency',
-            currency,
-            minimumFractionDigits: 0,
-          }),
-        );
-      },
-    );
+      expect(Intl.NumberFormat).toHaveBeenCalledWith(
+        undefined,
+        expect.objectContaining({
+          style: 'currency',
+          currency,
+          minimumFractionDigits: 0,
+        }),
+      );
+    });
 
     it('should accept a custom currency', () => {
       const locale = 'xx-XX';
