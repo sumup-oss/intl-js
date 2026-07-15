@@ -20,6 +20,10 @@ import type {
   FormattableTime,
   Locale,
 } from '../../types/index.js';
+import {
+  suppressLocaleDeprecationWarnings,
+  warnIfLocaleOmitted,
+} from '../locale-deprecation.js';
 
 import {
   getDateTimeFormat,
@@ -53,6 +57,10 @@ export {
  *   minute: '2-digit',
  * }); // 1 Feb 2000, 12:30
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat` API, the datetime is
  * formatted using the `Date.toLocale(Date|Time)String` API.
@@ -78,6 +86,10 @@ export const formatDateTime = formatDateTimeFactory();
  * formatDate(date, locale, 'medium'); // '1 Feb 2000'
  * formatDate(date, locale, 'long'); // '1 February 2000'
  * formatDate(date, locale, 'full'); // 'Tuesday, 1 February 2000'
+ *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
  *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat` API, the date is
@@ -110,6 +122,10 @@ export function formatDate(
  * formatTime(time, locale, 'medium'); // '09:55:00'
  * formatTime(time, locale, 'long'); // '09:55:00 UTC'
  * formatTime(time, locale, 'full'); // '09:55:00 Coordinated Universal Time'
+ *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
  *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat` API, the time is
@@ -163,6 +179,7 @@ function formatDateTimeFactory(): (
   }
 
   return (date, locales, options) => {
+    warnIfLocaleOmitted(locales);
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.format(date);
@@ -208,6 +225,10 @@ function formatDateTimeFactory(): (
  * //   { type: 'year', value: '2000' })
  * // ]
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat.formatToParts` API,
  * the datetime is localized and returned as a single string literal part.
@@ -231,6 +252,7 @@ function formatDateTimeToPartsFactory(): (
   }
 
   return (date, locales, options) => {
+    warnIfLocaleOmitted(locales);
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.formatToParts(date);
@@ -251,6 +273,10 @@ function formatDateTimeToPartsFactory(): (
  * formatDateTimeRange(startDate, endDate, 'de-DE');
  * // 01.–29.02.2000
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat.formatRange` API,
  * the start and end dates are localized individually and joined using an en dash.
@@ -267,13 +293,18 @@ function formatDateTimeRangeFactory(): (
 ) => string {
   if (!isDateTimeFormatRangeSupported) {
     return (startDate, endDate, locales, options) => {
-      const start = formatDateTime(startDate, locales, options);
-      const end = formatDateTime(endDate, locales, options);
-      return `${start} – ${end}`;
+      warnIfLocaleOmitted(locales);
+
+      return suppressLocaleDeprecationWarnings(() => {
+        const start = formatDateTime(startDate, locales, options);
+        const end = formatDateTime(endDate, locales, options);
+        return `${start} – ${end}`;
+      });
     };
   }
 
   return (startDate, endDate, locales, options) => {
+    warnIfLocaleOmitted(locales);
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.formatRange(startDate, endDate);
@@ -330,6 +361,10 @@ function formatDateTimeRangeFactory(): (
  * //   },
  * // ]
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat.formatDateTimeRangeToParts` API,
  * the start and end dates are localized individually and joined using an en dash.
@@ -346,13 +381,18 @@ function formatDateTimeRangeToPartsFactory(): (
 ) => (Intl.DateTimeFormatPart | { type: 'date'; value: string })[] {
   if (!isDateTimeFormatRangeSupported) {
     return (startDate, endDate, locales, options) => {
-      const start = formatDateTimeToParts(startDate, locales, options);
-      const end = formatDateTimeToParts(endDate, locales, options);
-      return [...start, { type: 'literal', value: ' – ' }, ...end];
+      warnIfLocaleOmitted(locales);
+
+      return suppressLocaleDeprecationWarnings(() => {
+        const start = formatDateTimeToParts(startDate, locales, options);
+        const end = formatDateTimeToParts(endDate, locales, options);
+        return [...start, { type: 'literal', value: ' – ' }, ...end];
+      });
     };
   }
 
   return (startDate, endDate, locales, options) => {
+    warnIfLocaleOmitted(locales);
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
@@ -366,7 +406,7 @@ function formatDateTimeRangeToPartsFactory(): (
  * @example
  * import { resolveDateTimeFormat } from '@sumup-oss/intl';
  *
- * resolveDateTimeFormat();
+ * resolveDateTimeFormat('en-DE');
  * // {
  * //   'locale': 'en-DE',
  * //   'calendar': 'gregory',
@@ -401,6 +441,10 @@ function formatDateTimeRangeToPartsFactory(): (
  * //   'day': 'numeric'
  * // }
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.DateTimeFormat.resolvedOptions` API,
  * `null` is returned.
@@ -418,6 +462,7 @@ function resolveDateTimeFormatFactory(): (
   }
 
   return (locales, options) => {
+    warnIfLocaleOmitted(locales);
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.resolvedOptions();

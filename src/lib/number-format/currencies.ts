@@ -20,6 +20,7 @@ import {
   CURRENCIES_WITHOUT_DECIMALS,
 } from '../../data/currencies.js';
 import type { Currency, Locale, NumericOptions } from '../../types/index.js';
+import { deprecationWarning } from '../deprecation-warning.js';
 
 import { resolveLocale } from './intl.js';
 
@@ -31,20 +32,11 @@ function extractCountry(locale: string): string {
   return country?.toUpperCase();
 }
 
-class DeprecationError extends Error {
-  constructor(message: string) {
-    super(message);
-    this.name = 'DeprecationError';
-  }
-}
-
 function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
   if (process?.env?.NODE_ENV !== 'production') {
-    const deprecation = new DeprecationError(
+    deprecationWarning(
       '[@sumup-oss/intl] The `currency` argument will become required in a future version.',
     );
-    // biome-ignore lint/suspicious/noConsole: Development-only warning
-    console.warn(deprecation);
   }
 
   const inferredLocale = resolveLocale(locales);
@@ -65,19 +57,6 @@ function resolveCurrency(locales?: Locale | Locale[]): Currency | null {
     return currency;
   }
 
-  if (
-    process?.env?.NODE_ENV !== 'production' &&
-    process?.env?.NODE_ENV !== 'test'
-  ) {
-    throw new TypeError(
-      [
-        `No currency found for "${localesArray.join(', ')}".`,
-        'Explicitly pass a currency as part of the options',
-        'or submit a new one on GitHub.',
-      ].join(' '),
-    );
-  }
-
   return null;
 }
 
@@ -89,6 +68,14 @@ export function getCurrencyOptions(
   const finalCurrency = currency || resolveCurrency(locales);
 
   if (!finalCurrency) {
+    if (process?.env?.NODE_ENV !== 'production') {
+      deprecationWarning(
+        '[@sumup-oss/intl] Could not resolve a currency for the given locale. ' +
+          'The number will be formatted as a plain decimal (no currency symbol). ' +
+          'Pass an explicit `currency` argument to fix this.',
+      );
+    }
+
     return {
       ...options,
       style: 'decimal',
