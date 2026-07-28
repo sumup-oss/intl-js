@@ -25,7 +25,7 @@ export const isNumberFormatSupported = (() => {
     return (
       typeof Intl !== 'undefined' && typeof Intl.NumberFormat !== 'undefined'
     );
-  } catch (_error) {
+  } catch {
     return false;
   }
 })();
@@ -37,7 +37,7 @@ export const isNumberFormatSupported = (() => {
 export const isNumberFormatToPartsSupported = (() => {
   try {
     return typeof Intl.NumberFormat.prototype.formatToParts !== 'undefined';
-  } catch (_error) {
+  } catch {
     return false;
   }
 })();

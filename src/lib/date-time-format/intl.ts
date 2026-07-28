@@ -27,7 +27,7 @@ export const isDateTimeFormatSupported = (() => {
     return (
       typeof Intl !== 'undefined' && typeof Intl.DateTimeFormat !== 'undefined'
     );
-  } catch (_error) {
+  } catch {
     return false;
   }
 })();
@@ -39,7 +39,7 @@ export const isDateTimeFormatSupported = (() => {
 export const isDateTimeFormatToPartsSupported = (() => {
   try {
     return typeof Intl.DateTimeFormat.prototype.formatToParts !== 'undefined';
-  } catch (_error) {
+  } catch {
     return false;
   }
 })();
@@ -51,7 +51,7 @@ export const isDateTimeFormatToPartsSupported = (() => {
 export const isDateTimeFormatRangeSupported = (() => {
   try {
     return typeof Intl.DateTimeFormat.prototype.formatRange !== 'undefined';
-  } catch (_error) {
+  } catch {
     return false;
   }
 })();
@@ -67,7 +67,7 @@ export const isDateTimeStyleSupported = (() => {
       timeStyle: 'short',
     }).resolvedOptions() as Intl.DateTimeFormatOptions;
     return Boolean(options.dateStyle && options.timeStyle);
-  } catch (_error) {
+  } catch {
     return false;
   }
 })();
