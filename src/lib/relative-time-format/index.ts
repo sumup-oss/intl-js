@@ -14,6 +14,7 @@
  */
 
 import type { Locale } from '../../types/index.js';
+import { warnIfLocaleOmitted } from '../locale-deprecation.js';
 import { formatNumber, formatNumberToParts } from '../number-format/index.js';
 
 import {
@@ -34,6 +35,10 @@ export { isRelativeTimeFormatSupported };
  * formatRelativeTime(-5, 'months', 'en-GB', {
  *   style: 'narrow',
  * }); // '5 mo ago'
+ *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
  *
  * @remarks
  * In runtimes that don't support the `Intl.RelativeTimeFormat` API,
@@ -57,6 +62,9 @@ function formatRelativeTimeFactory(): (
   }
 
   return (value, unit, locales, options) => {
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const relativeTimeFormat = getRelativeTimeFormat(locales, options);
     return relativeTimeFormat.format(value, unit);
   };
@@ -87,6 +95,10 @@ function formatRelativeTimeFactory(): (
  * //   { "type": "integer", "unit": "month", "value": "5" },
  * //   { "type": "literal", "value": " mo ago" }
  * // ]
+ *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
  *
  * @remarks
  * In runtimes that don't support the `Intl.RelativeTimeFormat` API,
@@ -127,6 +139,9 @@ function formatRelativeTimeToPartsFactory(): (
   }
 
   return (value, unit, locales, options) => {
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const relativeTimeFormat = getRelativeTimeFormat(locales, options);
     return relativeTimeFormat.formatToParts(value, unit);
   };
@@ -162,6 +177,10 @@ function formatRelativeTimeToPartsFactory(): (
  * //   "style": "narrow",
  * // }
  *
+ * @param locales - Formatting locale. Omitting this is deprecated and will become
+ *   required in a future major version. When omitted, formatting uses the runtime
+ *   default (browser or server locale), which may not match your user.
+ *
  * @remarks
  * In runtimes that don't support the `Intl.RelativeTimeFormat.resolvedOptions` API,
  * `null` is returned.
@@ -179,6 +198,9 @@ function resolveRelativeTimeFormatFactory(): (
   }
 
   return (locales, options) => {
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const relativeTimeFormat = getRelativeTimeFormat(locales, options);
     return relativeTimeFormat.resolvedOptions();
   };

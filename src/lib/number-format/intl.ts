@@ -49,9 +49,10 @@ export const getNumberFormat = memoize(Intl.NumberFormat) as (
 ) => Intl.NumberFormat;
 
 export function resolveLocale(locales?: Locale | Locale[]): Locale | Locale[] {
-  if (locales && locales.length >= 0) {
+  if (locales && locales.length > 0) {
     return locales;
   }
+
   const numberFormat = getNumberFormat();
   return numberFormat.resolvedOptions().locale;
 }
