@@ -179,7 +179,9 @@ function formatDateTimeFactory(): (
   }
 
   return (date, locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.format(date);
@@ -252,7 +254,9 @@ function formatDateTimeToPartsFactory(): (
   }
 
   return (date, locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.formatToParts(date);
@@ -293,7 +297,9 @@ function formatDateTimeRangeFactory(): (
 ) => string {
   if (!isDateTimeFormatRangeSupported) {
     return (startDate, endDate, locales, options) => {
-      warnIfLocaleOmitted(locales);
+      if (process?.env?.NODE_ENV !== 'production') {
+        warnIfLocaleOmitted(locales);
+      }
 
       return suppressLocaleDeprecationWarnings(() => {
         const start = formatDateTime(startDate, locales, options);
@@ -304,7 +310,9 @@ function formatDateTimeRangeFactory(): (
   }
 
   return (startDate, endDate, locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.formatRange(startDate, endDate);
@@ -381,7 +389,9 @@ function formatDateTimeRangeToPartsFactory(): (
 ) => (Intl.DateTimeFormatPart | { type: 'date'; value: string })[] {
   if (!isDateTimeFormatRangeSupported) {
     return (startDate, endDate, locales, options) => {
-      warnIfLocaleOmitted(locales);
+      if (process?.env?.NODE_ENV !== 'production') {
+        warnIfLocaleOmitted(locales);
+      }
 
       return suppressLocaleDeprecationWarnings(() => {
         const start = formatDateTimeToParts(startDate, locales, options);
@@ -392,7 +402,9 @@ function formatDateTimeRangeToPartsFactory(): (
   }
 
   return (startDate, endDate, locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
@@ -462,7 +474,9 @@ function resolveDateTimeFormatFactory(): (
   }
 
   return (locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const fallbackOptions = getFallbackOptions(options);
     const dateTimeFormat = getDateTimeFormat(locales, fallbackOptions);
     return dateTimeFormat.resolvedOptions();

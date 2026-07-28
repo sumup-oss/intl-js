@@ -62,7 +62,9 @@ function formatRelativeTimeFactory(): (
   }
 
   return (value, unit, locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const relativeTimeFormat = getRelativeTimeFormat(locales, options);
     return relativeTimeFormat.format(value, unit);
   };
@@ -137,7 +139,9 @@ function formatRelativeTimeToPartsFactory(): (
   }
 
   return (value, unit, locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const relativeTimeFormat = getRelativeTimeFormat(locales, options);
     return relativeTimeFormat.formatToParts(value, unit);
   };
@@ -194,7 +198,9 @@ function resolveRelativeTimeFormatFactory(): (
   }
 
   return (locales, options) => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const relativeTimeFormat = getRelativeTimeFormat(locales, options);
     return relativeTimeFormat.resolvedOptions();
   };

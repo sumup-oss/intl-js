@@ -103,7 +103,9 @@ function formatNumberFactory<T extends GetOptions>(
   }
 
   return (value, locales, ...args): string => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.format(value);
@@ -222,7 +224,9 @@ function formatNumberToPartsFactory<T extends GetOptions>(
   }
 
   return (value, locales, ...args): Intl.NumberFormatPart[] => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     return numberFormat.formatToParts(value);
@@ -389,7 +393,9 @@ function resolveNumberFormatFactory<T extends GetOptions>(
   }
 
   return (locales, ...args): NumberFormat => {
-    warnIfLocaleOmitted(locales);
+    if (process?.env?.NODE_ENV !== 'production') {
+      warnIfLocaleOmitted(locales);
+    }
     const options = getOptions(locales, ...args);
     const numberFormat = getNumberFormat(locales, options);
     const resolvedOptions = numberFormat.resolvedOptions();
