@@ -50,7 +50,6 @@ export const isDateTimeFormatToPartsSupported = (() => {
  */
 export const isDateTimeFormatRangeSupported = (() => {
   try {
-    // @ts-expect-error
     return typeof Intl.DateTimeFormat.prototype.formatRange !== 'undefined';
   } catch (_error) {
     return false;
