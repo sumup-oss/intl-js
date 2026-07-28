@@ -1,5 +1,13 @@
 # @sumup-oss/intl
 
+## 3.5.0
+
+### Minor Changes
+
+- [#378](https://github.com/sumup-oss/intl-js/pull/378) [`54da1ee`](https://github.com/sumup-oss/intl-js/commit/54da1ee79c32484360268503fb962140c9eb1e9c) Thanks [@anasalles47](https://github.com/anasalles47)! - Deprecated implicit locale resolution across all formatters. Omitting the `locales` argument now triggers a warning at development-time. The `locales` argument will become required in the next major version.
+
+- [#384](https://github.com/sumup-oss/intl-js/pull/384) [`307882c`](https://github.com/sumup-oss/intl-js/commit/307882ccae13275cd01c22924de8981f4c4cbdcc) Thanks [@connor-baer](https://github.com/connor-baer)! - Declared support for `temporal-polyfill@1.x` in the peer dependency range.
+
 ## 3.4.0
 
 ### Minor Changes
