@@ -1,5 +1,11 @@
 # @sumup-oss/intl
 
+## 3.5.1
+
+### Patch Changes
+
+- [`b759868`](https://github.com/sumup-oss/intl-js/commit/b75986864a9b0f6be685937bffff3684847f5758) Thanks [@connor-baer](https://github.com/connor-baer)! - Fixed the check for production mode.
+
 ## 3.5.0
 
 ### Minor Changes
