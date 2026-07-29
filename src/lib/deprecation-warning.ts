@@ -14,7 +14,7 @@
  */
 
 export function deprecationWarning(message: string): void {
-  if (process?.env?.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production') {
     return;
   }
 

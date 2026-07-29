@@ -103,7 +103,7 @@ function formatNumberFactory<T extends GetOptions>(
   }
 
   return (value, locales, ...args): string => {
-    if (process?.env?.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production') {
       warnIfLocaleOmitted(locales);
     }
     const options = getOptions(locales, ...args);
@@ -224,7 +224,7 @@ function formatNumberToPartsFactory<T extends GetOptions>(
   }
 
   return (value, locales, ...args): Intl.NumberFormatPart[] => {
-    if (process?.env?.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production') {
       warnIfLocaleOmitted(locales);
     }
     const options = getOptions(locales, ...args);
@@ -393,7 +393,7 @@ function resolveNumberFormatFactory<T extends GetOptions>(
   }
 
   return (locales, ...args): NumberFormat => {
-    if (process?.env?.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== 'production') {
       warnIfLocaleOmitted(locales);
     }
     const options = getOptions(locales, ...args);

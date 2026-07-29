@@ -48,7 +48,7 @@ export function warnIfLocaleOmitted(locales?: Locale | Locale[]): void {
     return;
   }
 
-  if (process?.env?.NODE_ENV !== 'production') {
+  if (process.env.NODE_ENV !== 'production') {
     deprecationWarning(LOCALE_DEPRECATION_MESSAGE);
   }
 }
